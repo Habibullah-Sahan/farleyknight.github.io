@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Awesome Rails Tools - Farley's Ruby on Rails Blog</title>
+  <meta name="author" content="Farley Knight">
+
+  
+  <meta name="description" content="Lesser Known Rails tools zeus zeus gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for rails &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.farleyknight.com/awesome-rails-tools">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Farley's Ruby on Rails Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Farley's Ruby on Rails Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.farleyknight.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Awesome Rails Tools</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>Lesser Known Rails tools</h1>
+
+<h2>zeus</h2>
+
+<p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
+
+<h3>How to use</h3>
+
+<p>First off you&rsquo;ll want to install <code>zeus</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem install zeus
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Notice that you <strong>don&rsquo;t</strong> need to add it to your <code>Gemfile</code>. It is ideally only run locally. Making it a project dependency can cause server maintenance problems down the line (see <a href="#common_zeus_problems">Common Zeus Problems</a> below). After installing, you can boot up <code>zeus</code> with the command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus start
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here&rsquo;s what it looks like on my Ubuntu laptop:</p>
+
+<p>[screenshot here]</p>
+
+<h3>Common Zeus Tasks</h3>
+
+<p>To run the Rails console:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus console
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To run the Rails generator:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus generate model Book
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To run the Rails sever:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus sever
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Common Zeus Problems</h3>
+
+<p>While <code>zeus</code> is an awesome gem, getting it working without any issues can be a bit of a problem at times. Here&rsquo;s some common problems that can occur with <code>zeus</code> and Rails.</p>
+
+<h4>zeus rspec</h4>
+
+<p>If you&rsquo;re testing with RSpec. If you try <code>zeus rspec</code>, you&rsquo;ll likely get:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="sb">`</span>spec_file?<span class="s1">&#39;: undefined method `match&#39;</span> <span class="k">for </span>nil:NilClass <span class="o">(</span>NoMethodError<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instead run <code>rspec</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus <span class="nb">test </span>spec
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>RSpec tests running twice</h4>
+
+<p>After getting your rspec tests running, you&rsquo;ll probably notice that it&rsquo;s running them twice. <a href="https://github.com/burke/zeus/issues/180#issuecomment-12758345">The solution</a> is to remove the line</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;rspec/autorun&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>from your <code>spec/spec_helper.rb</code></p>
+
+<h4>Running zeus on ARM (Chromebook or Raspberry Pi)</h4>
+
+<p>While <code>zeus</code> is a great tool, it has it&rsquo;s limitations. It cannot be used on ARM chips, namely Chromebooks &amp; Raspberry Pi. If you&rsquo;re looking for this functionality on those machines (or other chips that might not be supported by <code>zeus</code>) I would suggest checking out <code>spring</code>, which is discussed below.</p>
+
+<h4>By default, zeus can&rsquo;t handle assets</h4>
+
+<p>Many of the <code>zeus rake ...</code> commands work out of the box, including <code>zeus rake db:migrate</code>. However, <code>rake</code> commands involving the asset pipeline do not work as well. For example, trying <code>zeus rake assets:precompile</code> will get you:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus rake assets:clean
+</span><span class='line'>
+</span><span class='line'>/home/farleyknight/.rvm/rubies/ruby-1.9.3-p448/bin/ruby zeus <span class="nb">command</span>: rake assets:clean:all <span class="nv">RAILS_ENV</span><span class="o">=</span>development <span class="nv">RAILS_GROUPS</span><span class="o">=</span>assets
+</span><span class='line'>/home/farleyknight/.rvm/rubies/ruby-1.9.3-p448/bin/ruby: No such file or directory -- zeus <span class="nb">command</span>: rake <span class="o">(</span>LoadError<span class="o">)</span>
+</span><span class='line'>rake aborted!
+</span><span class='line'>
+</span><span class='line'>Command failed with status <span class="o">(</span>1<span class="o">)</span>: <span class="o">[</span>/home/farleyknight/.rvm/rubies/ruby-1.9.3-...<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The problem is that zeus doesn&rsquo;t change the <code>ENV['RAILS_GROUP']</code> for <code>rake assets:precompile</code> to work.</p>
+
+<p>The fix is as follows. Run</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus init
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It will create <code>zeus.json</code> and <code>custom_plan.rb</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;zeus/rails&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">CustomPlan</span> <span class="o">&lt;</span> <span class="ss">Zeus</span><span class="p">:</span><span class="ss">:Rails</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">assets_environment</span>
+</span><span class='line'>      <span class="no">Bundler</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:assets</span><span class="p">)</span>
+</span><span class='line'>      <span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;RAILS_GROUPS&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;assets&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">assets_run</span>
+</span><span class='line'>      <span class="no">ARGV</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">prepend</span> <span class="s2">&quot;assets:&quot;</span>
+</span><span class='line'>      <span class="no">Rake</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">run</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Zeus</span><span class="o">.</span><span class="n">plan</span> <span class="o">=</span> <span class="no">CustomPlan</span><span class="o">.</span><span class="n">new</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And change <code>zeus.json</code> to match:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;ruby -rubygems -r./custom_plan -eZeus.go&quot;</span><span class="p">,</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nt">&quot;plan&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nt">&quot;boot&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nt">&quot;default_bundle&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nt">&quot;development_environment&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nt">&quot;prerake&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nt">&quot;rake&quot;</span><span class="p">:</span> <span class="p">[],</span>
+</span><span class='line'>            <span class="nt">&quot;assets_environment&quot;</span><span class="p">:{</span>
+</span><span class='line'>              <span class="nt">&quot;assets_run&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;assets&quot;</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>          <span class="p">},</span>
+</span><span class='line'>          <span class="nt">&quot;runner&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;r&quot;</span><span class="p">],</span>
+</span><span class='line'>          <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">],</span>
+</span><span class='line'>          <span class="nt">&quot;server&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;s&quot;</span><span class="p">],</span>
+</span><span class='line'>          <span class="nt">&quot;generate&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;g&quot;</span><span class="p">],</span>
+</span><span class='line'>          <span class="nt">&quot;destroy&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">],</span>
+</span><span class='line'>          <span class="nt">&quot;dbconsole&quot;</span><span class="p">:</span> <span class="p">[]</span>
+</span><span class='line'>        <span class="p">},</span>
+</span><span class='line'>        <span class="nt">&quot;test_environment&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nt">&quot;cucumber_environment&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;cucumber&quot;</span><span class="p">:</span> <span class="p">[]},</span>
+</span><span class='line'>          <span class="nt">&quot;test_helper&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;test&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;rspec&quot;</span><span class="p">,</span> <span class="s2">&quot;testrb&quot;</span><span class="p">]}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will add the command <code>zeus assets ...</code>, so for example <code>zeus assets clean</code> will run <code>rake assets:clean</code> and <code>zeus assets precompile</code> will run <code>rake assets:precompile</code> and so on.</p>
+
+<p>If you&rsquo;re interested on how the <code>Zeus::Rails</code> plans work, <a href="https://github.com/burke/zeus/blob/master/docs/ruby/modifying.md">checkout the documentation</a> on the <a href="https://github.com/burke/zeus/">github repository</a>.</p>
+
+<h2>spring</h2>
+
+<p>Another framework for handling quick Rails boot times is a tool called <a href="https://github.com/jonleighton/spring">spring</a>. It has many features that <code>zeus</code> has, but it&rsquo;s written in pure Ruby.</p>
+
+<h3>Getting Started</h3>
+
+<p>[include how to use spring]</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Farley Knight</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.farleyknight.com/awesome-rails-tools/" data-via="" data-counturl="http://blog.farleyknight.com/awesome-rails-tools/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/rspec-tips/" title="Previous Post: RSpec Tips">&laquo; RSpec Tips</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/awesome-rails-tools/">Awesome Rails Tools</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rspec-tips/">RSpec Tips</a>
+      </li>
+    
+      <li class="post">
+        <a href="/helpful-command-line-tools/">Helpful Command Line Tools</a>
+      </li>
+    
+      <li class="post">
+        <a href="/devise-email-setup/">Devise Email Setup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/basic-web-security/">Basic Web Security</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Farley Knight -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
