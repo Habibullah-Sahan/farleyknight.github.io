@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://blog.farleyknight.com/sitemap.xml 
+Sitemap: http://farleyknight.github.io/sitemap.xml 

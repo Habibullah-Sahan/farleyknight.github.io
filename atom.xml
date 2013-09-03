@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Farley's Ruby on Rails Blog]]></title>
-  <link href="http://blog.farleyknight.com/atom.xml" rel="self"/>
-  <link href="http://blog.farleyknight.com/"/>
-  <updated>2013-09-03T17:18:30-04:00</updated>
-  <id>http://blog.farleyknight.com/</id>
+  <link href="http://farleyknight.github.io/atom.xml" rel="self"/>
+  <link href="http://farleyknight.github.io/"/>
+  <updated>2013-09-03T19:25:11-04:00</updated>
+  <id>http://farleyknight.github.io/</id>
   <author>
     <name><![CDATA[Farley Knight]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Awesome Rails Tools]]></title>
-    <link href="http://blog.farleyknight.com/awesome-rails-tools/"/>
+    <link href="http://farleyknight.github.io/awesome-rails-tools/"/>
     <updated>2013-09-03T13:24:00-04:00</updated>
-    <id>http://blog.farleyknight.com/awesome-rails-tools</id>
+    <id>http://farleyknight.github.io/awesome-rails-tools</id>
     <content type="html"><![CDATA[<h1>Lesser Known Rails tools</h1>
 
 <h2>zeus</h2>
@@ -246,9 +246,9 @@
   
   <entry>
     <title type="html"><![CDATA[RSpec Tips]]></title>
-    <link href="http://blog.farleyknight.com/rspec-tips/"/>
+    <link href="http://farleyknight.github.io/rspec-tips/"/>
     <updated>2013-09-03T13:07:00-04:00</updated>
-    <id>http://blog.farleyknight.com/rspec-tips</id>
+    <id>http://farleyknight.github.io/rspec-tips</id>
     <content type="html"><![CDATA[<h1>rails g rspec:model ModelName</h1>
 
 <p>Use this command to generate a spec for an existing ModelName</p>
@@ -257,9 +257,9 @@
   
   <entry>
     <title type="html"><![CDATA[Helpful Command Line Tools]]></title>
-    <link href="http://blog.farleyknight.com/helpful-command-line-tools/"/>
+    <link href="http://farleyknight.github.io/helpful-command-line-tools/"/>
     <updated>2013-09-03T13:01:00-04:00</updated>
-    <id>http://blog.farleyknight.com/helpful-command-line-tools</id>
+    <id>http://farleyknight.github.io/helpful-command-line-tools</id>
     <content type="html"><![CDATA[<h1>You can&rsquo;t stand in GUI-land forever..</h1>
 
 <p>As much as there are plenty of graphical tools for developers, there are plenty of tight spots that require use of the command line. For example, logging into an SSH server means that unless you use a VPN to handle desktop interaction, you&rsquo;re stuck with the command line. Also, if you&rsquo;re using any of the common command line tools, such as git, it&rsquo;s helpful to stay in the command line and continue doing your work.</p>
@@ -286,9 +286,9 @@
   
   <entry>
     <title type="html"><![CDATA[Devise Email Setup]]></title>
-    <link href="http://blog.farleyknight.com/devise-email-setup/"/>
+    <link href="http://farleyknight.github.io/devise-email-setup/"/>
     <updated>2013-09-02T14:43:00-04:00</updated>
-    <id>http://blog.farleyknight.com/devise-email-setup</id>
+    <id>http://farleyknight.github.io/devise-email-setup</id>
     <content type="html"><![CDATA[<h2>Basic Setup</h2>
 
 <p>The most basic Devise email setup is to set configuration for <code>ActionMailer</code>, which is slightly different for <code>development</code> and <code>production</code> modes. However, for both modes you&rsquo;ll want to check out your <code>config/initializers/devise.rb</code> file and change the line that reads:</p>
@@ -377,9 +377,9 @@
   
   <entry>
     <title type="html"><![CDATA[Basic Web Security]]></title>
-    <link href="http://blog.farleyknight.com/basic-web-security/"/>
+    <link href="http://farleyknight.github.io/basic-web-security/"/>
     <updated>2013-09-02T14:35:00-04:00</updated>
-    <id>http://blog.farleyknight.com/basic-web-security</id>
+    <id>http://farleyknight.github.io/basic-web-security</id>
     <content type="html"><![CDATA[<h2>How to handle passwords</h2>
 
 <p>You want to avoid passwords as much as possible when developing. This is not just a convenience measure, but also an engineering measure. Each human-memorized password will be another point of attack for your web server and web application. Whenever possible encrypted keys are preferable to passwords, as they tend to be much longer (and thus harder to brute-force), require no memorization, and can be locked away on thumbdrives or on the filesystem.</p>
@@ -400,9 +400,9 @@
   
   <entry>
     <title type="html"><![CDATA[Basic Devise Customization]]></title>
-    <link href="http://blog.farleyknight.com/basic-devise-customization/"/>
+    <link href="http://farleyknight.github.io/basic-devise-customization/"/>
     <updated>2013-09-02T14:15:00-04:00</updated>
-    <id>http://blog.farleyknight.com/basic-devise-customization</id>
+    <id>http://farleyknight.github.io/basic-devise-customization</id>
     <content type="html"><![CDATA[<h2>Customizing Devise Views</h2>
 
 <p>If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. Run:</p>
@@ -419,7 +419,7 @@
 
 <p>[TODO: Provide some common updates to Devise forms]</p>
 
-<p>Sometimes setting up Devise is just the start of your app, and you need more customization to provide a robust user experience. Here&rsquo;s some common Devise customizations that should take you even further along than the <a href="http://blog.farleyknight.com/getting-started-with-devise/">basic Devise guide</a> I&rsquo;ve written before.</p>
+<p>Sometimes setting up Devise is just the start of your app, and you need more customization to provide a robust user experience. Here&rsquo;s some common Devise customizations that should take you even further along than the <a href="http://farleyknight.github.io/getting-started-with-devise/">basic Devise guide</a> I&rsquo;ve written before.</p>
 
 <h2>Adding a Profile to your User model</h2>
 
@@ -465,17 +465,15 @@
 
 <h2>Letting Users sign up via Facebook</h2>
 
-<p>Blah blah blah..</p>
-
 <p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_facebook/">an example app</a> that shows how all of this fits together.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Common Devise Problems]]></title>
-    <link href="http://blog.farleyknight.com/common-devise-problems/"/>
+    <link href="http://farleyknight.github.io/common-devise-problems/"/>
     <updated>2013-09-02T12:35:00-04:00</updated>
-    <id>http://blog.farleyknight.com/common-devise-problems</id>
+    <id>http://farleyknight.github.io/common-devise-problems</id>
     <content type="html"><![CDATA[<h2>No route matches [GET] &ldquo;/users/sign_out&rdquo;</h2>
 
 <p>Say you&rsquo;ve got a logout partial that looks like this.</p>
@@ -517,7 +515,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>You can read more about <code>link_to</code> <a href="http://blog.farleyknight.com/rails-link_to/">here</a>.</p>
+<p>You can read more about <code>link_to</code> <a href="http://farleyknight.github.io/rails-link_to/">here</a>.</p>
 
 <p>Alternatively, although I would not recommend it, you can change the HTTP method used for signing out in <code>config/initializers/devise.rb</code>. That would mean changing this line:</p>
 
@@ -539,18 +537,29 @@
   
   <entry>
     <title type="html"><![CDATA[Getting Started with Devise]]></title>
-    <link href="http://blog.farleyknight.com/getting-started-with-devise/"/>
+    <link href="http://farleyknight.github.io/getting-started-with-devise/"/>
     <updated>2013-09-02T12:17:00-04:00</updated>
-    <id>http://blog.farleyknight.com/getting-started-with-devise</id>
+    <id>http://farleyknight.github.io/getting-started-with-devise</id>
     <content type="html"><![CDATA[<h2>Before you dive in</h2>
 
 <p>Devise is a robust authentication framework for Rails. It covers 95% of the use authentication cases you&rsquo;ll ever have working with Rails. While it&rsquo;s very robust, that robustness comes at the cost complexity. It is not recommended for absolute beginners. Moderate beginners, those of you who have used Rails for small projects and understand how authentication works, should try some sandbox projects with Devise.</p>
 
 <p>However, if you&rsquo;re learning Ruby on Rails at the same time as programming in general, I would personally recommend that you wait until your 2nd or 3rd year of programming before you dive into Devise.</p>
 
-<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="http://blog.farleyknight.com/basic-rails-guide">Basic Rails Guide</a>.</p>
+<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="http://farleyknight.github.io/basic-rails-guide">Basic Rails Guide</a>.</p>
 
-<h2>Setting up</h2>
+<h2>Devise setup fast-track</h2>
+
+<p>If you&rsquo;re looking to get set up immediately, without delay, run this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails new <span class="o">[</span>my_website<span class="o">]</span> -m http://raw.github.com/farleyknight/rails_templates/devise.rb
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finer grained detail is explained below.</p>
+
+<h2>Devise setup, step-by-Step</h2>
 
 <p>The following will get you the very basics for working with Devise. As with most Rails gems, you&rsquo;ll want to add the following line to your <code>Gemfile</code>.</p>
 
@@ -573,7 +582,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>This adds <code>config/initializers/devise.rb</code> to your Rails project. I provide complete details on what this file does in the <a href="http://blog.farleyknight.com/basic-devise-customization/">Basic Devise Customization</a>.</p>
+<p>This adds <code>config/initializers/devise.rb</code> to your Rails project. I provide complete details on what this file does in the <a href="http://farleyknight.github.io/basic-devise-customization/">Basic Devise Customization</a>.</p>
 
 <p>Come up with a descriptive name for your the &ldquo;user&rdquo; object in your project. Something simple like <code>Account</code>, <code>Admin</code>, <code>Client</code>, or even just <code>User</code> is good enough for our purposes. We&rsquo;ll assume that you&rsquo;re using User for the rest of this tutorial. Generate the <code>User</code> class by running:</p>
 
@@ -599,7 +608,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="http://blog.farleyknight.com/basic-devise-guide/">Basic Devise Guide</a></p>
+<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="http://farleyknight.github.io/basic-devise-guide/">Basic Devise Guide</a></p>
 
 <p>It also adds a database migration, which should look like this:</p>
 
@@ -723,7 +732,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="http://blog.farleyknight.com/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
+<p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="http://farleyknight.github.io/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
 
 <h3>Signing up with Facebook, Twitter, etc</h3>
 
@@ -735,8 +744,8 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;devise&#39;</span> <span class="c1"># Should already be in your Gemfile</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;oauth&#39;</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;oauth-facebook&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth-facebook&#39;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 

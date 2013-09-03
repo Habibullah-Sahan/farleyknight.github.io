@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.farleyknight.com">
+  <link rel="canonical" href="http://farleyknight.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Farley's Ruby on Rails Blog" type="application/atom+xml">
@@ -50,7 +50,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:blog.farleyknight.com" />
+    <input type="hidden" name="q" value="site:farleyknight.github.io" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -676,8 +676,6 @@
 
 <h2>Letting Users sign up via Facebook</h2>
 
-<p>Blah blah blah..</p>
-
 <p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_facebook/">an example app</a> that shows how all of this fits together.</p>
 </div>
   
@@ -815,7 +813,18 @@
 
 <p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="/basic-rails-guide">Basic Rails Guide</a>.</p>
 
-<h2>Setting up</h2>
+<h2>Devise setup fast-track</h2>
+
+<p>If you&rsquo;re looking to get set up immediately, without delay, run this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails new <span class="o">[</span>my_website<span class="o">]</span> -m http://raw.github.com/farleyknight/rails_templates/devise.rb
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finer grained detail is explained below.</p>
+
+<h2>Devise setup, step-by-Step</h2>
 
 <p>The following will get you the very basics for working with Devise. As with most Rails gems, you&rsquo;ll want to add the following line to your <code>Gemfile</code>.</p>
 
@@ -1000,8 +1009,8 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;devise&#39;</span> <span class="c1"># Should already be in your Gemfile</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;oauth&#39;</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;oauth-facebook&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth-facebook&#39;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
