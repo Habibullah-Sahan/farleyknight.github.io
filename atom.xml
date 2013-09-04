@@ -4,7 +4,7 @@
   <title><![CDATA[Farley's Ruby on Rails Blog]]></title>
   <link href="http://farleyknight.github.io/atom.xml" rel="self"/>
   <link href="http://farleyknight.github.io/"/>
-  <updated>2013-09-03T19:25:11-04:00</updated>
+  <updated>2013-09-03T23:35:47-04:00</updated>
   <id>http://farleyknight.github.io/</id>
   <author>
     <name><![CDATA[Farley Knight]]></name>
@@ -18,9 +18,7 @@
     <link href="http://farleyknight.github.io/awesome-rails-tools/"/>
     <updated>2013-09-03T13:24:00-04:00</updated>
     <id>http://farleyknight.github.io/awesome-rails-tools</id>
-    <content type="html"><![CDATA[<h1>Lesser Known Rails tools</h1>
-
-<h2>zeus</h2>
+    <content type="html"><![CDATA[<h2>zeus</h2>
 
 <p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
 
