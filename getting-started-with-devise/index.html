@@ -104,7 +104,7 @@
 <p>If you&rsquo;re looking to get set up immediately, without delay, run this:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails new <span class="o">[</span>my_website<span class="o">]</span> -m http://raw.github.com/farleyknight/rails_templates/devise.rb
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails new my_website -m https://raw.github.com/farleyknight/rails_templates/master/devise.rb
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -284,23 +284,6 @@
 
 
 <p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
-
-<h3>Signing up with Facebook, Twitter, etc</h3>
-
-<p>An often requested feature is to allow users to sign up via Facebook, Twitter, or other social network.</p>
-
-<p>You&rsquo;ll need to add a few more gems to do this. You&rsquo;ll need to add to your Gemfile:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;devise&#39;</span> <span class="c1"># Should already be in your Gemfile</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth&#39;</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth-facebook&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>[discuss facebook integration]</p>
 </div>
 
 

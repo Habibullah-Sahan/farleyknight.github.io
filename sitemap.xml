@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://farleyknight.github.io/getting-started-with-devise/</loc>
-        <lastmod>2013-09-03T19:24:40-04:00</lastmod>
+        <lastmod>2013-09-03T23:53:13-04:00</lastmod>
     </url>
     <url>
         <loc>http://farleyknight.github.io/common-devise-problems/</loc>
@@ -10,7 +10,7 @@
     </url>
     <url>
         <loc>http://farleyknight.github.io/basic-devise-customization/</loc>
-        <lastmod>2013-09-03T18:45:18-04:00</lastmod>
+        <lastmod>2013-09-03T23:56:28-04:00</lastmod>
     </url>
     <url>
         <loc>http://farleyknight.github.io/basic-web-security/</loc>
@@ -30,11 +30,11 @@
     </url>
     <url>
         <loc>http://farleyknight.github.io/awesome-rails-tools/</loc>
-        <lastmod>2013-09-03T23:35:30-04:00</lastmod>
+        <lastmod>2013-09-04T17:17:46-04:00</lastmod>
     </url>
     <url>
         <loc>http://farleyknight.github.io/blog/archives/</loc>
-        <lastmod>2013-09-03T23:35:30-04:00</lastmod>
+        <lastmod>2013-09-04T17:17:46-04:00</lastmod>
     </url>
     <url>
         <loc>http://farleyknight.github.io/robots.txt</loc>
@@ -42,6 +42,6 @@
     </url>
     <url>
         <loc>http://farleyknight.github.io/</loc>
-        <lastmod>2013-09-03T23:35:30-04:00</lastmod>
+        <lastmod>2013-09-04T17:17:46-04:00</lastmod>
     </url>
 </urlset>
