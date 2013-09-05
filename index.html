@@ -9,7 +9,7 @@
   <meta name="author" content="Farley Knight">
 
   
-  <meta name="description" content="zeus zeus gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for rails console, rails server, rails &hellip;">
+  <meta name="description" content="zeus gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for rails console, rails server, rails &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +71,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/awesome-rails-tools/">Awesome Rails Tools</a></h1>
+      <h1 class="entry-title"><a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot-times With Zeus</a></h1>
     
     
       <p class="meta">
@@ -87,18 +87,16 @@
   
 
 
-<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+<time datetime="2013-09-05T09:49:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h2>zeus</h2>
+  <div class="entry-content"><p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
 
-<p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
-
-<h3>How to use</h3>
+<h2>How to use</h2>
 
 <p>First off you&rsquo;ll want to install <code>zeus</code>.</p>
 
@@ -118,7 +116,7 @@
 
 <p>[screenshot here]</p>
 
-<h3>Common Zeus Tasks</h3>
+<h2>Common Zeus Tasks</h2>
 
 <p>To run the Rails console:</p>
 
@@ -141,11 +139,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>Common Zeus Problems</h3>
+<h2>Common Zeus Problems</h2>
 
 <p>While <code>zeus</code> is an awesome gem, getting it working without any issues can be a bit of a problem at times. Here&rsquo;s some common problems that can occur with <code>zeus</code> and Rails.</p>
 
-<h4>zeus rspec</h4>
+<h3>zeus rspec</h3>
 
 <p>If you&rsquo;re testing with RSpec. If you try <code>zeus rspec</code>, you&rsquo;ll likely get:</p>
 
@@ -161,7 +159,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h4>RSpec tests running twice</h4>
+<h3>RSpec tests running twice</h3>
 
 <p>After getting your rspec tests running, you&rsquo;ll probably notice that it&rsquo;s running them twice. <a href="https://github.com/burke/zeus/issues/180#issuecomment-12758345">The solution</a> is to remove the line</p>
 
@@ -172,11 +170,11 @@
 
 <p>from your <code>spec/spec_helper.rb</code></p>
 
-<h4>Running zeus on ARM (Chromebook or Raspberry Pi)</h4>
+<h3>Running zeus on ARM (Chromebook or Raspberry Pi)</h3>
 
 <p>While <code>zeus</code> is a great tool, it has it&rsquo;s limitations. It cannot be used on ARM chips, namely Chromebooks &amp; Raspberry Pi. If you&rsquo;re looking for this functionality on those machines (or other chips that might not be supported by <code>zeus</code>) I would suggest checking out <code>spring</code>, which is discussed below.</p>
 
-<h4>By default, zeus can&rsquo;t handle assets</h4>
+<h3>By default, zeus can&rsquo;t handle assets</h3>
 
 <p>Many of the <code>zeus rake ...</code> commands work out of the box, including <code>zeus rake db:migrate</code>. However, <code>rake</code> commands involving the asset pipeline do not work as well. For example, trying <code>zeus rake assets:precompile</code> will get you:</p>
 
@@ -245,9 +243,7 @@
 <span class='line-number'>26</span>
 <span class='line-number'>27</span>
 <span class='line-number'>28</span>
-<span class='line-number'>29</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;zeus/rails&#39;</span>
-</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;zeus/rails&#39;</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Usage: `zeus assets some:nested:task&#39;</span>
 </span><span class='line'><span class="c1">#</span>
@@ -338,8 +334,42 @@
 <p>This will add the command <code>zeus assets ...</code>, so for example <code>zeus assets clean</code> will run <code>rake assets:clean</code> and <code>zeus assets precompile</code> will run <code>rake assets:precompile</code> and so on.</p>
 
 <p>If you&rsquo;re interested on how the <code>Zeus::Rails</code> plans work, <a href="https://github.com/burke/zeus/blob/master/docs/ruby/modifying.md">checkout the documentation</a> on the <a href="https://github.com/burke/zeus/">github repository</a>.</p>
+</div>
+  
+  
 
-<h2>spring</h2>
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/awesome-rails-tools/">Awesome Rails Tools</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>spring</h2>
 
 <p>Another framework for handling quick Rails boot times is a tool called <a href="https://github.com/jonleighton/spring">spring</a>. It has many features that <code>zeus</code> has, but it&rsquo;s written in pure Ruby.</p>
 
@@ -1069,6 +1099,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot-times With Zeus</a>
+      </li>
+    
+      <li class="post">
         <a href="/awesome-rails-tools/">Awesome Rails Tools</a>
       </li>
     
@@ -1082,10 +1116,6 @@
     
       <li class="post">
         <a href="/devise-email-setup/">Devise Email Setup</a>
-      </li>
-    
-      <li class="post">
-        <a href="/basic-web-security/">Basic Web Security</a>
       </li>
     
   </ul>
