@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Awesome Rails Tools - Farley's Ruby on Rails Blog</title>
+  <title>Rails admin panels with activeadmin - Farley's Ruby on Rails Blog</title>
   <meta name="author" content="Farley Knight">
 
   
-  <meta name="description" content="spring Another framework for handling quick Rails boot times is a tool called spring. It has many features that zeus has, but it&rsquo;s written in &hellip;">
+  <meta name="description" content="couldn&rsquo;t find file &lsquo;jquery-ui&rsquo; (in /home/umbrosus/.rvm/gems/ruby-1.9.3-p392@gancxadebebi/gems/activeadmin-0.5.1/app/assets/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://farleyknight.github.io/awesome-rails-tools">
+  <link rel="canonical" href="http://farleyknight.github.io/rails-admin-panels-with-activeadmin">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Farley's Ruby on Rails Blog" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Awesome Rails Tools</h1>
+      <h1 class="entry-title">Rails Admin Panels With Activeadmin</h1>
     
     
       <p class="meta">
@@ -84,20 +84,34 @@
   
 
 
-<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+<time datetime="2013-09-05T15:22:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>spring</h2>
+<div class="entry-content"><p>couldn&rsquo;t find file &lsquo;jquery-ui&rsquo;
+  (in /home/umbrosus/.rvm/gems/ruby-1.9.3-p392@gancxadebebi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/base.js:2)</p>
 
-<p>Another framework for handling quick Rails boot times is a tool called <a href="https://github.com/jonleighton/spring">spring</a>. It has many features that <code>zeus</code> has, but it&rsquo;s written in pure Ruby.</p>
+<p>The &ldquo;jquery-rails&rdquo; gem recently removed jQuery UI.</p>
 
-<h3>Getting Started</h3>
+<p><a href="https://github.com/rails/jquery-rails/commit/2fdcdb2633cbc6426d412c050200fc31d14b9a3b">https://github.com/rails/jquery-rails/commit/2fdcdb2633cbc6426d412c050200fc31d14b9a3b</a></p>
 
-<p>[include how to use spring]</p>
+<p>They recommend using the jquery-ui-rails gem.</p>
+
+<p>There is an active pull request (as of this writing) to add that gem as a dependency. However, the developers of ActiveAdmin have stated that they are &ldquo;locking it down until we officially drop support for Rails 3.0&rdquo;. The version they are locked to is jquery-rails &lt; 3.0.0.</p>
+
+<p>In the meantime, just modify your Gemfile:</p>
+
+<p>gem &ldquo;jquery-ui-rails&rdquo; Not recommended, see @Kevin&rsquo;s comment below</p>
+
+<p>Or you can downgrade your version of jquery-rails:</p>
+
+<p>gem &ldquo;jquery-rails&rdquo;, &ldquo;&lt; 3.0.0&rdquo;
+Or you can pull from their Github master branch. They have applied a temporary fix.</p>
+
+<p>gem &ldquo;activeadmin&rdquo;, github: &ldquo;gregbell/active_admin&rdquo;</p>
 </div>
 
 
@@ -120,7 +134,7 @@
   
 
 
-<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+<time datetime="2013-09-05T15:22:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
       
 
 
@@ -128,7 +142,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://farleyknight.github.io/awesome-rails-tools/" data-via="" data-counturl="http://farleyknight.github.io/awesome-rails-tools/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://farleyknight.github.io/rails-admin-panels-with-activeadmin/" data-via="" data-counturl="http://farleyknight.github.io/rails-admin-panels-with-activeadmin/" >Tweet</a>
   
   
   
@@ -137,10 +151,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/rspec-tips/" title="Previous Post: RSpec Tips">&laquo; RSpec Tips</a>
+        <a class="basic-alignment left" href="/you-cant-stay-in-gui-land-forever/" title="Previous Post: You can't stay in GUI-land forever">&laquo; You can't stay in GUI-land forever</a>
       
       
-        <a class="basic-alignment right" href="/faster-rails-boot-times-with-zeus/" title="Next Post: Faster Rails boot times with zeus">Faster Rails boot times with zeus &raquo;</a>
+        <a class="basic-alignment right" href="/speed-up-development-with-guard/" title="Next Post: Speed up development with guard">Speed up development with guard &raquo;</a>
       
     </p>
   </footer>

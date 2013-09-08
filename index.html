@@ -9,7 +9,7 @@
   <meta name="author" content="Farley Knight">
 
   
-  <meta name="description" content="zeus gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for rails console, rails server, rails &hellip;">
+  <meta name="description" content="Customizing Devise Views If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +71,401 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot-times With Zeus</a></h1>
+      <h1 class="entry-title"><a href="/customizing-devise-views/">Customizing Devise Views</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-08T05:12:00-04:00" pubdate data-updated="true">Sep 8<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Customizing Devise Views</h2>
+
+<p>If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. Run:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rails g devise:views
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This adds a bunch of views under <code>app/views/</code>. The output should look something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>invoke  Devise::Generators::SharedViewsGenerator
+</span><span class='line'>create    app/views/devise/shared
+</span><span class='line'>create    app/views/devise/shared/_links.erb
+</span><span class='line'>invoke  form_for
+</span><span class='line'>create    app/views/devise/confirmations
+</span><span class='line'>create    app/views/devise/confirmations/new.html.erb
+</span><span class='line'>create    app/views/devise/passwords
+</span><span class='line'>create    app/views/devise/passwords/edit.html.erb
+</span><span class='line'>create    app/views/devise/passwords/new.html.erb
+</span><span class='line'>create    app/views/devise/registrations
+</span><span class='line'>create    app/views/devise/registrations/edit.html.erb
+</span><span class='line'>create    app/views/devise/registrations/new.html.erb
+</span><span class='line'>create    app/views/devise/sessions
+</span><span class='line'>create    app/views/devise/sessions/new.html.erb
+</span><span class='line'>create    app/views/devise/unlocks
+</span><span class='line'>create    app/views/devise/unlocks/new.html.erb
+</span><span class='line'>invoke  erb
+</span><span class='line'>create    app/views/devise/mailer
+</span><span class='line'>create    app/views/devise/mailer/confirmation_instructions.html.erb
+</span><span class='line'>create    app/views/devise/mailer/reset_password_instructions.html.erb
+</span><span class='line'>create    app/views/devise/mailer/unlock_instructions.html.erb
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Customizing Devise with Twitter Bootstrap</h3>
+
+<h3>Customizing user registration</h3>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/advanced-devise-customization/">Advanced Devise Customization</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-08T05:10:00-04:00" pubdate data-updated="true">Sep 8<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Devise security</h2>
+
+<h3>Logging password attempts</h3>
+
+<p>By default, Devise does not do anything special about brute-forced password attempts.</p>
+
+<h2>Handling other types of authentication</h2>
+
+<h3>Sign up via username, instead of email</h3>
+
+<h3>HTTP auth</h3>
+
+<h3>OAuth (includes Facebook, Twitter as special cases)</h3>
+
+<h3>LDAP</h3>
+
+<h1>#</h1>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/getting-started-with-rspec/">Getting Started With RSpec</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-07T14:41:00-04:00" pubdate data-updated="true">Sep 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>What is RSpec?</h1>
+
+<p><a href="http://rspec.info/">RSpec</a> is a Ruby gem for writing more elegant tests. It&rsquo;s known for being oriented for Behavior Driven Development.</p>
+
+<h1>Installation</h1>
+
+<h2>With a Gemfile</h2>
+
+<p>If your project has Gemfile, add these lines to it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">group</span> <span class="ss">:test</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;rspec&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then run</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>bundle
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>to install the gem.</p>
+
+<h2>Without a Gemfile</h2>
+
+<p>Install the <code>rspec</code> gem the old-fashioned way:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install rspec
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Initialization</h2>
+
+<p>Next, you can initialize your project (can be a Rails app, Sinatra app, or even a Ruby gem) with the necessary <code>rspec</code> files:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rspec --init
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will add <code>spec/spec_helper.rb</code> and <code>.rspec</code> to your current directory.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/speed-up-development-with-guard/">Speed Up Development With Guard</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-05T15:47:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/rails-admin-panels-with-activeadmin/">Rails Admin Panels With Activeadmin</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-05T15:22:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>couldn&rsquo;t find file &lsquo;jquery-ui&rsquo;
+  (in /home/umbrosus/.rvm/gems/ruby-1.9.3-p392@gancxadebebi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/base.js:2)</p>
+
+<p>The &ldquo;jquery-rails&rdquo; gem recently removed jQuery UI.</p>
+
+<p><a href="https://github.com/rails/jquery-rails/commit/2fdcdb2633cbc6426d412c050200fc31d14b9a3b">https://github.com/rails/jquery-rails/commit/2fdcdb2633cbc6426d412c050200fc31d14b9a3b</a></p>
+
+<p>They recommend using the jquery-ui-rails gem.</p>
+
+<p>There is an active pull request (as of this writing) to add that gem as a dependency. However, the developers of ActiveAdmin have stated that they are &ldquo;locking it down until we officially drop support for Rails 3.0&rdquo;. The version they are locked to is jquery-rails &lt; 3.0.0.</p>
+
+<p>In the meantime, just modify your Gemfile:</p>
+
+<p>gem &ldquo;jquery-ui-rails&rdquo; Not recommended, see @Kevin&rsquo;s comment below</p>
+
+<p>Or you can downgrade your version of jquery-rails:</p>
+
+<p>gem &ldquo;jquery-rails&rdquo;, &ldquo;&lt; 3.0.0&rdquo;
+Or you can pull from their Github master branch. They have applied a temporary fix.</p>
+
+<p>gem &ldquo;activeadmin&rdquo;, github: &ldquo;gregbell/active_admin&rdquo;</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/you-cant-stay-in-gui-land-forever/">You Can&#8217;t Stay in GUI-land Forever</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-05T09:59:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/git-tools-you-should-use/">Git Tools You Should Use</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-05T09:59:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>tig</h2>
+
+<h2>something for command line diffs</h2>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot Times With Zeus</a></h1>
     
     
       <p class="meta">
@@ -96,19 +490,19 @@
 
   <div class="entry-content"><p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
 
-<h2>How to use</h2>
+<h2>Install &amp; set up</h2>
 
 <p>First off you&rsquo;ll want to install <code>zeus</code>.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem install zeus
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install zeus
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Notice that you <strong>don&rsquo;t</strong> need to add it to your <code>Gemfile</code>. It is ideally only run locally. Making it a project dependency can cause server maintenance problems down the line (see <a href="#common_zeus_problems">Common Zeus Problems</a> below). After installing, you can boot up <code>zeus</code> with the command:</p>
+<p>Notice that you <strong>don&rsquo;t</strong> need to add it to your <code>Gemfile</code>. It is ideally only run locally. Making it a project dependency can cause server maintenance problems down the line (see <a href="/faster-boot-times-with-zeus/#common_zeus_problems">Common Zeus Problems</a> below). After installing, you can boot up <code>zeus</code> with the command:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus start
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus start
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -121,21 +515,21 @@
 <p>To run the Rails console:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus console
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus console
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>To run the Rails generator:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus generate model Book
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus generate model Book
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>To run the Rails sever:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus sever
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus sever
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -155,7 +549,7 @@
 <p>Instead run <code>rspec</code>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus <span class="nb">test </span>spec
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus <span class="nb">test </span>spec
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -209,7 +603,7 @@
 <p>Next run:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus init
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus init
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -411,674 +805,38 @@
   </header>
 
 
-  <div class="entry-content"><h1>rails g rspec:model ModelName</h1>
+  <div class="entry-content"><h2>Rspec generators</h2>
 
 <p>Use this command to generate a spec for an existing ModelName</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/helpful-command-line-tools/">Helpful Command Line Tools</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-03T13:01:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>You can&rsquo;t stand in GUI-land forever..</h1>
-
-<p>As much as there are plenty of graphical tools for developers, there are plenty of tight spots that require use of the command line. For example, logging into an SSH server means that unless you use a VPN to handle desktop interaction, you&rsquo;re stuck with the command line. Also, if you&rsquo;re using any of the common command line tools, such as git, it&rsquo;s helpful to stay in the command line and continue doing your work.</p>
-
-<p>Furthermore, all programs are just text. Being able to stick with a simple text interface means that you don&rsquo;t have to do context switching in your workflow, which is one of the more expensive operations to deal with (and also why programmers hate interruptions!).</p>
-
-<h2>emacs-nox or vim</h2>
-
-<p>[screenshot of emacs here]</p>
-
-<p>[screenshot of vim here]</p>
-
-<h2>tig</h2>
-
-<p>[screenshot here]</p>
-
-<h2>htop</h2>
-
-<p>[screenshot here]</p>
-
-<h2>(soundcloud command line interface?)</h2>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/devise-email-setup/">Devise Email Setup</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-02T14:43:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Basic Setup</h2>
-
-<p>The most basic Devise email setup is to set configuration for <code>ActionMailer</code>, which is slightly different for <code>development</code> and <code>production</code> modes. However, for both modes you&rsquo;ll want to check out your <code>config/initializers/devise.rb</code> file and change the line that reads:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">mailer_sender</span> <span class="o">=</span> <span class="s2">&quot;please-change-me-at-config-initializers-devise@example.com&quot;</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g spec:model ModelName
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>To something a bit more sane, such as:</p>
+<h2>Test files under <code>lib</code></h2>
+
+<p>Create <code>spec/lib</code></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">mailer_sender</span> <span class="o">=</span> <span class="s2">&quot;support@mysite.com&quot;</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir -p spec/lib
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>After setting this, all devise email will be sent as <code>support@mysite.com</code>.</p>
-
-<h2>ActionMailer setup</h2>
-
-<p>All of this information is available in detail on the <a href="http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration">official ActionMailer guide page</a>. However, this document will get you started faster, with some reasonable defaults.</p>
-
-<h3>ActionMailer in <code>development</code> with Gmail</h3>
-
-<p>The best way to handle email in your <code>development</code> environment is with a throw-away Gmail account. I emphasize that it should be throw-away as we&rsquo;re including the email &amp; password directly in the config file. If you&rsquo;re application has serious security implications, it&rsquo;s best that you use <code>sendmail</code> to do email during development, or that you pass the email &amp; password via another configuration file that is not committed to your project (by ignoring it in <code>.gitignore</code>).</p>
-
-<p>With that preface out of the way, in your <code>config/environments/development.rb</code> you&rsquo;ll want to have the following configuration:</p>
+<p>Add the following line to <code>spec/spec_helper.rb</code></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">default_url_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost:3000&#39;</span><span class="p">}</span>
-</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">delivery_method</span>     <span class="o">=</span> <span class="ss">:smtp</span>
-</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">smtp_settings</span>       <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>   <span class="ss">:tls</span>            <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span>
-</span><span class='line'>   <span class="ss">:address</span>        <span class="o">=&gt;</span> <span class="s2">&quot;smtp.gmail.com&quot;</span><span class="p">,</span>
-</span><span class='line'>   <span class="ss">:port</span>           <span class="o">=&gt;</span> <span class="mi">587</span><span class="p">,</span>
-</span><span class='line'>   <span class="ss">:domain</span>         <span class="o">=&gt;</span> <span class="s2">&quot;gmail.com&quot;</span><span class="p">,</span>
-</span><span class='line'>   <span class="ss">:authentication</span> <span class="o">=&gt;</span> <span class="ss">:login</span><span class="p">,</span>
-</span><span class='line'>   <span class="ss">:user_name</span>      <span class="o">=&gt;</span> <span class="s2">&quot;[username]&quot;</span><span class="p">,</span>
-</span><span class='line'>   <span class="ss">:password</span>       <span class="o">=&gt;</span> <span class="s2">&quot;[password]&quot;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You&rsquo;ll want to replace <code>[email]</code> and <code>[password]</code> with your Gmail email &amp; password.</p>
-
-<p>You can see a working <a href="http://github.com/farleyknight/devise_email">example app here</a>.</p>
-
-<h3>ActionMailer in <code>production</code></h3>
-
-<p>Setting up ActionMailer in production requires a real domain name. So don&rsquo;t bother with this step until you&rsquo;ve registered one. I suggest <code>namecheap.com</code>. Assuming you&rsquo;ve just registered, if your domain name is <code>example.com</code>, go into your <code>config/environments/production.rb</code> and add the following lines:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">default_url_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">&#39;example.com&#39;</span><span class="p">}</span>
-</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">delivery_method</span>     <span class="o">=</span> <span class="ss">:smtp</span>
-</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">smtp_settings</span>       <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>  <span class="ss">:address</span> <span class="o">=&gt;</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span>
-</span><span class='line'>  <span class="ss">:port</span>    <span class="o">=&gt;</span> <span class="mi">25</span><span class="p">,</span>
-</span><span class='line'>  <span class="ss">:domain</span>  <span class="o">=&gt;</span> <span class="s1">&#39;example.com&#39;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Afterwards, you&rsquo;ll want to set up a simple SMTP server on your web host. Run:</p>
-
-<p><code>gem install mailcatcher</code></p>
-
-<p>Will install the <a href="http://mailcatcher.me/">mailcatcher</a> gem.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/basic-web-security/">Basic Web Security</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-02T14:35:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>How to handle passwords</h2>
-
-<p>You want to avoid passwords as much as possible when developing. This is not just a convenience measure, but also an engineering measure. Each human-memorized password will be another point of attack for your web server and web application. Whenever possible encrypted keys are preferable to passwords, as they tend to be much longer (and thus harder to brute-force), require no memorization, and can be locked away on thumbdrives or on the filesystem.</p>
-
-<h3>Set up passwordless SSH</h3>
-
-<p>If you&rsquo;ve got a web server which you can SSH into, you should immediately remove route around the need for passwords by running this command:</p>
-
-<p><code>ssh-copy-id [myaccount]@[mysite]</code></p>
-
-<p>If you run this command (replacing <code>[myaccount]</code> with your SSH login and <code>[mysite]</code> with your site&rsquo;s domain name), you&rsquo;ll be asked one more time to login with a password.</p>
-
-<h3>Put passwords into config files, not in source code</h3>
-
-<h3>Put passwords into a password manager. Don&rsquo;t bother memorizing them.</h3>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/basic-devise-customization/">Basic Devise Customization</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-02T14:15:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Customizing Devise Views</h2>
-
-<p>If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. Run:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g devise:views
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This adds a bunch of views under <code>app/views/</code>, such as:</p>
-
-<p><code>app/views/devise/registrations/new.html.erb</code>
-<code>app/views/devise/registrations/edit.html.erb</code></p>
-
-<p>[TODO: Provide some common updates to Devise forms]</p>
-
-<p>Sometimes setting up Devise is just the start of your app, and you need more customization to provide a robust user experience. Here&rsquo;s some common Devise customizations that should take you even further along than the <a href="/getting-started-with-devise/">basic Devise guide</a> I&rsquo;ve written before.</p>
-
-<h2>Adding a Profile to your User model</h2>
-
-<p>Let&rsquo;s say you&rsquo;re building a social networking site. You want to keep a clean separation between the users <em>account</em> (their email, password, account status, etc) from the user&rsquo;s <em>profile data</em> (first &amp; last name, avatar, location, relationship status, etc). The best way to handle this is to add another model for Profile, creating it alongside the User model during registration.</p>
-
-<p>Here&rsquo;s how to customize the user model for exactly this use case.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
-</span><span class='line'>  <span class="c1"># Include default devise modules. Others available are:</span>
-</span><span class='line'>  <span class="c1"># :token_authenticatable, :confirmable,</span>
-</span><span class='line'>  <span class="c1"># :lockable, :timeoutable and :omniauthable</span>
-</span><span class='line'>  <span class="n">devise</span> <span class="ss">:database_authenticatable</span><span class="p">,</span> <span class="ss">:registerable</span><span class="p">,</span> <span class="ss">:recoverable</span><span class="p">,</span> <span class="ss">:rememberable</span><span class="p">,</span> <span class="ss">:trackable</span><span class="p">,</span> <span class="ss">:validatable</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">has_one</span> <span class="ss">:profile</span>
-</span><span class='line'>  <span class="n">accepts_nested_attributes_for</span> <span class="ss">:profile</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="s2">&quot;**/*_spec.rb&quot;</span>
+</span><span class='line'>  <span class="c1"># A bunch more code..</span>
 </span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Profile</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
-</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:user</span>
-</span><span class='line'>  <span class="n">validates</span> <span class="ss">:first_name</span><span class="p">,</span> <span class="ss">:last_name</span><span class="p">,</span> <span class="ss">:location</span><span class="p">,</span> <span class="ss">presence</span><span class="p">:</span> <span class="kp">true</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_profiles/">an example app</a> that shows how all of this fits together:</p>
-
-<h2>Signing up with Facebook, Twitter, etc</h2>
-
-<p>An often requested feature is to allow users to sign up via Facebook, Twitter, or other social network.</p>
-
-<p>You&rsquo;ll need to add a few more gems to do this. You&rsquo;ll need to add to your Gemfile:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;devise&#39;</span> <span class="c1"># Should already be in your Gemfile</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth&#39;</span>
-</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth-facebook&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Devise Facebook fast-track</h3>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rails</span> <span class="kp">new</span> <span class="n">my_website</span> <span class="o">-</span><span class="n">m</span> <span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">raw</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">farleyknight</span><span class="o">/</span><span class="n">rails_templates</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">devise_facebook</span><span class="o">.</span><span class="n">rb</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>[discuss facebook integration]</p>
-
-<p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_facebook/">an example app</a> that shows how all of this fits together.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/common-devise-problems/">Common Devise Problems</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-02T12:35:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>No route matches [GET] &ldquo;/users/sign_out&rdquo;</h2>
-
-<p>Say you&rsquo;ve got a logout partial that looks like this.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">&lt;div id=&quot;logout_link&quot;&gt;</span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">if</span> <span class="n">signed_in?</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Logout&quot;</span><span class="p">,</span> <span class="n">destroy_user_session_path</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You want to show a logout link while the user is signed in. However, when you pop the partial into the page, you get an error message:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>No route matches <span class="o">[</span>GET<span class="o">]</span> <span class="s2">&quot;/users/sign_out&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The problem is your logout link. By default, Devise sessions use <code>[DELETE] "/users/sign_out"</code> and not <code>[GET] "/users/sign_out"</code>. In general, HTTP <code>DELETE</code> is preferred over <code>GET</code>, since it demonstrates that you&rsquo;re trying to remove a resource (namely the user session).</p>
-
-<p>To fix this, you need to provide the <code>method</code> parameter to <code>link_to</code>. The fix looks like this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">&lt;div id=&quot;logout_link&quot;&gt;</span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">if</span> <span class="n">signed_in?</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Logout&quot;</span><span class="p">,</span> <span class="n">destroy_user_session_path</span><span class="p">,</span> <span class="ss">:method</span> <span class="o">=&gt;</span> <span class="ss">:delete</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You can read more about <code>link_to</code> <a href="/rails-link_to/">here</a>.</p>
-
-<p>Alternatively, although I would not recommend it, you can change the HTTP method used for signing out in <code>config/initializers/devise.rb</code>. That would mean changing this line:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">sign_out_via</span> <span class="o">=</span> <span class="ss">:delete</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>to this</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">sign_out_via</span> <span class="o">=</span> <span class="ss">:get</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I would only use this in situations where you have several logout links all over your app, or you can&rsquo;t change the logout link directly. It&rsquo;s really a bit of a hack that Devise was polite enough to provide for you through there configuration, and not something that&rsquo;s recommended on standard Rails apps.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/getting-started-with-devise/">Getting Started With Devise</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-02T12:17:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Before you dive in</h2>
-
-<p>Devise is a robust authentication framework for Rails. It covers 95% of the use authentication cases you&rsquo;ll ever have working with Rails. While it&rsquo;s very robust, that robustness comes at the cost complexity. It is not recommended for absolute beginners. Moderate beginners, those of you who have used Rails for small projects and understand how authentication works, should try some sandbox projects with Devise.</p>
-
-<p>However, if you&rsquo;re learning Ruby on Rails at the same time as programming in general, I would personally recommend that you wait until your 2nd or 3rd year of programming before you dive into Devise.</p>
-
-<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="/basic-rails-guide">Basic Rails Guide</a>.</p>
-
-<h2>Devise setup fast-track</h2>
-
-<p>If you&rsquo;re looking to get set up immediately, without delay, run this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails new my_website -m https://raw.github.com/farleyknight/rails_templates/master/devise.rb
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Finer grained detail is explained below.</p>
-
-<h2>Devise setup, step-by-Step</h2>
-
-<p>The following will get you the very basics for working with Devise. As with most Rails gems, you&rsquo;ll want to add the following line to your <code>Gemfile</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s2">&quot;devise&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And then run:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle install
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In your Rails root directory. This will install Devise, and all it&rsquo;s dependencies. Once installed, run:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rails</span> <span class="n">g</span> <span class="ss">devise</span><span class="p">:</span><span class="n">install</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This adds <code>config/initializers/devise.rb</code> to your Rails project. I provide complete details on what this file does in the <a href="/basic-devise-customization/">Basic Devise Customization</a>.</p>
-
-<p>Come up with a descriptive name for your the &ldquo;user&rdquo; object in your project. Something simple like <code>Account</code>, <code>Admin</code>, <code>Client</code>, or even just <code>User</code> is good enough for our purposes. We&rsquo;ll assume that you&rsquo;re using User for the rest of this tutorial. Generate the <code>User</code> class by running:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g devise User
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>It should look like this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
-</span><span class='line'>  <span class="c1"># Include default devise modules. Others available are:</span>
-</span><span class='line'>  <span class="c1"># :token_authenticatable, :confirmable,</span>
-</span><span class='line'>  <span class="c1"># :lockable, :timeoutable and :omniauthable</span>
-</span><span class='line'>  <span class="n">devise</span> <span class="ss">:database_authenticatable</span><span class="p">,</span> <span class="ss">:registerable</span><span class="p">,</span> <span class="ss">:recoverable</span><span class="p">,</span> <span class="ss">:rememberable</span><span class="p">,</span> <span class="ss">:trackable</span><span class="p">,</span> <span class="ss">:validatable</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="/basic-devise-guide/">Basic Devise Guide</a></p>
-
-<p>It also adds a database migration, which should look like this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">DeviseCreateUsers</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Migration</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">change</span>
-</span><span class='line'>    <span class="n">create_table</span><span class="p">(</span><span class="ss">:users</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
-</span><span class='line'>      <span class="c1">## Database authenticatable</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">string</span> <span class="ss">:email</span><span class="p">,</span>              <span class="ss">:null</span> <span class="o">=&gt;</span> <span class="kp">false</span><span class="p">,</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="s2">&quot;&quot;</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">string</span> <span class="ss">:encrypted_password</span><span class="p">,</span> <span class="ss">:null</span> <span class="o">=&gt;</span> <span class="kp">false</span><span class="p">,</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="s2">&quot;&quot;</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="c1">## Recoverable</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:reset_password_token</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="ss">:reset_password_sent_at</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="c1">## Rememberable</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="ss">:remember_created_at</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="c1">## Trackable</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">integer</span>  <span class="ss">:sign_in_count</span><span class="p">,</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="mi">0</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="ss">:current_sign_in_at</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="ss">:last_sign_in_at</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:current_sign_in_ip</span>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:last_sign_in_ip</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="c1">## Confirmable</span>
-</span><span class='line'>      <span class="c1"># t.string   :confirmation_token</span>
-</span><span class='line'>      <span class="c1"># t.datetime :confirmed_at</span>
-</span><span class='line'>      <span class="c1"># t.datetime :confirmation_sent_at</span>
-</span><span class='line'>      <span class="c1"># t.string   :unconfirmed_email # Only if using reconfirmable</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="c1">## Lockable</span>
-</span><span class='line'>      <span class="c1"># t.integer  :failed_attempts, :default =&gt; 0 # Only if lock strategy is :failed_attempts</span>
-</span><span class='line'>      <span class="c1"># t.string   :unlock_token # Only if unlock strategy is :email or :both</span>
-</span><span class='line'>      <span class="c1"># t.datetime :locked_at</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="c1">## Token authenticatable</span>
-</span><span class='line'>      <span class="c1"># t.string :authentication_token</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">timestamps</span>
-</span><span class='line'>    <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">add_index</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:email</span><span class="p">,</span>                <span class="ss">:unique</span> <span class="o">=&gt;</span> <span class="kp">true</span>
-</span><span class='line'>    <span class="n">add_index</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:reset_password_token</span><span class="p">,</span> <span class="ss">:unique</span> <span class="o">=&gt;</span> <span class="kp">true</span>
-</span><span class='line'>    <span class="c1"># add_index :users, :confirmation_token,   :unique =&gt; true</span>
-</span><span class='line'>    <span class="c1"># add_index :users, :unlock_token,         :unique =&gt; true</span>
-</span><span class='line'>    <span class="c1"># add_index :users, :authentication_token, :unique =&gt; true</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>After doing a migrate:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake db:migrate
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You should now have a <code>users</code> table in your database now. After that, you&rsquo;re pretty much good to go! Run</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails server
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>and you should be able to login at <code>http://localhost:3000/users/sign_up</code>.</p>
-
-<h2>Further Setup</h2>
-
-<p>If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. Run:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g devise:views
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
 </div>
   
   
@@ -1087,6 +845,8 @@
     </article>
   
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -1099,23 +859,23 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot-times With Zeus</a>
+        <a href="/customizing-devise-views/">Customizing Devise Views</a>
       </li>
     
       <li class="post">
-        <a href="/awesome-rails-tools/">Awesome Rails Tools</a>
+        <a href="/advanced-devise-customization/">Advanced Devise Customization</a>
       </li>
     
       <li class="post">
-        <a href="/rspec-tips/">RSpec Tips</a>
+        <a href="/getting-started-with-rspec/">Getting Started With RSpec</a>
       </li>
     
       <li class="post">
-        <a href="/helpful-command-line-tools/">Helpful Command Line Tools</a>
+        <a href="/speed-up-development-with-guard/">Speed Up Development With Guard</a>
       </li>
     
       <li class="post">
-        <a href="/devise-email-setup/">Devise Email Setup</a>
+        <a href="/rails-admin-panels-with-activeadmin/">Rails Admin Panels With Activeadmin</a>
       </li>
     
   </ul>

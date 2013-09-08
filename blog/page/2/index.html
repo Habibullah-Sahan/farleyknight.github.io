@@ -1,532 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Farley's Ruby on Rails Blog]]></title>
-  <link href="http://farleyknight.github.io/atom.xml" rel="self"/>
-  <link href="http://farleyknight.github.io/"/>
-  <updated>2013-09-08T08:45:29-04:00</updated>
-  <id>http://farleyknight.github.io/</id>
-  <author>
-    <name><![CDATA[Farley Knight]]></name>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Farley's Ruby on Rails Blog</title>
+  <meta name="author" content="Farley Knight">
+
+  
+  <meta name="description" content="You can&rsquo;t stand in GUI-land forever.. As much as there are plenty of graphical tools for developers, there are plenty of tight spots that &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://farleyknight.github.io/blog/page/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Farley's Ruby on Rails Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Farley's Ruby on Rails Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:farleyknight.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
     
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+      <h1 class="entry-title"><a href="/helpful-command-line-tools/">Helpful Command Line Tools</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
 
   
-  <entry>
-    <title type="html"><![CDATA[Customizing Devise views]]></title>
-    <link href="http://farleyknight.github.io/customizing-devise-views/"/>
-    <updated>2013-09-08T05:12:00-04:00</updated>
-    <id>http://farleyknight.github.io/customizing-devise-views</id>
-    <content type="html"><![CDATA[<h2>Customizing Devise Views</h2>
 
-<p>If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. Run:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rails g devise:views
-</span></code></pre></td></tr></table></div></figure>
+<time datetime="2013-09-03T13:01:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
 
 
-<p>This adds a bunch of views under <code>app/views/</code>. The output should look something like this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>invoke  Devise::Generators::SharedViewsGenerator
-</span><span class='line'>create    app/views/devise/shared
-</span><span class='line'>create    app/views/devise/shared/_links.erb
-</span><span class='line'>invoke  form_for
-</span><span class='line'>create    app/views/devise/confirmations
-</span><span class='line'>create    app/views/devise/confirmations/new.html.erb
-</span><span class='line'>create    app/views/devise/passwords
-</span><span class='line'>create    app/views/devise/passwords/edit.html.erb
-</span><span class='line'>create    app/views/devise/passwords/new.html.erb
-</span><span class='line'>create    app/views/devise/registrations
-</span><span class='line'>create    app/views/devise/registrations/edit.html.erb
-</span><span class='line'>create    app/views/devise/registrations/new.html.erb
-</span><span class='line'>create    app/views/devise/sessions
-</span><span class='line'>create    app/views/devise/sessions/new.html.erb
-</span><span class='line'>create    app/views/devise/unlocks
-</span><span class='line'>create    app/views/devise/unlocks/new.html.erb
-</span><span class='line'>invoke  erb
-</span><span class='line'>create    app/views/devise/mailer
-</span><span class='line'>create    app/views/devise/mailer/confirmation_instructions.html.erb
-</span><span class='line'>create    app/views/devise/mailer/reset_password_instructions.html.erb
-</span><span class='line'>create    app/views/devise/mailer/unlock_instructions.html.erb
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Customizing Devise with Twitter Bootstrap</h3>
-
-<h3>Customizing user registration</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Advanced Devise customization]]></title>
-    <link href="http://farleyknight.github.io/advanced-devise-customization/"/>
-    <updated>2013-09-08T05:10:00-04:00</updated>
-    <id>http://farleyknight.github.io/advanced-devise-customization</id>
-    <content type="html"><![CDATA[<h2>Devise security</h2>
-
-<h3>Logging password attempts</h3>
-
-<p>By default, Devise does not do anything special about brute-forced password attempts.</p>
-
-<h2>Handling other types of authentication</h2>
-
-<h3>Sign up via username, instead of email</h3>
-
-<h3>HTTP auth</h3>
-
-<h3>OAuth (includes Facebook, Twitter as special cases)</h3>
-
-<h3>LDAP</h3>
-
-<h1>#</h1>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Getting started with RSpec]]></title>
-    <link href="http://farleyknight.github.io/getting-started-with-rspec/"/>
-    <updated>2013-09-07T14:41:00-04:00</updated>
-    <id>http://farleyknight.github.io/getting-started-with-rspec</id>
-    <content type="html"><![CDATA[<h1>What is RSpec?</h1>
-
-<p><a href="http://rspec.info/">RSpec</a> is a Ruby gem for writing more elegant tests. It&rsquo;s known for being oriented for Behavior Driven Development.</p>
-
-<h1>Installation</h1>
-
-<h2>With a Gemfile</h2>
-
-<p>If your project has Gemfile, add these lines to it:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">group</span> <span class="ss">:test</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">gem</span> <span class="s1">&#39;rspec&#39;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And then run</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>bundle
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>to install the gem.</p>
-
-<h2>Without a Gemfile</h2>
-
-<p>Install the <code>rspec</code> gem the old-fashioned way:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install rspec
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Initialization</h2>
-
-<p>Next, you can initialize your project (can be a Rails app, Sinatra app, or even a Ruby gem) with the necessary <code>rspec</code> files:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rspec --init
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This will add <code>spec/spec_helper.rb</code> and <code>.rspec</code> to your current directory.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Speed up development with guard]]></title>
-    <link href="http://farleyknight.github.io/speed-up-development-with-guard/"/>
-    <updated>2013-09-05T15:47:00-04:00</updated>
-    <id>http://farleyknight.github.io/speed-up-development-with-guard</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rails admin panels with activeadmin]]></title>
-    <link href="http://farleyknight.github.io/rails-admin-panels-with-activeadmin/"/>
-    <updated>2013-09-05T15:22:00-04:00</updated>
-    <id>http://farleyknight.github.io/rails-admin-panels-with-activeadmin</id>
-    <content type="html"><![CDATA[<p>couldn&rsquo;t find file &lsquo;jquery-ui&rsquo;
-  (in /home/umbrosus/.rvm/gems/ruby-1.9.3-p392@gancxadebebi/gems/activeadmin-0.5.1/app/assets/javascripts/active_admin/base.js:2)</p>
-
-<p>The &ldquo;jquery-rails&rdquo; gem recently removed jQuery UI.</p>
-
-<p><a href="https://github.com/rails/jquery-rails/commit/2fdcdb2633cbc6426d412c050200fc31d14b9a3b">https://github.com/rails/jquery-rails/commit/2fdcdb2633cbc6426d412c050200fc31d14b9a3b</a></p>
-
-<p>They recommend using the jquery-ui-rails gem.</p>
-
-<p>There is an active pull request (as of this writing) to add that gem as a dependency. However, the developers of ActiveAdmin have stated that they are &ldquo;locking it down until we officially drop support for Rails 3.0&rdquo;. The version they are locked to is jquery-rails &lt; 3.0.0.</p>
-
-<p>In the meantime, just modify your Gemfile:</p>
-
-<p>gem &ldquo;jquery-ui-rails&rdquo; Not recommended, see @Kevin&rsquo;s comment below</p>
-
-<p>Or you can downgrade your version of jquery-rails:</p>
-
-<p>gem &ldquo;jquery-rails&rdquo;, &ldquo;&lt; 3.0.0&rdquo;
-Or you can pull from their Github master branch. They have applied a temporary fix.</p>
-
-<p>gem &ldquo;activeadmin&rdquo;, github: &ldquo;gregbell/active_admin&rdquo;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[You can't stay in GUI-land forever]]></title>
-    <link href="http://farleyknight.github.io/you-cant-stay-in-gui-land-forever/"/>
-    <updated>2013-09-05T09:59:00-04:00</updated>
-    <id>http://farleyknight.github.io/you-cant-stay-in-gui-land-forever</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[git tools you should use]]></title>
-    <link href="http://farleyknight.github.io/git-tools-you-should-use/"/>
-    <updated>2013-09-05T09:59:00-04:00</updated>
-    <id>http://farleyknight.github.io/git-tools-you-should-use</id>
-    <content type="html"><![CDATA[<h2>tig</h2>
-
-<h2>something for command line diffs</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Faster Rails boot times with zeus]]></title>
-    <link href="http://farleyknight.github.io/faster-rails-boot-times-with-zeus/"/>
-    <updated>2013-09-05T09:49:00-04:00</updated>
-    <id>http://farleyknight.github.io/faster-rails-boot-times-with-zeus</id>
-    <content type="html"><![CDATA[<p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
-
-<h2>Install &amp; set up</h2>
-
-<p>First off you&rsquo;ll want to install <code>zeus</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install zeus
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Notice that you <strong>don&rsquo;t</strong> need to add it to your <code>Gemfile</code>. It is ideally only run locally. Making it a project dependency can cause server maintenance problems down the line (see <a href="http://farleyknight.github.io/faster-boot-times-with-zeus/#common_zeus_problems">Common Zeus Problems</a> below). After installing, you can boot up <code>zeus</code> with the command:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus start
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&rsquo;s what it looks like on my Ubuntu laptop:</p>
-
-<p>[screenshot here]</p>
-
-<h2>Common Zeus Tasks</h2>
-
-<p>To run the Rails console:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus console
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To run the Rails generator:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus generate model Book
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To run the Rails sever:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus sever
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Common Zeus Problems</h2>
-
-<p>While <code>zeus</code> is an awesome gem, getting it working without any issues can be a bit of a problem at times. Here&rsquo;s some common problems that can occur with <code>zeus</code> and Rails.</p>
-
-<h3>zeus rspec</h3>
-
-<p>If you&rsquo;re testing with RSpec. If you try <code>zeus rspec</code>, you&rsquo;ll likely get:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="sb">`</span>spec_file?<span class="s1">&#39;: undefined method `match&#39;</span> <span class="k">for </span>nil:NilClass <span class="o">(</span>NoMethodError<span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Instead run <code>rspec</code>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus <span class="nb">test </span>spec
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>RSpec tests running twice</h3>
-
-<p>After getting your rspec tests running, you&rsquo;ll probably notice that it&rsquo;s running them twice. <a href="https://github.com/burke/zeus/issues/180#issuecomment-12758345">The solution</a> is to remove the line</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;rspec/autorun&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>from your <code>spec/spec_helper.rb</code></p>
-
-<h3>Running zeus on ARM (Chromebook or Raspberry Pi)</h3>
-
-<p>While <code>zeus</code> is a great tool, it has it&rsquo;s limitations. It cannot be used on ARM chips, namely Chromebooks &amp; Raspberry Pi. If you&rsquo;re looking for this functionality on those machines (or other chips that might not be supported by <code>zeus</code>) I would suggest checking out <code>spring</code>, which is discussed below.</p>
-
-<h3>By default, zeus can&rsquo;t handle assets</h3>
-
-<p>Many of the <code>zeus rake ...</code> commands work out of the box, including <code>zeus rake db:migrate</code>. However, <code>rake</code> commands involving the asset pipeline do not work as well. For example, trying <code>zeus rake assets:precompile</code> will get you:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus rake assets:clean
-</span><span class='line'>
-</span><span class='line'>/home/farleyknight/.rvm/rubies/ruby-1.9.3-p448/bin/ruby zeus <span class="nb">command</span>: rake assets:clean:all <span class="nv">RAILS_ENV</span><span class="o">=</span>development <span class="nv">RAILS_GROUPS</span><span class="o">=</span>assets
-</span><span class='line'>/home/farleyknight/.rvm/rubies/ruby-1.9.3-p448/bin/ruby: No such file or directory -- zeus <span class="nb">command</span>: rake <span class="o">(</span>LoadError<span class="o">)</span>
-</span><span class='line'>rake aborted!
-</span><span class='line'>
-</span><span class='line'>Command failed with status <span class="o">(</span>1<span class="o">)</span>: <span class="o">[</span>/home/farleyknight/.rvm/rubies/ruby-1.9.3-...<span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The problem is that zeus doesn&rsquo;t change the <code>ENV['RAILS_GROUP']</code> for <code>rake assets:precompile</code> to work.</p>
-
-<p>The fix is as follows.</p>
-
-<p>First, make sure you have the line in your current environment file:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">assets</span><span class="o">.</span><span class="n">initialize_on_precompile</span> <span class="o">=</span> <span class="kp">false</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Next run:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus init
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>It will create <code>zeus.json</code> and <code>custom_plan.rb</code>. Change your custom plan to match:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;zeus/rails&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1"># Usage: `zeus assets some:nested:task&#39;</span>
-</span><span class='line'><span class="c1">#</span>
-</span><span class='line'><span class="c1"># translates to</span>
-</span><span class='line'><span class="c1">#</span>
-</span><span class='line'><span class="c1"># `rake assets:some:nested:task`</span>
-</span><span class='line'><span class="c1">#</span>
-</span><span class='line'><span class="c1"># E.g.</span>
-</span><span class='line'><span class="c1">#</span>
-</span><span class='line'><span class="c1"># `zeus assets precompile`</span>
-</span><span class='line'><span class="c1">#</span>
-</span><span class='line'><span class="c1"># instead of `rake assets:precompile`</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">AssetsPlan</span> <span class="o">&lt;</span> <span class="ss">Zeus</span><span class="p">:</span><span class="ss">:Rails</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">assets_environment</span>
-</span><span class='line'>    <span class="no">Bundler</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:development</span><span class="p">,</span> <span class="ss">:assets</span><span class="p">)</span>
-</span><span class='line'>    <span class="o">::</span><span class="no">Rails</span><span class="o">.</span><span class="n">env</span> <span class="o">=</span> <span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;RAILS_ENV&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;development&quot;</span>
-</span><span class='line'>    <span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;RAILS_GROUPS&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;assets&quot;</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">assets</span>
-</span><span class='line'>    <span class="no">ARGV</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">prepend</span> <span class="s2">&quot;assets:&quot;</span>
-</span><span class='line'>    <span class="no">Rake</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">run</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="no">Zeus</span><span class="o">.</span><span class="n">plan</span> <span class="o">=</span> <span class="no">AssetsPlan</span><span class="o">.</span><span class="n">new</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And change <code>zeus.json</code> to match:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;ruby -rubygems -r./zeus_assets -eZeus.go&quot;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nt">&quot;plan&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nt">&quot;boot&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nt">&quot;default_bundle&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nt">&quot;assets_environment&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nt">&quot;assets&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span>
-</span><span class='line'>        <span class="p">},</span>
-</span><span class='line'>        <span class="nt">&quot;development_environment&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nt">&quot;prerake&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>            <span class="nt">&quot;rake&quot;</span><span class="p">:</span> <span class="p">[]</span>
-</span><span class='line'>          <span class="p">},</span>
-</span><span class='line'>          <span class="nt">&quot;runner&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;r&quot;</span><span class="p">],</span>
-</span><span class='line'>          <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">],</span>
-</span><span class='line'>          <span class="nt">&quot;server&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;s&quot;</span><span class="p">],</span>
-</span><span class='line'>          <span class="nt">&quot;generate&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;g&quot;</span><span class="p">],</span>
-</span><span class='line'>          <span class="nt">&quot;destroy&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">],</span>
-</span><span class='line'>          <span class="nt">&quot;dbconsole&quot;</span><span class="p">:</span> <span class="p">[]</span>
-</span><span class='line'>        <span class="p">},</span>
-</span><span class='line'>        <span class="nt">&quot;test_environment&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nt">&quot;test_helper&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;test&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;rspec&quot;</span><span class="p">,</span> <span class="s2">&quot;testrb&quot;</span><span class="p">]}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This will add the command <code>zeus assets ...</code>, so for example <code>zeus assets clean</code> will run <code>rake assets:clean</code> and <code>zeus assets precompile</code> will run <code>rake assets:precompile</code> and so on.</p>
-
-<p>If you&rsquo;re interested on how the <code>Zeus::Rails</code> plans work, <a href="https://github.com/burke/zeus/blob/master/docs/ruby/modifying.md">checkout the documentation</a> on the <a href="https://github.com/burke/zeus/">github repository</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Awesome Rails Tools]]></title>
-    <link href="http://farleyknight.github.io/awesome-rails-tools/"/>
-    <updated>2013-09-03T13:24:00-04:00</updated>
-    <id>http://farleyknight.github.io/awesome-rails-tools</id>
-    <content type="html"><![CDATA[<h2>spring</h2>
-
-<p>Another framework for handling quick Rails boot times is a tool called <a href="https://github.com/jonleighton/spring">spring</a>. It has many features that <code>zeus</code> has, but it&rsquo;s written in pure Ruby.</p>
-
-<h3>Getting Started</h3>
-
-<p>[include how to use spring]</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RSpec Tips]]></title>
-    <link href="http://farleyknight.github.io/rspec-tips/"/>
-    <updated>2013-09-03T13:07:00-04:00</updated>
-    <id>http://farleyknight.github.io/rspec-tips</id>
-    <content type="html"><![CDATA[<h2>Rspec generators</h2>
-
-<p>Use this command to generate a spec for an existing ModelName</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g spec:model ModelName
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Test files under <code>lib</code></h2>
-
-<p>Create <code>spec/lib</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir -p spec/lib
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Add the following line to <code>spec/spec_helper.rb</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
-</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="s2">&quot;**/*_spec.rb&quot;</span>
-</span><span class='line'>  <span class="c1"># A bunch more code..</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Helpful Command Line Tools]]></title>
-    <link href="http://farleyknight.github.io/helpful-command-line-tools/"/>
-    <updated>2013-09-03T13:01:00-04:00</updated>
-    <id>http://farleyknight.github.io/helpful-command-line-tools</id>
-    <content type="html"><![CDATA[<h1>You can&rsquo;t stand in GUI-land forever..</h1>
+  <div class="entry-content"><h1>You can&rsquo;t stand in GUI-land forever..</h1>
 
 <p>As much as there are plenty of graphical tools for developers, there are plenty of tight spots that require use of the command line. For example, logging into an SSH server means that unless you use a VPN to handle desktop interaction, you&rsquo;re stuck with the command line. Also, if you&rsquo;re using any of the common command line tools, such as git, it&rsquo;s helpful to stay in the command line and continue doing your work.</p>
 
@@ -547,15 +115,42 @@ Or you can pull from their Github master branch. They have applied a temporary f
 <p>[screenshot here]</p>
 
 <h2>(soundcloud command line interface?)</h2>
-]]></content>
-  </entry>
+</div>
   
-  <entry>
-    <title type="html"><![CDATA[Devise Email Setup]]></title>
-    <link href="http://farleyknight.github.io/devise-email-setup/"/>
-    <updated>2013-09-02T14:43:00-04:00</updated>
-    <id>http://farleyknight.github.io/devise-email-setup</id>
-    <content type="html"><![CDATA[<h2>Basic Setup</h2>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/devise-email-setup/">Devise Email Setup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T14:43:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Basic Setup</h2>
 
 <p>The most basic Devise email setup is to set configuration for <code>ActionMailer</code>, which is slightly different for <code>development</code> and <code>production</code> modes. However, for both modes you&rsquo;ll want to check out your <code>config/initializers/devise.rb</code> file and change the line that reads:</p>
 
@@ -638,15 +233,42 @@ Or you can pull from their Github master branch. They have applied a temporary f
 <p><code>gem install mailcatcher</code></p>
 
 <p>Will install the <a href="http://mailcatcher.me/">mailcatcher</a> gem.</p>
-]]></content>
-  </entry>
+</div>
   
-  <entry>
-    <title type="html"><![CDATA[Basic Web Security]]></title>
-    <link href="http://farleyknight.github.io/basic-web-security/"/>
-    <updated>2013-09-02T14:35:00-04:00</updated>
-    <id>http://farleyknight.github.io/basic-web-security</id>
-    <content type="html"><![CDATA[<h2>How to handle passwords</h2>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/basic-web-security/">Basic Web Security</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T14:35:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>How to handle passwords</h2>
 
 <p>You want to avoid passwords as much as possible when developing. This is not just a convenience measure, but also an engineering measure. Each human-memorized password will be another point of attack for your web server and web application. Whenever possible encrypted keys are preferable to passwords, as they tend to be much longer (and thus harder to brute-force), require no memorization, and can be locked away on thumbdrives or on the filesystem.</p>
 
@@ -661,15 +283,42 @@ Or you can pull from their Github master branch. They have applied a temporary f
 <h3>Put passwords into config files, not in source code</h3>
 
 <h3>Put passwords into a password manager. Don&rsquo;t bother memorizing them.</h3>
-]]></content>
-  </entry>
+</div>
   
-  <entry>
-    <title type="html"><![CDATA[Basic Devise Customization]]></title>
-    <link href="http://farleyknight.github.io/basic-devise-customization/"/>
-    <updated>2013-09-02T14:15:00-04:00</updated>
-    <id>http://farleyknight.github.io/basic-devise-customization</id>
-    <content type="html"><![CDATA[<p>Sometimes setting up Devise is just the start of your app, and you need more customization to provide a robust user experience. Here&rsquo;s some common Devise customizations that should take you even further along than the <a href="http://farleyknight.github.io/getting-started-with-devise/">basic Devise guide</a> I&rsquo;ve written before.</p>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/basic-devise-customization/">Basic Devise Customization</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T14:15:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sometimes setting up Devise is just the start of your app, and you need more customization to provide a robust user experience. Here&rsquo;s some common Devise customizations that should take you even further along than the <a href="/getting-started-with-devise/">basic Devise guide</a> I&rsquo;ve written before.</p>
 
 <h2>Adding a Profile to your User model</h2>
 
@@ -738,15 +387,42 @@ Or you can pull from their Github master branch. They have applied a temporary f
 <p>[discuss facebook integration]</p>
 
 <p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_facebook/">an example app</a> that shows how all of this fits together.</p>
-]]></content>
-  </entry>
+</div>
   
-  <entry>
-    <title type="html"><![CDATA[Common Devise Problems]]></title>
-    <link href="http://farleyknight.github.io/common-devise-problems/"/>
-    <updated>2013-09-02T12:35:00-04:00</updated>
-    <id>http://farleyknight.github.io/common-devise-problems</id>
-    <content type="html"><![CDATA[<h2>No route matches [GET] &ldquo;/users/sign_out&rdquo;</h2>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/common-devise-problems/">Common Devise Problems</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T12:35:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>No route matches [GET] &ldquo;/users/sign_out&rdquo;</h2>
 
 <p>Say you&rsquo;ve got a logout partial that looks like this.</p>
 
@@ -787,7 +463,7 @@ Or you can pull from their Github master branch. They have applied a temporary f
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>You can read more about <code>link_to</code> <a href="http://farleyknight.github.io/rails-link_to/">here</a>.</p>
+<p>You can read more about <code>link_to</code> <a href="/rails-link_to/">here</a>.</p>
 
 <p>Alternatively, although I would not recommend it, you can change the HTTP method used for signing out in <code>config/initializers/devise.rb</code>. That would mean changing this line:</p>
 
@@ -804,21 +480,48 @@ Or you can pull from their Github master branch. They have applied a temporary f
 
 
 <p>I would only use this in situations where you have several logout links all over your app, or you can&rsquo;t change the logout link directly. It&rsquo;s really a bit of a hack that Devise was polite enough to provide for you through there configuration, and not something that&rsquo;s recommended on standard Rails apps.</p>
-]]></content>
-  </entry>
+</div>
   
-  <entry>
-    <title type="html"><![CDATA[Getting Started with Devise]]></title>
-    <link href="http://farleyknight.github.io/getting-started-with-devise/"/>
-    <updated>2013-09-02T12:17:00-04:00</updated>
-    <id>http://farleyknight.github.io/getting-started-with-devise</id>
-    <content type="html"><![CDATA[<h2>Before you dive in</h2>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/getting-started-with-devise/">Getting Started With Devise</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T12:17:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Before you dive in</h2>
 
 <p><a href="https://github.com/plataformatec/devise">Devise</a> is a robust authentication framework for Rails. It covers 95% of the authentication use cases you&rsquo;ll ever have working with Rails. While it&rsquo;s very robust, that robustness comes at the cost of complexity. It is not recommended for absolute beginners. Moderate beginners, in other words, those of you who have used Rails for small projects and understand how authentication works in general, should try some sandbox projects with Devise.</p>
 
 <p>However, if you&rsquo;re learning Ruby on Rails at the same time as programming in general, I would personally recommend that you wait until your 2nd or 3rd year of programming before you dive into Devise.</p>
 
-<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="http://farleyknight.github.io/basic-rails-guide/">Basic Rails Guide</a>.</p>
+<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="/basic-rails-guide/">Basic Rails Guide</a>.</p>
 
 <h2>Devise setup fast-track</h2>
 
@@ -854,7 +557,7 @@ Or you can pull from their Github master branch. They have applied a temporary f
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>This adds <code>config/initializers/devise.rb</code> to your Rails project. I provide complete details on what this file does in the <a href="http://farleyknight.github.io/basic-devise-customization/">Basic Devise Customization</a>.</p>
+<p>This adds <code>config/initializers/devise.rb</code> to your Rails project. I provide complete details on what this file does in the <a href="/basic-devise-customization/">Basic Devise Customization</a>.</p>
 
 <p>Come up with a descriptive name for the &ldquo;user&rdquo; object in your project. Something simple like <code>Account</code>, <code>Admin</code>, <code>Client</code>, or even just <code>User</code> is good enough for this tutorial. We&rsquo;ll assume that you&rsquo;re using <code>User</code> for the rest of this tutorial. Generate the <code>User</code> class by running:</p>
 
@@ -880,7 +583,7 @@ Or you can pull from their Github master branch. They have applied a temporary f
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="http://farleyknight.github.io/basic-devise-guide/">Basic Devise Guide</a>. It also adds a database migration, found under <code>db/migrate/..._devise_create_users.rb</code>, which should look like this:</p>
+<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="/basic-devise-guide/">Basic Devise Guide</a>. It also adds a database migration, found under <code>db/migrate/..._devise_create_users.rb</code>, which should look like this:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1080,28 +783,107 @@ Or you can pull from their Github master branch. They have applied a temporary f
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="http://farleyknight.github.io/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
+<p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
 
 <p>Some other things you may want to do with your devise installation. You may want allow users to:</p>
 
 <ul>
-<li><a href="http://farleyknight.github.io/devise-edit-passwords/">Allow Users to edit their password</a></li>
-<li><a href="http://farleyknight.github.io/devise-user-confirmation/">Confirm their accounts via email</a></li>
-<li><a href="http://farleyknight.github.io/devise-user-invites/">Invite other users via email</a></li>
-<li><a href="http://farleyknight.github.io/devise-cancan-rolify/">Advanced User authorization with CanCan and Rolify</a></li>
+<li><a href="/devise-edit-passwords/">Allow Users to edit their password</a></li>
+<li><a href="/devise-user-confirmation/">Confirm their accounts via email</a></li>
+<li><a href="/devise-user-invites/">Invite other users via email</a></li>
+<li><a href="/devise-cancan-rolify/">Advanced User authorization with CanCan and Rolify</a></li>
 <li>Allow users to sign up via
 
 <ul>
-<li><a href="http://farleyknight.github.io/devise-facebook/">Facebook</a></li>
-<li><a href="http://farleyknight.github.io/devise-twitter/">Twitter</a></li>
-<li><a href="http://farleyknight.github.io/devise-google-plus/">Google+</a></li>
+<li><a href="/devise-facebook/">Facebook</a></li>
+<li><a href="/devise-twitter/">Twitter</a></li>
+<li><a href="/devise-google-plus/">Google+</a></li>
 </ul>
 </li>
 </ul>
 
 
-<p>Check out my full list of <a href="http://farleyknight.github.io/devise-tutorials/">my Devise tutorials</a> if you are stil curious.</p>
-]]></content>
-  </entry>
+<p>Check out my full list of <a href="/devise-tutorials/">my Devise tutorials</a> if you are stil curious.</p>
+</div>
   
-</feed>
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/customizing-devise-views/">Customizing Devise Views</a>
+      </li>
+    
+      <li class="post">
+        <a href="/advanced-devise-customization/">Advanced Devise Customization</a>
+      </li>
+    
+      <li class="post">
+        <a href="/getting-started-with-rspec/">Getting Started With RSpec</a>
+      </li>
+    
+      <li class="post">
+        <a href="/speed-up-development-with-guard/">Speed Up Development With Guard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/rails-admin-panels-with-activeadmin/">Rails Admin Panels With Activeadmin</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Farley Knight -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Faster Rails boot-times with zeus - Farley's Ruby on Rails Blog</title>
+  <title>Faster Rails boot times with zeus - Farley's Ruby on Rails Blog</title>
   <meta name="author" content="Farley Knight">
 
   
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Faster Rails Boot-times With Zeus</h1>
+      <h1 class="entry-title">Faster Rails Boot Times With Zeus</h1>
     
     
       <p class="meta">
@@ -93,19 +93,19 @@
 
 <div class="entry-content"><p><a href="https://github.com/burke/zeus">zeus</a> gives you lightning fast Rails boot times. Starts a master Rails process &amp; spawns new processes for <code>rails console</code>, <code>rails server</code>, <code>rails generate</code>, etc.</p>
 
-<h2>How to use</h2>
+<h2>Install &amp; set up</h2>
 
 <p>First off you&rsquo;ll want to install <code>zeus</code>.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>gem install zeus
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gem install zeus
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Notice that you <strong>don&rsquo;t</strong> need to add it to your <code>Gemfile</code>. It is ideally only run locally. Making it a project dependency can cause server maintenance problems down the line (see <a href="#common_zeus_problems">Common Zeus Problems</a> below). After installing, you can boot up <code>zeus</code> with the command:</p>
+<p>Notice that you <strong>don&rsquo;t</strong> need to add it to your <code>Gemfile</code>. It is ideally only run locally. Making it a project dependency can cause server maintenance problems down the line (see <a href="/faster-boot-times-with-zeus/#common_zeus_problems">Common Zeus Problems</a> below). After installing, you can boot up <code>zeus</code> with the command:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus start
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus start
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -118,21 +118,21 @@
 <p>To run the Rails console:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus console
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus console
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>To run the Rails generator:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus generate model Book
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus generate model Book
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>To run the Rails sever:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus sever
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus sever
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -152,7 +152,7 @@
 <p>Instead run <code>rspec</code>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus <span class="nb">test </span>spec
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus <span class="nb">test </span>spec
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -206,7 +206,7 @@
 <p>Next run:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>zeus init
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>zeus init
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -373,6 +373,8 @@
         <a class="basic-alignment left" href="/awesome-rails-tools/" title="Previous Post: Awesome Rails Tools">&laquo; Awesome Rails Tools</a>
       
       
+        <a class="basic-alignment right" href="/git-tools-you-should-use/" title="Next Post: git tools you should use">git tools you should use &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -386,23 +388,23 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot-times With Zeus</a>
+        <a href="/customizing-devise-views/">Customizing Devise Views</a>
       </li>
     
       <li class="post">
-        <a href="/awesome-rails-tools/">Awesome Rails Tools</a>
+        <a href="/advanced-devise-customization/">Advanced Devise Customization</a>
       </li>
     
       <li class="post">
-        <a href="/rspec-tips/">RSpec Tips</a>
+        <a href="/getting-started-with-rspec/">Getting Started With RSpec</a>
       </li>
     
       <li class="post">
-        <a href="/helpful-command-line-tools/">Helpful Command Line Tools</a>
+        <a href="/speed-up-development-with-guard/">Speed Up Development With Guard</a>
       </li>
     
       <li class="post">
-        <a href="/devise-email-setup/">Devise Email Setup</a>
+        <a href="/rails-admin-panels-with-activeadmin/">Rails Admin Panels With Activeadmin</a>
       </li>
     
   </ul>

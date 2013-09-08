@@ -9,7 +9,7 @@
   <meta name="author" content="Farley Knight">
 
   
-  <meta name="description" content="Before you dive in Devise is a robust authentication framework for Rails. It covers 95% of the use authentication cases you&rsquo;ll ever have &hellip;">
+  <meta name="description" content="Before you dive in Devise is a robust authentication framework for Rails. It covers 95% of the authentication use cases you&rsquo;ll ever have &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -93,52 +93,52 @@
 
 <div class="entry-content"><h2>Before you dive in</h2>
 
-<p>Devise is a robust authentication framework for Rails. It covers 95% of the use authentication cases you&rsquo;ll ever have working with Rails. While it&rsquo;s very robust, that robustness comes at the cost complexity. It is not recommended for absolute beginners. Moderate beginners, those of you who have used Rails for small projects and understand how authentication works, should try some sandbox projects with Devise.</p>
+<p><a href="https://github.com/plataformatec/devise">Devise</a> is a robust authentication framework for Rails. It covers 95% of the authentication use cases you&rsquo;ll ever have working with Rails. While it&rsquo;s very robust, that robustness comes at the cost of complexity. It is not recommended for absolute beginners. Moderate beginners, in other words, those of you who have used Rails for small projects and understand how authentication works in general, should try some sandbox projects with Devise.</p>
 
 <p>However, if you&rsquo;re learning Ruby on Rails at the same time as programming in general, I would personally recommend that you wait until your 2nd or 3rd year of programming before you dive into Devise.</p>
 
-<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="/basic-rails-guide">Basic Rails Guide</a>.</p>
+<p>With that preface aside, if you feel confident enough for what&rsquo;s ahead, go ahead and start reading. If you find yourself confused or asking yourself questions about terms &amp; operations that I don&rsquo;t bother to explain, you should back up a bit and read my <a href="/basic-rails-guide/">Basic Rails Guide</a>.</p>
 
 <h2>Devise setup fast-track</h2>
 
-<p>If you&rsquo;re looking to get set up immediately, without delay, run this:</p>
+<p>If you&rsquo;re looking to get set up immediately, without delay, you can create a fresh, new Rails app with this template:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>rails new my_website -m https://raw.github.com/farleyknight/rails_templates/master/devise.rb
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Finer grained detail is explained below.</p>
+<p>If you&rsquo;re reading this tutorial slowly, to pick up on all the fine-grained details, you can use the template above to create an application to use as a reference as you read.</p>
 
 <h2>Devise setup, step-by-Step</h2>
 
-<p>The following will get you the very basics for working with Devise. As with most Rails gems, you&rsquo;ll want to add the following line to your <code>Gemfile</code>.</p>
+<p>The following will get you the very basics for working with Devise. As with most Rails gems, you&rsquo;ll want to add the following line to the bottom of your <code>Gemfile</code>.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s2">&quot;devise&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And then run:</p>
+<p>On the command line, run:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle install
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>bundle install
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>In your Rails root directory. This will install Devise, and all it&rsquo;s dependencies. Once installed, run:</p>
+<p>In your Rails root directory. This will install Devise, and all it&rsquo;s dependencies. Once installed, run on the command line:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rails</span> <span class="n">g</span> <span class="ss">devise</span><span class="p">:</span><span class="n">install</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rails g devise:install
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>This adds <code>config/initializers/devise.rb</code> to your Rails project. I provide complete details on what this file does in the <a href="/basic-devise-customization/">Basic Devise Customization</a>.</p>
 
-<p>Come up with a descriptive name for your the &ldquo;user&rdquo; object in your project. Something simple like <code>Account</code>, <code>Admin</code>, <code>Client</code>, or even just <code>User</code> is good enough for our purposes. We&rsquo;ll assume that you&rsquo;re using User for the rest of this tutorial. Generate the <code>User</code> class by running:</p>
+<p>Come up with a descriptive name for the &ldquo;user&rdquo; object in your project. Something simple like <code>Account</code>, <code>Admin</code>, <code>Client</code>, or even just <code>User</code> is good enough for this tutorial. We&rsquo;ll assume that you&rsquo;re using <code>User</code> for the rest of this tutorial. Generate the <code>User</code> class by running:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g devise User
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rails g devise User
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -159,9 +159,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="/basic-devise-guide/">Basic Devise Guide</a></p>
-
-<p>It also adds a database migration, which should look like this:</p>
+<p>Each of those options to the <code>devise</code> method references a different devise module. That is covered in more detail in the <a href="/basic-devise-guide/">Basic Devise Guide</a>. It also adds a database migration, found under <code>db/migrate/..._devise_create_users.rb</code>, which should look like this:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -258,32 +256,130 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>After doing a migrate:</p>
+<p>After doing a migrate, run the <code>rake</code> command:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rake db:migrate
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake db:migrate
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>You should now have a <code>users</code> table in your database now. After that, you&rsquo;re pretty much good to go! Run</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails server
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rails server
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>and you should be able to login at <code>http://localhost:3000/users/sign_up</code>.</p>
+
+<h2>Handling Authentication</h2>
+
+<p>It&rsquo;s not simply enough to allow users to log in to your site. You need to give your logged in users an incentive to log in! Here&rsquo;s how to set up your site to react differently, based on whether they&rsquo;ve logged in or not.</p>
+
+<h3>Using login information in your views</h3>
+
+<p>Most sites typically have a spot in the upper-right hand corner for logging into the site. For example, we might have a header toolbar, with the words &ldquo;Log into mysite.com&rdquo;. Similarly, after the user has logged in, that wording could change to say &ldquo;Logged in as: <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#102;&#97;&#x72;&#108;&#x65;&#121;&#x6b;&#110;&#105;&#x67;&#x68;&#x74;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#102;&#97;&#x72;&#108;&#x65;&#x79;&#107;&#110;&#105;&#103;&#104;&#x74;&#64;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a>&rdquo;. Using the <code>user_logged_in?</code> and <code>current_user</code> methods, the code would look like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="cp">&lt;%</span> <span class="k">if</span> <span class="n">user_signed_in?</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  Logged in as: </span><span class="cp">&lt;%=</span> <span class="n">current_user</span><span class="o">.</span><span class="n">email</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">else</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Log into mysite.com&quot;</span><span class="p">,</span> <span class="n">new_user_session_path</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Checking if the user is logged in, per controller action</h3>
+
+<p>Once you have basic authorization in place, you&rsquo;ll want to mark off sections of the site for logged-in users only. Let&rsquo;s say you have a <code>DashboardController</code> which is the dashboard for any logged in user. Using the before filter method <code>authenticate_user!</code>, we can be sure that this dashboard is only seen by logged in users.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">DashboardController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="n">before_filter</span> <span class="ss">:authenticate_user!</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">index</span>
+</span><span class='line'>    <span class="c1"># Show some stuff to the logged-in user</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>User Redirection</h3>
+
+<p>After your user has logged in, you want to redirect them to their dashboard. To do this, add the following method to your <code>ApplicationController</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="ss">ActionController</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'>  <span class="c1"># ...</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">after_sign_in_path_for</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">dashboard_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After a user has logged out, you want to redirect them to a special page, thanking them and asking them to return soon. Here&rsquo;s another snippet you can use to do that:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="ss">ActionController</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'>  <span class="c1"># ...</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">after_sign_out_path_for</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">please_come_again_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h2>Further Setup</h2>
 
 <p>If you need more control over how Devise works in your app, you&rsquo;re going to want to use their view generator as well. Run:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g devise:views
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rails g devise:views
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>This adds a bunch of views under <code>app/views/devise/</code>. We can go into more detail under the <a href="/basic-devise-customization/">Basic Devise Customization</a> guide.</p>
+
+<p>Some other things you may want to do with your devise installation. You may want allow users to:</p>
+
+<ul>
+<li><a href="/devise-edit-passwords/">Allow Users to edit their password</a></li>
+<li><a href="/devise-user-confirmation/">Confirm their accounts via email</a></li>
+<li><a href="/devise-user-invites/">Invite other users via email</a></li>
+<li><a href="/devise-cancan-rolify/">Advanced User authorization with CanCan and Rolify</a></li>
+<li>Allow users to sign up via
+
+<ul>
+<li><a href="/devise-facebook/">Facebook</a></li>
+<li><a href="/devise-twitter/">Twitter</a></li>
+<li><a href="/devise-google-plus/">Google+</a></li>
+</ul>
+</li>
+</ul>
+
+
+<p>Check out my full list of <a href="/devise-tutorials/">my Devise tutorials</a> if you are stil curious.</p>
 </div>
 
 
@@ -339,23 +435,23 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/faster-rails-boot-times-with-zeus/">Faster Rails Boot-times With Zeus</a>
+        <a href="/customizing-devise-views/">Customizing Devise Views</a>
       </li>
     
       <li class="post">
-        <a href="/awesome-rails-tools/">Awesome Rails Tools</a>
+        <a href="/advanced-devise-customization/">Advanced Devise Customization</a>
       </li>
     
       <li class="post">
-        <a href="/rspec-tips/">RSpec Tips</a>
+        <a href="/getting-started-with-rspec/">Getting Started With RSpec</a>
       </li>
     
       <li class="post">
-        <a href="/helpful-command-line-tools/">Helpful Command Line Tools</a>
+        <a href="/speed-up-development-with-guard/">Speed Up Development With Guard</a>
       </li>
     
       <li class="post">
-        <a href="/devise-email-setup/">Devise Email Setup</a>
+        <a href="/rails-admin-panels-with-activeadmin/">Rails Admin Panels With Activeadmin</a>
       </li>
     
   </ul>
