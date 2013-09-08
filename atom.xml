@@ -4,7 +4,7 @@
   <title><![CDATA[Farley's Ruby on Rails Blog]]></title>
   <link href="http://farleyknight.github.io/atom.xml" rel="self"/>
   <link href="http://farleyknight.github.io/"/>
-  <updated>2013-09-08T08:45:29-04:00</updated>
+  <updated>2013-09-08T10:06:25-04:00</updated>
   <id>http://farleyknight.github.io/</id>
   <author>
     <name><![CDATA[Farley Knight]]></name>
@@ -77,31 +77,6 @@
 <h3>Customizing Devise with Twitter Bootstrap</h3>
 
 <h3>Customizing user registration</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Advanced Devise customization]]></title>
-    <link href="http://farleyknight.github.io/advanced-devise-customization/"/>
-    <updated>2013-09-08T05:10:00-04:00</updated>
-    <id>http://farleyknight.github.io/advanced-devise-customization</id>
-    <content type="html"><![CDATA[<h2>Devise security</h2>
-
-<h3>Logging password attempts</h3>
-
-<p>By default, Devise does not do anything special about brute-forced password attempts.</p>
-
-<h2>Handling other types of authentication</h2>
-
-<h3>Sign up via username, instead of email</h3>
-
-<h3>HTTP auth</h3>
-
-<h3>OAuth (includes Facebook, Twitter as special cases)</h3>
-
-<h3>LDAP</h3>
-
-<h1>#</h1>
 ]]></content>
   </entry>
   
@@ -463,90 +438,6 @@ Or you can pull from their Github master branch. They have applied a temporary f
 <p>This will add the command <code>zeus assets ...</code>, so for example <code>zeus assets clean</code> will run <code>rake assets:clean</code> and <code>zeus assets precompile</code> will run <code>rake assets:precompile</code> and so on.</p>
 
 <p>If you&rsquo;re interested on how the <code>Zeus::Rails</code> plans work, <a href="https://github.com/burke/zeus/blob/master/docs/ruby/modifying.md">checkout the documentation</a> on the <a href="https://github.com/burke/zeus/">github repository</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Awesome Rails Tools]]></title>
-    <link href="http://farleyknight.github.io/awesome-rails-tools/"/>
-    <updated>2013-09-03T13:24:00-04:00</updated>
-    <id>http://farleyknight.github.io/awesome-rails-tools</id>
-    <content type="html"><![CDATA[<h2>spring</h2>
-
-<p>Another framework for handling quick Rails boot times is a tool called <a href="https://github.com/jonleighton/spring">spring</a>. It has many features that <code>zeus</code> has, but it&rsquo;s written in pure Ruby.</p>
-
-<h3>Getting Started</h3>
-
-<p>[include how to use spring]</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RSpec Tips]]></title>
-    <link href="http://farleyknight.github.io/rspec-tips/"/>
-    <updated>2013-09-03T13:07:00-04:00</updated>
-    <id>http://farleyknight.github.io/rspec-tips</id>
-    <content type="html"><![CDATA[<h2>Rspec generators</h2>
-
-<p>Use this command to generate a spec for an existing ModelName</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g spec:model ModelName
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Test files under <code>lib</code></h2>
-
-<p>Create <code>spec/lib</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir -p spec/lib
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Add the following line to <code>spec/spec_helper.rb</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
-</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="s2">&quot;**/*_spec.rb&quot;</span>
-</span><span class='line'>  <span class="c1"># A bunch more code..</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Helpful Command Line Tools]]></title>
-    <link href="http://farleyknight.github.io/helpful-command-line-tools/"/>
-    <updated>2013-09-03T13:01:00-04:00</updated>
-    <id>http://farleyknight.github.io/helpful-command-line-tools</id>
-    <content type="html"><![CDATA[<h1>You can&rsquo;t stand in GUI-land forever..</h1>
-
-<p>As much as there are plenty of graphical tools for developers, there are plenty of tight spots that require use of the command line. For example, logging into an SSH server means that unless you use a VPN to handle desktop interaction, you&rsquo;re stuck with the command line. Also, if you&rsquo;re using any of the common command line tools, such as git, it&rsquo;s helpful to stay in the command line and continue doing your work.</p>
-
-<p>Furthermore, all programs are just text. Being able to stick with a simple text interface means that you don&rsquo;t have to do context switching in your workflow, which is one of the more expensive operations to deal with (and also why programmers hate interruptions!).</p>
-
-<h2>emacs-nox or vim</h2>
-
-<p>[screenshot of emacs here]</p>
-
-<p>[screenshot of vim here]</p>
-
-<h2>tig</h2>
-
-<p>[screenshot here]</p>
-
-<h2>htop</h2>
-
-<p>[screenshot here]</p>
-
-<h2>(soundcloud command line interface?)</h2>
 ]]></content>
   </entry>
   
@@ -999,7 +890,7 @@ Or you can pull from their Github master branch. They have applied a temporary f
 
 <h3>Using login information in your views</h3>
 
-<p>Most sites typically have a spot in the upper-right hand corner for logging into the site. For example, we might have a header toolbar, with the words &ldquo;Log into mysite.com&rdquo;. Similarly, after the user has logged in, that wording could change to say &ldquo;Logged in as: <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#102;&#97;&#x72;&#108;&#x65;&#121;&#x6b;&#110;&#105;&#x67;&#x68;&#x74;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#102;&#97;&#x72;&#108;&#x65;&#x79;&#107;&#110;&#105;&#103;&#104;&#x74;&#64;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a>&rdquo;. Using the <code>user_logged_in?</code> and <code>current_user</code> methods, the code would look like this:</p>
+<p>Most sites typically have a spot in the upper-right hand corner for logging into the site. For example, we might have a header toolbar, with the words &ldquo;Log into mysite.com&rdquo;. Similarly, after the user has logged in, that wording could change to say &ldquo;Logged in as: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#102;&#97;&#x72;&#x6c;&#101;&#x79;&#x6b;&#110;&#105;&#x67;&#104;&#x74;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#102;&#x61;&#x72;&#x6c;&#101;&#121;&#x6b;&#x6e;&#105;&#x67;&#104;&#116;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a>&rdquo;. Using the <code>user_logged_in?</code> and <code>current_user</code> methods, the code would look like this:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

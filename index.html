@@ -165,58 +165,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/advanced-devise-customization/">Advanced Devise Customization</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-08T05:10:00-04:00" pubdate data-updated="true">Sep 8<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Devise security</h2>
-
-<h3>Logging password attempts</h3>
-
-<p>By default, Devise does not do anything special about brute-forced password attempts.</p>
-
-<h2>Handling other types of authentication</h2>
-
-<h3>Sign up via username, instead of email</h3>
-
-<h3>HTTP auth</h3>
-
-<h3>OAuth (includes Facebook, Twitter as special cases)</h3>
-
-<h3>LDAP</h3>
-
-<h1>#</h1>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/getting-started-with-rspec/">Getting Started With RSpec</a></h1>
     
     
@@ -740,7 +688,7 @@ Or you can pull from their Github master branch. They have applied a temporary f
       
   <header>
     
-      <h1 class="entry-title"><a href="/awesome-rails-tools/">Awesome Rails Tools</a></h1>
+      <h1 class="entry-title"><a href="/devise-email-setup/">Devise Email Setup</a></h1>
     
     
       <p class="meta">
@@ -756,20 +704,96 @@ Or you can pull from their Github master branch. They have applied a temporary f
   
 
 
-<time datetime="2013-09-03T13:24:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+<time datetime="2013-09-02T14:43:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h2>spring</h2>
+  <div class="entry-content"><h2>Basic Setup</h2>
 
-<p>Another framework for handling quick Rails boot times is a tool called <a href="https://github.com/jonleighton/spring">spring</a>. It has many features that <code>zeus</code> has, but it&rsquo;s written in pure Ruby.</p>
+<p>The most basic Devise email setup is to set configuration for <code>ActionMailer</code>, which is slightly different for <code>development</code> and <code>production</code> modes. However, for both modes you&rsquo;ll want to check out your <code>config/initializers/devise.rb</code> file and change the line that reads:</p>
 
-<h3>Getting Started</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">mailer_sender</span> <span class="o">=</span> <span class="s2">&quot;please-change-me-at-config-initializers-devise@example.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>[include how to use spring]</p>
+
+<p>To something a bit more sane, such as:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">mailer_sender</span> <span class="o">=</span> <span class="s2">&quot;support@mysite.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After setting this, all devise email will be sent as <code>support@mysite.com</code>.</p>
+
+<h2>ActionMailer setup</h2>
+
+<p>All of this information is available in detail on the <a href="http://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration">official ActionMailer guide page</a>. However, this document will get you started faster, with some reasonable defaults.</p>
+
+<h3>ActionMailer in <code>development</code> with Gmail</h3>
+
+<p>The best way to handle email in your <code>development</code> environment is with a throw-away Gmail account. I emphasize that it should be throw-away as we&rsquo;re including the email &amp; password directly in the config file. If you&rsquo;re application has serious security implications, it&rsquo;s best that you use <code>sendmail</code> to do email during development, or that you pass the email &amp; password via another configuration file that is not committed to your project (by ignoring it in <code>.gitignore</code>).</p>
+
+<p>With that preface out of the way, in your <code>config/environments/development.rb</code> you&rsquo;ll want to have the following configuration:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">default_url_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost:3000&#39;</span><span class="p">}</span>
+</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">delivery_method</span>     <span class="o">=</span> <span class="ss">:smtp</span>
+</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">smtp_settings</span>       <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>   <span class="ss">:tls</span>            <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span>
+</span><span class='line'>   <span class="ss">:address</span>        <span class="o">=&gt;</span> <span class="s2">&quot;smtp.gmail.com&quot;</span><span class="p">,</span>
+</span><span class='line'>   <span class="ss">:port</span>           <span class="o">=&gt;</span> <span class="mi">587</span><span class="p">,</span>
+</span><span class='line'>   <span class="ss">:domain</span>         <span class="o">=&gt;</span> <span class="s2">&quot;gmail.com&quot;</span><span class="p">,</span>
+</span><span class='line'>   <span class="ss">:authentication</span> <span class="o">=&gt;</span> <span class="ss">:login</span><span class="p">,</span>
+</span><span class='line'>   <span class="ss">:user_name</span>      <span class="o">=&gt;</span> <span class="s2">&quot;[username]&quot;</span><span class="p">,</span>
+</span><span class='line'>   <span class="ss">:password</span>       <span class="o">=&gt;</span> <span class="s2">&quot;[password]&quot;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You&rsquo;ll want to replace <code>[email]</code> and <code>[password]</code> with your Gmail email &amp; password.</p>
+
+<p>You can see a working <a href="http://github.com/farleyknight/devise_email">example app here</a>.</p>
+
+<h3>ActionMailer in <code>production</code></h3>
+
+<p>Setting up ActionMailer in production requires a real domain name. So don&rsquo;t bother with this step until you&rsquo;ve registered one. I suggest <code>namecheap.com</code>. Assuming you&rsquo;ve just registered, if your domain name is <code>example.com</code>, go into your <code>config/environments/production.rb</code> and add the following lines:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">default_url_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">&#39;example.com&#39;</span><span class="p">}</span>
+</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">delivery_method</span>     <span class="o">=</span> <span class="ss">:smtp</span>
+</span><span class='line'><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">smtp_settings</span>       <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>  <span class="ss">:address</span> <span class="o">=&gt;</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:port</span>    <span class="o">=&gt;</span> <span class="mi">25</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:domain</span>  <span class="o">=&gt;</span> <span class="s1">&#39;example.com&#39;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Afterwards, you&rsquo;ll want to set up a simple SMTP server on your web host. Run:</p>
+
+<p><code>gem install mailcatcher</code></p>
+
+<p>Will install the <a href="http://mailcatcher.me/">mailcatcher</a> gem.</p>
 </div>
   
   
@@ -782,7 +806,7 @@ Or you can pull from their Github master branch. They have applied a temporary f
       
   <header>
     
-      <h1 class="entry-title"><a href="/rspec-tips/">RSpec Tips</a></h1>
+      <h1 class="entry-title"><a href="/basic-web-security/">Basic Web Security</a></h1>
     
     
       <p class="meta">
@@ -798,45 +822,132 @@ Or you can pull from their Github master branch. They have applied a temporary f
   
 
 
-<time datetime="2013-09-03T13:07:00-04:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2013</time>
+<time datetime="2013-09-02T14:35:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h2>Rspec generators</h2>
+  <div class="entry-content"><h2>How to handle passwords</h2>
 
-<p>Use this command to generate a spec for an existing ModelName</p>
+<p>You want to avoid passwords as much as possible when developing. This is not just a convenience measure, but also an engineering measure. Each human-memorized password will be another point of attack for your web server and web application. Whenever possible encrypted keys are preferable to passwords, as they tend to be much longer (and thus harder to brute-force), require no memorization, and can be locked away on thumbdrives or on the filesystem.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>rails g spec:model ModelName
-</span></code></pre></td></tr></table></div></figure>
+<h3>Set up passwordless SSH</h3>
+
+<p>If you&rsquo;ve got a web server which you can SSH into, you should immediately remove route around the need for passwords by running this command:</p>
+
+<p><code>ssh-copy-id [myaccount]@[mysite]</code></p>
+
+<p>If you run this command (replacing <code>[myaccount]</code> with your SSH login and <code>[mysite]</code> with your site&rsquo;s domain name), you&rsquo;ll be asked one more time to login with a password.</p>
+
+<h3>Put passwords into config files, not in source code</h3>
+
+<h3>Put passwords into a password manager. Don&rsquo;t bother memorizing them.</h3>
+</div>
+  
+  
 
 
-<h2>Test files under <code>lib</code></h2>
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/basic-devise-customization/">Basic Devise Customization</a></h1>
+    
+    
+      <p class="meta">
+        
 
-<p>Create <code>spec/lib</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir -p spec/lib
-</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Add the following line to <code>spec/spec_helper.rb</code></p>
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T14:15:00-04:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sometimes setting up Devise is just the start of your app, and you need more customization to provide a robust user experience. Here&rsquo;s some common Devise customizations that should take you even further along than the <a href="/getting-started-with-devise/">basic Devise guide</a> I&rsquo;ve written before.</p>
+
+<h2>Adding a Profile to your User model</h2>
+
+<p>Let&rsquo;s say you&rsquo;re building a social networking site. You want to keep a clean separation between the users <em>account</em> (their email, password, account status, etc) from the user&rsquo;s <em>profile data</em> (first &amp; last name, avatar, location, relationship status, etc). The best way to handle this is to add another model for Profile, creating it alongside the User model during registration.</p>
+
+<p>Here&rsquo;s how to customize the user model for exactly this use case.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
-</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="s2">&quot;**/*_spec.rb&quot;</span>
-</span><span class='line'>  <span class="c1"># A bunch more code..</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'>  <span class="c1"># Include default devise modules. Others available are:</span>
+</span><span class='line'>  <span class="c1"># :token_authenticatable, :confirmable,</span>
+</span><span class='line'>  <span class="c1"># :lockable, :timeoutable and :omniauthable</span>
+</span><span class='line'>  <span class="n">devise</span> <span class="ss">:database_authenticatable</span><span class="p">,</span> <span class="ss">:registerable</span><span class="p">,</span> <span class="ss">:recoverable</span><span class="p">,</span> <span class="ss">:rememberable</span><span class="p">,</span> <span class="ss">:trackable</span><span class="p">,</span> <span class="ss">:validatable</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">has_one</span> <span class="ss">:profile</span>
+</span><span class='line'>  <span class="n">accepts_nested_attributes_for</span> <span class="ss">:profile</span>
 </span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Profile</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:user</span>
+</span><span class='line'>  <span class="n">validates</span> <span class="ss">:first_name</span><span class="p">,</span> <span class="ss">:last_name</span><span class="p">,</span> <span class="ss">:location</span><span class="p">,</span> <span class="ss">presence</span><span class="p">:</span> <span class="kp">true</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_profiles/">an example app</a> that shows how all of this fits together:</p>
+
+<h2>Signing up with Facebook, Twitter, etc</h2>
+
+<p>An often requested feature is to allow users to sign up via Facebook, Twitter, or other social network.</p>
+
+<p>You&rsquo;ll need to add a few more gems to do this. You&rsquo;ll need to add to your Gemfile:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;devise&#39;</span> <span class="c1"># Should already be in your Gemfile</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;omniauth-facebook&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Devise Facebook fast-track</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rails</span> <span class="kp">new</span> <span class="n">my_website</span> <span class="o">-</span><span class="n">m</span> <span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">raw</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">farleyknight</span><span class="o">/</span><span class="n">rails_templates</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">devise_facebook</span><span class="o">.</span><span class="n">rb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>[discuss facebook integration]</p>
+
+<p>Here&rsquo;s <a href="http://github.com/farleyknight/devise_facebook/">an example app</a> that shows how all of this fits together.</p>
 </div>
   
   
@@ -863,10 +974,6 @@ Or you can pull from their Github master branch. They have applied a temporary f
       </li>
     
       <li class="post">
-        <a href="/advanced-devise-customization/">Advanced Devise Customization</a>
-      </li>
-    
-      <li class="post">
         <a href="/getting-started-with-rspec/">Getting Started With RSpec</a>
       </li>
     
@@ -876,6 +983,10 @@ Or you can pull from their Github master branch. They have applied a temporary f
     
       <li class="post">
         <a href="/rails-admin-panels-with-activeadmin/">Rails Admin Panels With Activeadmin</a>
+      </li>
+    
+      <li class="post">
+        <a href="/you-cant-stay-in-gui-land-forever/">You Can&#8217;t Stay in GUI-land Forever</a>
       </li>
     
   </ul>

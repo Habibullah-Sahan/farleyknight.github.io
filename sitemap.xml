@@ -21,18 +21,6 @@
         <lastmod>2013-09-05T19:13:23-04:00</lastmod>
     </url>
     <url>
-        <loc>http://farleyknight.github.io/helpful-command-line-tools/</loc>
-        <lastmod>2013-09-05T19:13:23-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://farleyknight.github.io/rspec-tips/</loc>
-        <lastmod>2013-09-05T19:13:23-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://farleyknight.github.io/awesome-rails-tools/</loc>
-        <lastmod>2013-09-05T19:13:23-04:00</lastmod>
-    </url>
-    <url>
         <loc>http://farleyknight.github.io/faster-rails-boot-times-with-zeus/</loc>
         <lastmod>2013-09-05T19:13:23-04:00</lastmod>
     </url>
@@ -55,10 +43,6 @@
     <url>
         <loc>http://farleyknight.github.io/getting-started-with-rspec/</loc>
         <lastmod>2013-09-07T14:49:58-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://farleyknight.github.io/advanced-devise-customization/</loc>
-        <lastmod>2013-09-08T05:20:09-04:00</lastmod>
     </url>
     <url>
         <loc>http://farleyknight.github.io/customizing-devise-views/</loc>
