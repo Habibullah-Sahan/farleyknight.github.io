@@ -5,9 +5,15 @@
 * **Main Site** - http://www.haproxy.org/
 * **Documentation** - http://www.haproxy.org/download/1.4/doc/configuration.txt
 * **Wikipedia** - http://en.wikipedia.org/wiki/HAProxy
-* **Git repo** - http://git.1wt.eu/web?p=haproxy.git;a=summary
+* **Main git repo** - http://git.1wt.eu/web?p=haproxy.git;a=summary
 
 ## Major versions
+| Version No. | Git repo | Status |
+|---|---|---|---|
+| v1.5 | http://git.haproxy.org/?p=haproxy-1.5.git | Stable version |
+| v1.4 | http://git.haproxy.org/?p=haproxy-1.4.git | Stable version |
+| v1.3 | http://git.haproxy.org/?p=haproxy-1.3.git | Critical fixes only |
+| v1.2 | http://git.haproxy.org/?p=haproxy-1.2.git | **Unmaintained** |
 
 
 ## Companies using HAProxy
