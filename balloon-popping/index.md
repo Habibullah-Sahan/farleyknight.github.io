@@ -1,6 +1,0 @@
-HTML
-
-CSS
-
-JavaScript
-
