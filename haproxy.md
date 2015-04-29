@@ -1,11 +1,18 @@
 # HAProxy
 
-## Sites
+### Description
+> HAProxy is a free, very fast and reliable solution offering high availability, load balancing, and proxying for TCP and HTTP-based applications. It is particularly suited for very high traffic web sites and powers quite a number of the world's most visited ones. Over the years it has become the de-facto standard opensource load balancer, is now shipped with most mainstream Linux distributions, and is often deployed by default in cloud platforms. Since it does not advertise itself, we only know it's used when the admins report it :-)
+>
+> http://haproxy.org
+
+## Quick Facts
 
 * **Main Site** - http://www.haproxy.org/
 * **Documentation** - http://www.haproxy.org/download/1.4/doc/configuration.txt
 * **Wikipedia** - http://en.wikipedia.org/wiki/HAProxy
 * **Main git repo** - http://git.1wt.eu/web?p=haproxy.git;a=summary
+* **Current version** - v1.5
+* **Current version released** - (??/??/????)
 
 ## Major versions
 | Version No. | Git repo | Status |
@@ -17,6 +24,12 @@
 
 
 ## Companies using HAProxy
+
+### GitHub
+> This is also where we got tripped up. We currently use HAProxy as our SSL termination which ends up using the default OpenSSL settings if you don't specify any additional options. This means that both session IDs and session tickets are enabled by default.
+>
+> https://github.com/blog/1734-improving-our-ssl-setup
+
 
 ### Stack Overflow 
 > Keep in mind these are for the entire Stack Exchange network but still don’t include everything. With the exception of the 2 totals, these numbers are only from HTTP requests we log to look at performance. Also, whoa that’s a lot of hours in a day, how do you do that? We like to call it magic, other people call it “multiple servers with multi-core processors” - but we’ll stick with magic. Here’s what runs the Stack Exchange network in that data center:
