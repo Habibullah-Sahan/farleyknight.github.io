@@ -26,7 +26,7 @@
 > * 2 Redis Servers
 > * 3 Tag Engine servers (anything searching by tag hits this, e.g. /questions/tagged/c++)
 > * 3 elasticsearch servers
-> * 2 Load balancers (HAProxy)
+> * **2 Load balancers** (**HAProxy**)
 > * 2 Networks (each a Nexus 5596 + Fabric Extenders)
 > * 2 Cisco 5525-X ASAs (think Firewall)
 > * 2 Cisco 3945 Routers
