@@ -12,18 +12,22 @@
 * **Wikipedia** - http://en.wikipedia.org/wiki/HAProxy
 * **Main git repo** - http://git.1wt.eu/web?p=haproxy.git;a=summary
 * **Current version** - v1.5
-* **Current version released** - (??/??/????)
+* **Current version released** - June 19th, 2014
 
 ## Major versions
-| Version No. | Git repo | Status |
+| Version No. | Git repo | Status | Released | 
 |---|---|---|---|
-| v1.5 | http://git.haproxy.org/?p=haproxy-1.5.git | Stable version |
-| v1.4 | http://git.haproxy.org/?p=haproxy-1.4.git | Stable version |
-| v1.3 | http://git.haproxy.org/?p=haproxy-1.3.git | Critical fixes only |
-| v1.2 | http://git.haproxy.org/?p=haproxy-1.2.git | **Unmaintained** |
+| v1.5 | http://git.haproxy.org/?p=haproxy-1.5.git | Stable version | June 19th, 2014 |
+| v1.4 | http://git.haproxy.org/?p=haproxy-1.4.git | Stable version | (??/??/????) | 
+| v1.3 | http://git.haproxy.org/?p=haproxy-1.3.git | Critical fixes only | (??/??/????) |
+| v1.2 | http://git.haproxy.org/?p=haproxy-1.2.git | **Unmaintained** | (??/??/????) |
 
 
 ## Companies using HAProxy
+
+### Airbnb
+
+
 
 ### GitHub
 > This is also where we got tripped up. We currently use HAProxy as our SSL termination which ends up using the default OpenSSL settings if you don't specify any additional options. This means that both session IDs and session tickets are enabled by default.
