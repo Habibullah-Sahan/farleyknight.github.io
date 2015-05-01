@@ -30,7 +30,10 @@
 
 
 ### GitHub
-> This is also where we got tripped up. We currently use HAProxy as our SSL termination which ends up using the default OpenSSL settings if you don't specify any additional options. This means that both session IDs and session tickets are enabled by default.
+
+In an article explaining SSL problems at GitHub, @dbussink mentions briefly their use case for HAProxy.
+
+> This is also where we got tripped up. **We currently use HAProxy** as our SSL termination which ends up using the default OpenSSL settings if you don't specify any additional options. This means that both session IDs and session tickets are enabled by default.
 >
 > https://github.com/blog/1734-improving-our-ssl-setup
 
