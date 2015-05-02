@@ -3,9 +3,11 @@
 
 ## Description
 
+This should be a general description of the product. No more than a paragraph. It's best to quote someone else on this topic than write it by hand. In the future this policy might change, but I don't want the site to have too much custom language at this point.
 
 ## Quick Facts
 
+A list of facts
 
 ## Google Trends
 
@@ -14,6 +16,8 @@
 
 
 ## Security exploits
+
+A list of all known CVE issues for the product, grouped by major version. The list below is a rough example, and will probably need to be cleaned up in the future.
 
 * v1.1
   - Minor issue with passwords
