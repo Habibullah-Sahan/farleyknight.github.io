@@ -67,7 +67,8 @@ In an article explaining SSL problems at GitHub, @dbussink mentions briefly thei
 
 ## Positive Reviews
 
-> ... Configured as RAID-5, that gave us a little under 2.5TG per server for storing videos. A simple rsync script keeps the video archives in sync after user and editor uploads. Apache 2.2 configured with the worker MPM lets me do about 600 simultaneous connections per machine before I start running out of memory. Six of these boxes **behind a HAProxy load balancing system can completely saturate a 1Gbps fiber Cogent network** drop with plenty of cycles to spare, and we’ve held that level of bandwidth for amazingly sustained periods of time. 
+> ... Configured as RAID-5, that gave us a little under 2.5TG per server for storing videos. A simple rsync script keeps the video archives in sync after user and editor uploads. Apache 2.2 configured with the worker MPM lets me do about 600 simultaneous connections per machine before I start running out of memory. Six of these boxes **behind a HAProxy load balancing system can completely saturate a 1Gbps fiber Cogent network** drop with plenty of cycles to spare, and we’ve held that level of bandwidth for amazingly sustained periods of time.
+>
 > http://www.ghostwheel.com/merlin/Personal/notes/2007/03/25/200-terabytes-served-in-81-days-247tb-per-day/
 
 ## Negative Reviews
