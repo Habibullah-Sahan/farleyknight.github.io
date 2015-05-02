@@ -17,8 +17,10 @@ A list of facts
 
 ## Security exploits
 
-A list of all known CVE issues for the product, grouped by major version. The list below is a rough example, and will probably need to be cleaned up in the future.
+A list of all known CVE issues for the product, as well as security enhancements, grouped by major version. The list below is a rough example, and will probably need to be cleaned up in the future.
 
+* v1.2
+  - CVE 12345
 * v1.1
   - Minor issue with passwords
 * v1.0 
