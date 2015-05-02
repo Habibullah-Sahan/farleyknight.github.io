@@ -56,20 +56,25 @@ In an article explaining SSL problems at GitHub, @dbussink mentions briefly thei
 
 ## Features
 
-#### SSL (Since v1.5)
+### SSL (Since v1.5)
 Something..
 
 
-#### Failover
+### Failover
 
-> (a blurb from the site about setting up failover with HAProxy
+> (a blurb from the site about setting up failover with HAProxy)
 >
 > http://blog.haproxy.com/2013/12/23/failover-and-worst-case-management-with-haproxy/
 
+> (a blurb from the site about setting up failover with HAProxy)
+>
+> http://serverfault.com/questions/281230/how-to-setup-haproxy-with-failover
 
-  - http://serverfault.com/questions/281230/how-to-setup-haproxy-with-failover
-* WebSockets
-  - http://blog.silverbucket.net/post/31927044856/3-ways-to-configure-haproxy-for-websockets
+### WebSockets
+
+> (a blurb from the site about setting up failover with HAProxy)
+>
+> http://blog.silverbucket.net/post/31927044856/3-ways-to-configure-haproxy-for-websockets
 
 ## Articles
 * http://www.rightscale.com/blog/cloud-management-best-practices/benchmarking-load-balancers-cloud
