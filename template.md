@@ -45,7 +45,23 @@
 
 ## Tutorials
 
+### Installation
+
+
+#### On Windows
+
+
+#### On Mac OS X
+
+
+#### On Ubuntu Linux
+
+
+#### On Red Hat Linux
+
+
 ### Beginner Tutorials
+
 
 ### Advanced Tutorials
 
