@@ -14,6 +14,10 @@
 * **Current version** - v1.5
 * **Current version released** - June 19th, 2014
 
+## Google Trends
+
+<script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-US&q=haproxy&tz&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=500&h=330"></script>
+
 ## Major versions
 | Version No. | Git repo | Status | Released | 
 |---|---|---|---|
