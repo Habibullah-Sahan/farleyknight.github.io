@@ -1,11 +1,10 @@
 # Apache
 
-
-## <h2>Description</h2>
+## Description
 <p>Apache refers to the Apache Software Foundation. This is a US 501(c)(3) non-profit corporation aiming at financial, legal and organizational support for more than 150 open source software projects. Apache has a good reputation in providing established framework in aspect of intellectual and financial contributions. Apache HTTP server could also be regarded as world's most widely used web server software. Apache started its journey in early 1995 based on NCSA HTTPd server.</p>
 
-## <h2>Quick Facts</h2>
-* Main Site - http://www.apache.org/
+## Quick Facts
+* **Main Site** - http://www.apache.org/
 * Documentation - http://httpd.apache.org/docs/
 * Wikipedia - http://en.wikipedia.org/wiki/Apache_HTTP_Server
 * Main Git Repo - http://git.apache.org/
