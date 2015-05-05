@@ -5,12 +5,11 @@
 
 ## Quick Facts
 * **Main Site** - http://www.apache.org/
-* Documentation - http://httpd.apache.org/docs/
-* Wikipedia - http://en.wikipedia.org/wiki/Apache_HTTP_Server
-* Main Git Repo - http://git.apache.org/
-* Current Version - Apache HTTP Server 2.4.12 (httpd)
-* Current Version Released - 2015-01-29
-
+* **Documentation** - http://httpd.apache.org/docs/
+* **Wikipedia** - http://en.wikipedia.org/wiki/Apache_HTTP_Server
+* **Main Git Repo** - http://git.apache.org/
+* **Current Version** - *Apache HTTP Server 2.4.12 (httpd)*
+* **Current Version Released** - 2015-01-29
 
 ### Google Trends
 
@@ -18,7 +17,9 @@ Apache Maven, Apache ivy, Apache Ant
 
 ### Number of downloads over time
 
-Apache OpenOffice™ has been downloaded more than 100 million times. Source - https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces56
+Apache OpenOffice™ has been downloaded more than 100 million times.
+
+**Source** - https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces56
 
 ## Major versions
 
