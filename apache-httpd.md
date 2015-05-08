@@ -1,7 +1,9 @@
-# Apache
+# Apache Httpd
 
 ## Description
-<p>Apache refers to the Apache Software Foundation. This is a US 501(c)(3) non-profit corporation aiming at financial, legal and organizational support for more than 150 open source software projects. Apache has a good reputation in providing established framework in aspect of intellectual and financial contributions. Apache HTTP server could also be regarded as world's most widely used web server software. Apache started its journey in early 1995 based on NCSA HTTPd server.</p>
+The Apache HTTP Server Project is a collaborative software development effort aimed at creating a robust, commercial-grade, featureful, and freely-available source code implementation of an HTTP (Web) server. The project is jointly managed by a group of volunteers located around the world, using the Internet and the Web to communicate, plan, and develop the server and its related documentation. This project is part of the Apache Software Foundation. In addition, hundreds of users have contributed ideas, code, and documentation to the project. This file is intended to briefly describe the history of the Apache HTTP Server and recognize the many contributors.
+
+**Source: http://httpd.apache.org/ABOUT_APACHE.html**
 
 ## Quick Facts
 * **Main Site** - http://www.apache.org/
@@ -30,20 +32,26 @@ v2.4 | February 17, 2012 | http://httpd.apache.org/docs/2.4/ | Stable and Under 
 
 ## Security exploits
 
-A list of all known CVE issues for the product, as well as security enhancements, grouped by major version. The list below is a rough example, and will probably need to be cleaned up in the future.
+The following links will show the documentation of vulnerabilities as per the product version:
 
-* v1.2
-  - CVE 12345
-* v1.1
-  - Minor issue with passwords
-* v1.0 
-  - Fixed SSL bug 
-* v0.9
-  - Add support for protocol encryption
+**Apache 2.2 Security Vulnerabilities:** http://httpd.apache.org/security/vulnerabilities_22.html
 
-## Companies using PRODUCT_NAME
+**Apache 2.4 Security Vulnerabilities:** http://httpd.apache.org/security/vulnerabilities_24.html
 
-List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
+## Companies using Apache Httpd
+
+Till now Apache is the most widely used web server. As per the April 2015 servey of Netcraft on 849,027,856 sites, Apache holds the first position in terms of numbers. Following are some of the top companies that are using Apache Httpd:
+* Wikipedia.org
+* Paypal.com
+* Apple.com
+* Bbc.co.uk
+* Adobe.com
+* Baidu.com
+* Ask.com
+As Apache Httpd Web Server is being used my millions of websites out there, it is not easy to create a list. But above are some of the well known platforms out there that are using Apache Httpd Web Server.
+
+**Source:** http://w3techs.com/technologies/details/ws-apache/all/all
+
 
 ## Features
 
