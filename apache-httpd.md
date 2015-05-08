@@ -48,6 +48,7 @@ Till now Apache is the most widely used web server. As per the April 2015 servey
 * Adobe.com
 * Baidu.com
 * Ask.com
+
 As Apache Httpd Web Server is being used my millions of websites out there, it is not easy to create a list. But above are some of the well known platforms out there that are using Apache Httpd Web Server.
 
 **Source:** http://w3techs.com/technologies/details/ws-apache/all/all
