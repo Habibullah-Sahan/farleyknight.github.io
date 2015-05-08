@@ -22,7 +22,11 @@ Apache OpenOffice™ has been downloaded more than 100 million times.
 **Source** - https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces56
 
 ## Major versions
-
+**Version No.| Release Date | Documentation | Status**
+:-----------:|:------------:|:-------------:|:-------
+   v2.0    |March 10, 2000 | http://httpd.apache.org/docs/2.0/ | No longer maintained
+v2.2 | December 1, 2005 | http://httpd.apache.org/docs/2.2/ | Stable
+v2.4 | February 17, 2012 | http://httpd.apache.org/docs/2.4/ | Stable and Under Maintainance
 
 ## Security exploits
 
