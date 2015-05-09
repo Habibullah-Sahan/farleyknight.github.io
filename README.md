@@ -20,5 +20,27 @@ List of message queuing services:
 * Resque
 * ZeroMQ
 * Sidekiq
-* 
+
+List of web browsers:
+
+* Internet Explorer
+* Chrome
+* Firefox
+* Safari
+* Opera
+
+List of relational databases:
+
+* MySQL
+* PostgreSQL
+* Oracle
+* MSSQL
+* Microsoft Access
+* SQLite
+
+List of document databases:
+
+* Apache Cassandra
+* MongoDB
+
 
