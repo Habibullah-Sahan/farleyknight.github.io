@@ -56,7 +56,17 @@ As Apache Httpd Web Server is being used my millions of websites out there, it i
 
 ## Features
 
-Top 3 to 5 features it has some of it's peers don't. In other words, these should be the 3 to 5 features that make the product stand out from it's competitors.
+Apache is certainly the oldest in the business out there. Each version comes with unique enhancements. In v2.4 multiple MPMs could be built as loadable modules. This is expected to enhance the runtime. Besides, the [Event MPM] (http://httpd.apache.org/docs/2.4/mod/event.html "Event MPM") which was experimental in v2.2 is fully supported in v2.4
+
+[If] (http://httpd.apache.org/docs/2.4/mod/core.html#if "<If>"), [Else] (http://httpd.apache.org/docs/2.4/mod/core.html#else "<Else>") and [ElseIf] (http://httpd.apache.org/docs/2.4/mod/core.html#elseif "<ElseIf>") have been added in Per-request configuration sections to configure better on per-request criteria. No matter what people say but nobody can deny that Apache Web Server is the oldest platform among its competitor. And it outnumbers its competitor on the basis of user number.
+
+Each up gradation came up with its unique features which can simply distinguish between the features of its competitors. The following links are the official documentation of features which were added during the up gradations from on version to another:
+
+**Documentation of new features in Apache 2.0:** http://httpd.apache.org/docs/2.0/new_features_2_0.html
+
+**Documentation of new features in Apache 2.2:** http://httpd.apache.org/docs/2.2/new_features_2_2.html
+
+**Documentation of new features in Apache 2.4:** http://httpd.apache.org/docs/2.4/new_features_2_4.html
 
 ## Major plugins
 
