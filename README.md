@@ -50,3 +50,5 @@ List of document databases:
 > - http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
 
 I want to be able to create large tables like the link above, using our data.
+
+An interesting site with a similiar (although not identical) goal: http://stackshare.io/
