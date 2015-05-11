@@ -44,6 +44,9 @@ List of document databases:
 * MongoDB
 * CouchDB
 
-Sites of interest:
 
-* I want to be able to create large tables like this using our data: http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
+> But, the differences between NoSQL databases are much bigger than ever was between one SQL database and another. This means that it is a **bigger responsibility on software architects** to **choose the appropriate one for a project right at the beginning**. 
+> 
+> - http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
+
+I want to be able to create large tables like the link above, using our data.
