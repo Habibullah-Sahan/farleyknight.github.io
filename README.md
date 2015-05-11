@@ -42,5 +42,8 @@ List of document databases:
 
 * Apache Cassandra
 * MongoDB
+* CouchDB
 
+Sites of interest:
 
+* I want to be able to create large tables like this using our data: http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
