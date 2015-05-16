@@ -74,7 +74,7 @@ Plugins are usually extensions which enables a particular platform to do more. "
 
 **mod_proxy_msrpc:** This module enables the anywhere Outlook service. Without it, Apache would block any Outlook Anywhere requests. Detailed information on this module could be found here: https://github.com/bombadil/mod_proxy_msrpc
 
-**mod_auth_dacs:** This module is also known as the **DACS** module. This module is available for v2.0, v2.2 and v2.4 **mod_auth_dacs:** is one of the popular security modules. Details about this Secure Resource Sharing module could be found on: http://dacs.dss.ca/
+**mod_auth_dacs:** This module is also known as the **DACS** module. This module is available for v2.0, v2.2 and v2.4 **mod_auth_dacs** is one of the popular security modules. Details about this Secure Resource Sharing module could be found on: http://dacs.dss.ca/
 
 **IP2Location:** IP2Location module enables the easy detection of the country, city, region, latitude, longitude, time zone, zip code, ISP, domain name, area code, connection type, weather, MCC, MNC, mobile brand name, elevation and usage type by IP address. All the details could be foud here: http://www.ip2location.com/developers/apache
 
