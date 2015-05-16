@@ -70,7 +70,19 @@ Each up gradation came up with its unique features which can simply distinguish 
 
 ## Major plugins
 
-Top 5 to 10 major plugins for this, if available.
+Plugins are usually extensions which enables a particular platform to do more. "Modules" could also be used as a synonymous term of plugin. Some of the popular modules for Apache are:
+
+**mod_proxy_msrpc:** This module enables the anywhere Outlook service. Without it, Apache would block any Outlook Anywhere requests. Detailed information on this module could be found here: https://github.com/bombadil/mod_proxy_msrpc
+
+**mod_auth_dacs:** This module is also known as the **DACS** module. This module is available for v2.0, v2.2 and v2.4 **mod_auth_dacs:** is one of the popular security modules. Details about this Secure Resource Sharing module could be found on: http://dacs.dss.ca/
+
+**IP2Location:** IP2Location module enables the easy detection of the country, city, region, latitude, longitude, time zone, zip code, ISP, domain name, area code, connection type, weather, MCC, MNC, mobile brand name, elevation and usage type by IP address. All the details could be foud here: http://www.ip2location.com/developers/apache
+
+**mod_amf:** This module for Apache is very popular for detecting mobile devices. The process is easy and fast. Details about this module could be found on this link: http://www.apachemobilefilter.org/
+
+**mod_pLua:** The **mod_pLua** module is also among the popular modules. And it helps develope web applications. Details could be found on this link: http://sourceforge.net/projects/modplua/
+
+Besides, an official documentation of the most popular modules and latest modules for Apache could be traced through [this link] (https://modules.apache.org/ "this link"). The modules could also be traced as per the tags: [Security] (https://modules.apache.org/browse.lua?tag=security "Security"), [Logging] (https://modules.apache.org/browse.lua?tag=logging "Logging"), [Mapping] (https://modules.apache.org/browse.lua?tag=mapping "Mapping"), [MPMs] (https://modules.apache.org/browse.lua?tag=mpms "MPMs"), [Generators] (https://modules.apache.org/browse.lua?tag=generators "Generators"), [Filters] (https://modules.apache.org/browse.lua?tag=filters "Filters"), [Scripting] (https://modules.apache.org/browse.lua?tag=scripting "Scripting"), [Version Control] (https://modules.apache.org/browse.lua?tag=vc "Version Control"), [Proxying] (https://modules.apache.org/browse.lua?tag=proxying "Proxying") and [Miscellaneous] (https://modules.apache.org/browse.lua?tag=misc "Miscellaneous").
 
 ## Internals (Algorithms, Protocols, formats, etc)
 
