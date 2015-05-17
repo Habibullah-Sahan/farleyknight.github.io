@@ -5,6 +5,10 @@ The Apache HTTP Server Project is a collaborative software development effort ai
 
 **Source: http://httpd.apache.org/ABOUT_APACHE.html**
 
+Apache HTTP Server is based on [NCSA HTTPd] (http://en.wikipedia.org/wiki/NCSA_HTTPd "NCSA HTTPd"). Apche HTTPd has played the most important of roles in the growth of [WWW (World Wide Web)] (http://en.wikipedia.org/wiki/World_Wide_Web "WWW (World Wide Web)"). Apache has achieved the milestone of serving more than 100 million Websites in the year 2009. They are the first platform to reach such a milestone in aspect of WWW development.
+
+Reference: http://en.wikipedia.org/wiki/Apache_HTTP_Server
+
 ## Quick Facts
 * **Main Site** - http://www.apache.org/
 * **Documentation** - http://httpd.apache.org/docs/
