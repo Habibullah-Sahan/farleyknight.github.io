@@ -1,9 +1,11 @@
-# PRODUCT_NAME
-
-
+# Nginx
 ## Description
 
-This should be a general description of the product. No more than a paragraph. It's best to quote someone else on this topic than write it by hand. In the future this policy might change, but I don't want the site to have too much custom language at this point.
+Nginx is a high performance HTTP server. At the same time it is also a reverse proxy and IMAP/POP3 proxy server. Nginx popularized itself by providing rich feature set, high performance, stability, simple configuration and low resource consumption. Ngnix open source web server is powering more than 130 million website. And the popularity of this platform among high traffic website is noteworthy.
+
+Nginx claims to provide with a better load balancing with cookies. The platform has kept the 4 mega trends of the IT sector: Cloud, Big data, Mobility and Social in mind to manage the traffic in a sophisticated manner. According to the [recent Ntecraft web survey] (http://news.netcraft.com/archives/2015/04/20/april-2015-web-server-survey.html "recent Ntecraft web survey"), Nginx has served or proxied 21.43% of the busiest websites. [Igor Sysoev] (http://en.wikipedia.org/wiki/Igor_Sysoev "Igor Sysoev") must be a proud man who originally wrote Nginx.
+
+**References:** http://nginx.org/en/
 
 ## Quick Facts
 
