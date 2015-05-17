@@ -1,6 +1,6 @@
 # farleyknight.github.io
 
-List of web server software packages:
+## List of web server software packages:
 
 * Apache HTTP Server
 * Apache Tomcat
@@ -9,7 +9,7 @@ List of web server software packages:
 * Nginx
 * Microsoft's Internet Information Services (IIS) Windows Server
 
-List of open source search engines:
+## List of open source search engines:
 
 * Elastic Search
 * Solr
@@ -19,7 +19,7 @@ List of open source search engines:
 
 Useful for reference on this topic: http://solr-vs-elasticsearch.com/
 
-List of message queuing services:
+## List of message queuing services:
 
 * ActiveMQ
 * RabbitMQ
@@ -31,7 +31,7 @@ List of message queuing services:
 * ZeroMQ
 * Sidekiq
 
-List of web browsers:
+## List of web browsers:
 
 * Internet Explorer
 * Chrome
@@ -39,7 +39,7 @@ List of web browsers:
 * Safari
 * Opera
 
-List of relational databases:
+## List of relational databases:
 
 * MySQL
 * PostgreSQL
@@ -48,7 +48,7 @@ List of relational databases:
 * Microsoft Access
 * SQLite
 
-List of document databases:
+## List of document databases:
 
 * Apache Cassandra
 * MongoDB
