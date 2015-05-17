@@ -9,6 +9,16 @@ List of web server software packages:
 * Nginx
 * Microsoft's Internet Information Services (IIS) Windows Server
 
+List of open source search engines:
+
+* Elastic Search
+* Solr
+* Sphinx
+* Apache Lucene
+* Nutch
+
+Useful for reference on this topic: http://solr-vs-elasticsearch.com/
+
 List of message queuing services:
 
 * ActiveMQ
