@@ -8,22 +8,36 @@ Nginx claims to provide with a better load balancing with cookies. The platform 
 **References:** http://nginx.org/en/
 
 ## Quick Facts
-
-A list of facts
-
-## Analytics
+* **Main Site** - http://nginx.com/
+* **Documentation** - http://nginx.org/en/docs/
+* **Wikipedia** - http://en.wikipedia.org/wiki/Nginx
+* **Main Git Repo** - https://github.com/nginx/nginx
+* **Current Version** - NGINX Plus R6
+* **Current Version Released** - 14 April 2015
 
 ### Google Trends
 
-Google trends can be found [here](http://google.com/trends) but remember that the values are relative and don't give an indication of the volume of traffic, only a relative comparison by key word. Also the embed code does not show up on GitHub.
+Nginx has been gaining popularity on a gradual basis. If one tracks the Google Trends, he will find the popularity of the keyword "Nginx" on the rise. Here are some of the Google Trends about Nginx: Nginx, Nginx - Web server Software, Php nginx, Nginx vs Apache, nginx server, ubuntu nginx, nginx proxy, install nginx and many more.
+
+The worldwide data analytics of Google Trend shows that the particular keyword "Nginx" is mostly popular in China following by Russia, Ukraine, Belarus, Latvia, South Korea, Hong Kong, Moldova, Estonia and Taiwan.
+
+**Source:** http://www.google.com/trends/explore#q=Nginx
 
 ### Number of downloads over time
 
-This figure may be reported by the organization or company which produced the software. If third-party information is available, that's even better and should be used over the previous case.
+More than 3 million times.
+
+**Source:** http://nginx.com/blog/12-reasons-why-nginx-is-the-standard-for-containerized-applications-and-deploying-microservices/
 
 ## Major versions
 
-This should be a list of the last 3 to 5 major versions of the software, with links to download. Also, whenever possible, link to tags on GitHub to specific major versions, so programmers can start reading the code before making a "purchasing" decision.
+Version No.| Release Date | Documentation | Status
+:-----------:|:------------:|:-------------:|:-------
+NGINX Plus R6 | 14 April 2015 | http://nginx.com/blog/nginx-plus-r6-released/ | Commercially-supported version with added features
+v1.9.0 | 28 April 2015 | http://nginx.org/en/CHANGES | Mainline Version with Stream Module
+v1.8.0 | 21 April 2015 | http://nginx.org/en/CHANGES-1.8 | Stable Version with Hash load balancing method, Backend SSL certificate verification, Experimental thread pools support, Proxy_request_buffering and more
+v1.6.3 | 7 April 2015 | http://nginx.org/en/CHANGES-1.6 | Legacy version
+v1.4.7 | 18 March 2014 | http://nginx.org/en/CHANGES-1.4 | Legacy version
 
 ## Security exploits
 
