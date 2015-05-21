@@ -40,18 +40,14 @@ v1.6.3 | 7 April 2015 | http://nginx.org/en/CHANGES-1.6 | Legacy version
 v1.4.7 | 18 March 2014 | http://nginx.org/en/CHANGES-1.4 | Legacy version
 
 ## Security exploits
+Following are the known issues of Nginx:
 
-A list of all known CVE issues for the product, as well as security enhancements, grouped by major version. The list below is a rough example, and will probably need to be cleaned up in the future.
+* **SSL session reuse vulnerability:** The severity of this issue has been identified as medium. Common Vulnerabilities and Exposures (CVE), [CVE-2014-3616] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3616 "CVE-2014-3616") was identified by [Antoine Delignat-Lavaud] (http://antoine.delignat-lavaud.fr/ "Antoine Delignat-Lavaud"). Ability to reuse a cached SSL session for an unrelated context meant potential "virtual host confusion" attacks. Though it was vulnerable to v0.5.6-v1.7.4, it is not vulnerable to v1.7.5+ and v1.6.2+
 
-* v1.2
-  - CVE 12345
-* v1.1
-  - Minor issue with passwords
-* v1.0 
-  - Fixed SSL bug 
-* v0.9
-  - Add support for protocol encryption
-
+     Following are some of the available Security Advisory links regarding this issue:
+     - http://www.debian.org/security/2014/dsa-3029
+     - http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html
+ 
 ## Companies using PRODUCT_NAME
 
 List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
