@@ -23,9 +23,7 @@ Apache Maven, Apache ivy, Apache Ant
 
 ### Number of downloads over time
 
-Apache OpenOffice™ has been downloaded more than 100 million times.
-
-**Source** - https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces56
+**Apache Web Server** has dominated its competitor from the very beginning. According to the [Netcraft May 2015 Web Survey] (http://news.netcraft.com/archives/2015/05/19/may-2015-web-server-survey.html#more-19227 "Netcraft May 2015 Web Survey") which was ran on 857,927,160 sites and 5,281,889 computers, Apache held 39.25% Market share of all sites. The survey also revealed Apache holding 50.91% Market share of active sites, 49.19% Market share of the top million busiest sites and 46.95% Market share of computers.
 
 ## Major versions
  Version No.| Release Date | Documentation | Status
