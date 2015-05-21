@@ -47,6 +47,12 @@ Following are the known issues of Nginx:
      Following are some of the available Security Advisory links regarding this issue:
      - http://www.debian.org/security/2014/dsa-3029
      - http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html
+     
+* **STARTTLS command injection:** This is also among the medium vulnerable security exploits. This issue caused the vulnerability of inserting commands into encrypted SMTP sessions by sending a cleartext command that is processed after TLS. According to its CVE([CVE-2014-3556] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3556 "CVE-2014-3556")) this could also be related to a "plaintext command injection" attack and is similar to [CVE-2011-0411] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0411 "CVE-2011-0411"). According to [nginx security advisory (CVE-2014-3556)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html "nginx security advisory (CVE-2014-3556)") the issue was discovered by Chris Boulton. The [patch] (http://nginx.org/download/patch.2014.starttls.txt "patch") and [pgp] (http://nginx.org/download/patch.2014.starttls.txt.asc "pgp") documentation for this issue are also available.
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html?_ga=1.135323249.1375076917.1431890626
+    - https://bugzilla.redhat.com/show_bug.cgi?id=1126891
  
 ## Companies using PRODUCT_NAME
 
