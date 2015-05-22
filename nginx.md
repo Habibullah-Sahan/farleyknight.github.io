@@ -59,6 +59,12 @@ Following are the known issues of Nginx:
     Following are some of the available Security Advisory links regarding this security elxploit:
     - [Nginx security advisory (CVE-2014-0133)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000135.html?_ga=1.168482145.1375076917.1431890626 "Nginx security advisory (CVE-2014-0133)")
     - [OpenSUSE Security Update] (http://lists.opensuse.org/opensuse-updates/2014-03/msg00095.html "OpenSUSE Security Update")
+     
+* **SPDY memory corruption:** As per the official Nginx documents: A bug in the experimental SPDY implementation in nginx 1.5.10 was found, which might allow an attacker to corrupt worker process memory by using a specially crafted request, potentially resulting in arbitrary code execution. It was only identified in v1.5.10 and is not vulnerable to v1.5.11+. [Lucas Molas] (https://hackerone.com/lmolas "Lucas Molas") is the person behind the identification of this security exploit. The patch for the issue can be found [here] (http://nginx.org/download/patch.2014.spdy.txt "here"). The pgp can be dound [here] (http://nginx.org/download/patch.2014.spdy.txt.asc "here").
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory (CVE-2014-0088)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000132.html?_ga=1.92405213.1375076917.1431890626 "Nginx security advisory (CVE-2014-0088)")
+    - [SecurityTracker Alert ID: 1030150] (http://www.securitytracker.com/id/1030150 "SecurityTracker Alert ID: 1030150")
     
 ## Companies using PRODUCT_NAME
 
