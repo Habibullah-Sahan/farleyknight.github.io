@@ -45,15 +45,21 @@ Following are the known issues of Nginx:
 * **SSL session reuse vulnerability:** The severity of this issue has been identified as medium. Common Vulnerabilities and Exposures (CVE), [CVE-2014-3616] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3616 "CVE-2014-3616") was identified by [Antoine Delignat-Lavaud] (http://antoine.delignat-lavaud.fr/ "Antoine Delignat-Lavaud"). Ability to reuse a cached SSL session for an unrelated context meant potential "virtual host confusion" attacks. Though it was vulnerable to v0.5.6 - v1.7.4, it is not vulnerable to v1.7.5+ and v1.6.2+
 
      Following are some of the available Security Advisory links regarding this issue:
-     - http://www.debian.org/security/2014/dsa-3029
-     - http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html
+     - [Nginx security advisory (CVE-2014-3616)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000147.html "Nginx security advisory (CVE-2014-3616)")
+     - [Debian Security Advisory] (http://www.debian.org/security/2014/dsa-3029 "Debian Security Advisory")
      
 * **STARTTLS command injection:** This is also among the medium vulnerable security exploits. This issue caused the vulnerability of inserting commands into encrypted SMTP sessions by sending a cleartext command that is processed after TLS. According to its CVE([CVE-2014-3556] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3556 "CVE-2014-3556")) this could also be related to a "plaintext command injection" attack and is similar to [CVE-2011-0411] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0411 "CVE-2011-0411"). According to [nginx security advisory (CVE-2014-3556)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html "nginx security advisory (CVE-2014-3556)") the issue was discovered by Chris Boulton. The [patch] (http://nginx.org/download/patch.2014.starttls.txt "patch") and [pgp] (http://nginx.org/download/patch.2014.starttls.txt.asc "pgp") documentation for this issue are also available. **STARTTLS command injection** is marked as vulnerable to v1.5.6 - v1.7.3 but it is not vulnerable to 1.7.4+ and 1.6.1+
 
     Following are some of the available Security Advisory links regarding this security elxploit:
-    - http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html?_ga=1.135323249.1375076917.1431890626
-    - https://bugzilla.redhat.com/show_bug.cgi?id=1126891
+    - [Nginx security advisory (CVE-2014-3556)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000144.html?_ga=1.135323249.1375076917.1431890626 "Nginx security advisory (CVE-2014-3556)")
+    - [Red Hat Bugzilla – Bug 1126891] (https://bugzilla.redhat.com/show_bug.cgi?id=1126891 "Red Hat Bugzilla – Bug 1126891")
  
+* **SPDY heap buffer overflow:** This enabled remote attackers to execute arbitrary code via a crafted request. While it is Vulnerable to v1.3.15 - v1.5.11, it is not vulnerable in v1.5.12+ and v1.4.7+. The patch for the problem could be found [here] (http://nginx.org/download/patch.2014.spdy2.txt "here"). The pgp could be found [here] (http://nginx.org/download/patch.2014.spdy2.txt.asc "here").
+   
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory (CVE-2014-0133)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000135.html?_ga=1.168482145.1375076917.1431890626 "Nginx security advisory (CVE-2014-0133)")
+    - [OpenSUSE Security Update] (http://lists.opensuse.org/opensuse-updates/2014-03/msg00095.html "OpenSUSE Security Update")
+    
 ## Companies using PRODUCT_NAME
 
 List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
