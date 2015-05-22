@@ -91,6 +91,32 @@ configurations by using a specially crafted request. [Ivan Fratric] (https://twi
     - [Nginx security advisory] (http://mailman.nginx.org/pipermail/nginx-announce/2012/000086.html?_ga=1.165204735.1375076917.1431890626 "Nginx security advisory")
     - [PT-2012-06: Security restrictions bypass in nginx for Windows] (http://english.securitylab.ru/lab/PT-2012-06 "PT-2012-06: Security restrictions bypass in nginx for Windows")
     
+* **Buffer overflow in the ngx_http_mp4_module:** The issue was discovered by [Matthew Daley] (https://github.com/mdaley "Mathew Daley"). This enabled a remote attacker overwrite memory locations in a worker process via crafted mp4 file if the ngx_http_mp4_module is used. This is vulnerable to v1.1.3-1.1.18 and v1.0.7-1.0.14. Not vulnerable in v1.1.19+ and 1.0.15+. The patch file can be found [here] (http://nginx.org/download/patch.2012.mp4.txt "here") and the pgp file can be found [here] (http://nginx.org/download/patch.2012.mp4.txt.asc "here").
+ 
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory] (http://mailman.nginx.org/pipermail/nginx-announce/2012/000080.html?_ga=1.126557517.1375076917.1431890626 "Nginx security advisory")
+    - [Exchange.xforce security advisory] (https://exchange.xforce.ibmcloud.com/vulnerabilities/74831 "Exchange.xforce security advisory")
+
+* **Memory disclosure with specially crafted backend responses:** Matthew Daley is once again responsible for discovering  yet another major issue. This can lead to a disclosure of previously freed memory on specially 
+crafted response. The issu is vulnerable to v0.1.0-1.1.16 but non-vulnerable to v1.1.17+ and 1.0.14+. The patch for the issue can be found [here] (http://nginx.org/download/patch.2012.memory.txt "here") and the pgp can be found [here] (http://nginx.org/download/patch.2012.memory.txt.asc "here").
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory] (http://mailman.nginx.org/pipermail/nginx-announce/2012/000076.html?_ga=1.54645099.1375076917.1431890626 "Nginx security advisory")
+    - [Openwall security advisory] (http://www.openwall.com/lists/oss-security/2012/03/15/5 "Openwall security advisory")
+    
+* **Buffer overflow in resolver:** Successful exploitation of this issue allows remote attackers to execute arbitrary code in context of the vulnerable application. This could be considered as a minor issue. While it is vulnerable to v0.6.18-1.1.7, it is not vulnerable in v1.1.8+ and v1.0.10+. Upgrading from vulnerable version will solve this problem. The changes can be traced [here] (http://trac.nginx.org/nginx/changeset/4268/nginx "here")
+
+* **Vulnerabilities with invalid UTF-8 sequence on Windows:** This is yet another major security exploit in terms of severity. As per [CVE-2010-2266] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2266 "CVE-2010-2266"): it can allow remote attackers to cause a denial of service (crash) via certain encoded directory traversal sequences that trigger memory corruption, as demonstrated using the "%c0.%c0." sequence. This is vulnerable to nginx/Windows 0.7.52-0.8.40. But the issue is ineffective in v0.8.41+ and v0.7.67+. More information about this issue can be found [here] (https://www.exploit-db.com/exploits/13818/ "here")
+
+* **Vulnerabilities with Windows file default stream:** This is also marked as one of the major security exploits. Successful attack of this issue can allow remote attackers to obtain source code or unparsed content of arbitrary files under the web document root. It is vulnerable to nginx/Windows 0.7.52-0.8.39. But it is non velnerable in v0.8.40+ and v0.7.66+. 
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [viernes, 11 de junio de 2010] (http://spa-s3c.blogspot.com/2010/06/full-responsible-disclosurenginx-engine.html "viernes, 11 de junio de 2010")
+    - [Exploit Database Reference] (https://www.exploit-db.com/exploits/13822/ "Exploit Database Reference")
+    
+* **Vulnerabilities with Windows 8.3 filename pseudonyms:** The severity of this issue has been identified as major. According to [Coresecurity] (http://www.coresecurity.com/content/filename-pseudonyms-vulnerabilities "Coresecurity"): by abusing this weakness an attacker can bypass security options implemented in the web server. They exemplified by saying that file.shtml will become FILE~1.SHT resulting in unprocessed service of files. This issue is vulnerable to nginx/Windows 0.7.52-0.8.32 and non-vulnerable in v0.8.33+ and v0.7.65+.
+
+
 ## Companies using PRODUCT_NAME
 
 List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
