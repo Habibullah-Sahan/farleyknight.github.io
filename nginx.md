@@ -66,6 +66,31 @@ Following are the known issues of Nginx:
     - [Nginx security advisory (CVE-2014-0088)] (http://mailman.nginx.org/pipermail/nginx-announce/2014/000132.html?_ga=1.92405213.1375076917.1431890626 "Nginx security advisory (CVE-2014-0088)")
     - [SecurityTracker Alert ID: 1030150] (http://www.securitytracker.com/id/1030150 "SecurityTracker Alert ID: 1030150")
     
+* **Request line parsing vulnerability:** This enabled an attacker to bypass security restrictions in certain
+configurations by using a specially crafted request. [Ivan Fratric] (https://twitter.com/ifsecure "Ivan Fratric") of Google discovered this security exploit. It is vulnerable to v0.8.41 - v1.5.6 but not vulnerable to v1.5.7+ and 1.4.4+. The patch for the security exploit can be found [here] (http://nginx.org/download/patch.2013.space.txt "here") and the pgp can be found [here] (http://nginx.org/download/patch.2013.space.txt.asc "here").
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory (CVE-2013-4547)] (http://mailman.nginx.org/pipermail/nginx-announce/2013/000125.html?_ga=1.160159485.1375076917.1431890626 "Nginx security advisory (CVE-2013-4547)")
+    - [SUSE:openSUSE-SU-2013:1745] (http://lists.opensuse.org/opensuse-updates/2013-11/msg00084.html "SUSE:openSUSE-SU-2013:1745")
+    
+* **Memory disclosure with specially crafted HTTP backend responses:** The problem led to a denial of service or a disclosure of a worker process memory on a specially crafted response from an upstream proxied server. The severity of this issue is marked as medium. It is vulnerable to v1.1.4 - v1.2.8 and v1.3.9 - v1.4.0. But it is not vulnerable to v1.5.0+, v1.4.1+ and v1.2.9+. The patch and pgp to the security exploits are: [The patch for v1.3.9 - v1.4.0] (http://nginx.org/download/patch.2013.chunked.txt "The patch for v1.3.9 - v1.4.0"), [The patch for v1.1.4 - v1.2.8] (http://nginx.org/download/patch.2013.proxy.txt "The patch for v1.1.4 - v1.2.8"), [pgp for v1.3.9 - v1.4.0] (http://nginx.org/download/patch.2013.chunked.txt.asc "pgp for v1.3.9 - v1.4.0"), [pgp for v1.1.4 - v1.2.8] (http://nginx.org/download/patch.2013.proxy.txt.asc "pgp for v1.1.4 - v1.2.8").
+ 
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory (CVE-2013-2070)] (http://mailman.nginx.org/pipermail/nginx-announce/2013/000114.html?_ga=1.59431405.1375076917.1431890626 "Nginx security advisory (CVE-2013-2070)")
+    - [oss-security] (http://seclists.org/oss-sec/2013/q2/291 "oss-security")
+    
+* **Stack-based buffer overflow with specially crafted request:** The severity of this issue is major. This could occur in a worker process while handling a specially crafted request, potentially resulting in arbitrary code execution. The security exploit is a concern to v1.3.9 - v1.4.0. But it should be fine in v1.5.0+ and v1.4.1+. Greg MacManus of iSIGHT Partners Labs has been attributed with the credit of identifying this issue. The patch for this issue can be found [here] (http://nginx.org/download/patch.2013.chunked.txt "here") and the pgp can be found [here] (http://nginx.org/download/patch.2013.chunked.txt.asc "here").
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory (CVE-2013-2028)] (http://mailman.nginx.org/pipermail/nginx-announce/2013/000112.html?_ga=1.89914971.1375076917.1431890626 "Nginx security advisory (CVE-2013-2028)")
+    - [Packetstormsecurity] (http://packetstormsecurity.com/files/121675/Nginx-1.3.9-1.4.0-Denial-Of-Service.html "Packetstormsecurity")
+    
+* **Vulnerabilities with Windows directory aliases:** [Vladimir Kochetkov] (https://github.com/kochetkov/ "Vladimir Kochetkov") has identified this issue. The issue is related to security restrictions bypass via (1) a trailing . (dot) or (2) certain "$index_allocation" sequences in a request. While this issue is vulnerable to nginx/Windows 0.7.52-1.3.0, it is not vulnerable in v1.3.1+ and 1.2.1+. 
+
+    Following are some of the available Security Advisory links regarding this security elxploit:
+    - [Nginx security advisory] (http://mailman.nginx.org/pipermail/nginx-announce/2012/000086.html?_ga=1.165204735.1375076917.1431890626 "Nginx security advisory")
+    - [PT-2012-06: Security restrictions bypass in nginx for Windows] (http://english.securitylab.ru/lab/PT-2012-06 "PT-2012-06: Security restrictions bypass in nginx for Windows")
+    
 ## Companies using PRODUCT_NAME
 
 List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
