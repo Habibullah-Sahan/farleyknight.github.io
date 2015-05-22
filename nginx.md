@@ -116,8 +116,17 @@ crafted response. The issu is vulnerable to v0.1.0-1.1.16 but non-vulnerable to 
     
 * **Vulnerabilities with Windows 8.3 filename pseudonyms:** The severity of this issue has been identified as major. According to [Coresecurity] (http://www.coresecurity.com/content/filename-pseudonyms-vulnerabilities "Coresecurity"): by abusing this weakness an attacker can bypass security options implemented in the web server. They exemplified by saying that file.shtml will become FILE~1.SHT resulting in unprocessed service of files. This issue is vulnerable to nginx/Windows 0.7.52-0.8.32 and non-vulnerable in v0.8.33+ and v0.7.65+.
 
+* **An error log data are not sanitized:** According to [CVE-2009-4487] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4487 "CVE-2009-4487") nginx 0.7.64 writes data to a log file without sanitizing non-printable characters, which might allow remote attackers to modify a window's title, or possibly execute arbitrary commands or overwrite files, via an HTTP request containing an escape sequence for a terminal emulator. The severity of this issue is yet to be identified. And it remains vulnerable to all the versions.
+ 
+* **The renegotiation vulnerability in SSL protocol:** The severity is identified as major. While it is vulnerable to v 0.1.0-0.8.22, it is not vulnerable in v0.8.23+ and v0.7.64+. As the issue concerns with SSL and TLS, it threatens the privacy. The patch for this issue can be found [here] (http://nginx.org/download/patch.cve-2009-3555.txt “here”) and pgp can be found [here] (http://nginx.org/download/patch.cve-2009-3555.txt.asc “here”).
+ 
+* **Directory traversal vulnerability:** The severity of this issue has been identified as minor being vulnerable to v0.1.0-0.8.16. But it is not vulnerable in v0.8.17+ and v0.7.63+. Using this weakness it was possible to overwrite arbitrary or authenticate unauthorized users without proper permission. More details could be found on [CVE-2009-3898] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3898 “CVE-2009-3898”).
+ 
+* **Buffer underflow vulnerability:** According to [Vulnerability Note VU#180065] (http://www.kb.cert.org/vuls/id/180065 “Vulnerability Note VU#180065”) this issue is such where a remote, unauthenticated attacker may be able to execute arbitrary code in the context of the worker process or cause the worker process to crash, resulting in a denial of service. The severity of this issue has been identified as major. It is vulnerable to v 0.1.0-0.8.14. But it is not vulnerable in v 0.8.15+, v0.7.62+, v0.6.39+ and v0.5.38+. The patch file for this security exploit can be found [here] (http://nginx.org/download/patch.180065.txt “here”) and the pgp can be found [here] (http://nginx.org/download/patch.180065.txt.asc “here”).
+ 
+* **Null pointer dereference vulnerability:** The severity of this issue is major as well. According to [CVE-2009-3896] (http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3896 “CVE-2009-3896”) this could lead to a denial of service via long URI. It is vulnerable to v0.1.0-0.8.13. But it is not vulnerable in v0.8.14+, 0.7.62+, 0.6.39+ and 0.5.38+. The patch for the security exploit can be found [here] (http://nginx.org/download/patch.null.pointer.txt “here”) and the pgp can be found [here] (http://nginx.org/download/patch.null.pointer.txt.asc “here”).
 
-## Companies using PRODUCT_NAME
+## Companies using Nginx
 
 List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
 
