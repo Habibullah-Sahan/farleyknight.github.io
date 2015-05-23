@@ -128,8 +128,15 @@ crafted response. The issu is vulnerable to v0.1.0-1.1.16 but non-vulnerable to 
 
 ## Companies using Nginx
 
-List 3 to 5 companies that use this product. Make sure to find a reputable page on the web that has this information. You should directly quote them somehow. If all you have are a set of slides by some guy that worked at the company that made the software, then take a screenshot and use the image as proof.
-
+According to the [Netcraft May 2015 Web Server Survey] (http://news.netcraft.com/archives/2015/05/19/may-2015-web-server-survey.html “Netcraft May 2015 Web Server Survey”) though Nginx lost a little bit of overall market share, it is still doing well within the million busiest sites. Nginx is especially popular among the high volume traffic websites. Following are some of the popular platforms using Nginx:
+ * [NETFLIX] (https://www.netflix.com/ "NETFLIX")
+ * [box] (https://www.box.com/ "box")
+ * [hulu] (www.hulu.com/ "hulu")
+ * [Wordpress] (https://wordpress.com/ "Wordpress")
+ * [MaxCDN] (https://www.maxcdn.com/ "MaxCDN")
+ * [Yandex] (https://www.yandex.com/ "Yandex")
+ * [Dropbox] (https://www.dropbox.com/ "Dropbox")
+ 
 ## Features
 
 Top 3 to 5 features it has some of it's peers don't. In other words, these should be the 3 to 5 features that make the product stand out from it's competitors.
