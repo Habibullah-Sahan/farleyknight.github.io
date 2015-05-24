@@ -136,10 +136,27 @@ According to the [Netcraft May 2015 Web Server Survey] (http://news.netcraft.com
  * [MaxCDN] (https://www.maxcdn.com/ "MaxCDN")
  * [Yandex] (https://www.yandex.com/ "Yandex")
  * [Dropbox] (https://www.dropbox.com/ "Dropbox")
+ * [Pinterest] (https://www.pinterest.com/ "Pinterest")
+ * [Rambler] (http://www.rambler.ru/ "Rambler")
  
 ## Features
 
-Top 3 to 5 features it has some of it's peers don't. In other words, these should be the 3 to 5 features that make the product stand out from it's competitors.
+Nginx has a clear impact of serving people’s interest as a successful web server platform. Almost all the web servers which are in hunt with their existence and growth in the market have; and will have the basic features in common. But the proper use and tuning of each of these platforms will put one, ahead of another in some cases. Of course the expectancy of desired outcome from a web server will also play an important role in determining which one web server platform has the upper hand in a particular situation. But following are some of the features which have made Nginx popular among the users:
+
+  * Nginx is capable of giving better performance in terms of stability and scalability.
+  * Nginx can deliver remarkable speed with lower memory consumption without much of a tuning effort.
+  * Nginx is Event based and asynchronous which allows a better FLV and MP4 streaming.
+  * Load Balancing, Caching and Reverse Proxy services are delivered with ease.
+  * Many would find Multiple SSL sites working  easily with Nginx.
+  * As Nginx offers a premium product too, they can afford to run a team of full time top notch developers to give the best performance and maintain real time security. Having said that, the fact is: Nginx do have less security exploits as per the official and unofficial documentations.
+   
+Above features set high standards for Nginx. If you wish to go through a detailed documentation of features, here are some links for you:
+
+  * [Official Documentation of Basic HTTP Server Features] (http://nginx.org/en/#basic_http_features “Official Documentation of Basic HTTP Server Features”)
+  * [Other HTTP Server Features] (http://nginx.org/en/#other_http_features “Other HTTP Server Features”)
+  * [Mail Proxy Server Features] (http://nginx.org/en/#mail_proxy_server_features “Mail Proxy Server Features”)
+  * [TCP proxy server features] (http://nginx.org/en/#tcp_proxy_server_features “TCP proxy server features”)
+  * You might also like the [Wikipidea Documentation of Nginx HTTP Proxy and Web Server Features] (http://en.wikipedia.org/wiki/Nginx#HTTP_proxy_and_Web_server_features “Wikipidea Documentation of Nginx HTTP Proxy and Web Server Features”)
 
 ## Major plugins
 
