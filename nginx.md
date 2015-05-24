@@ -143,12 +143,13 @@ According to the [Netcraft May 2015 Web Server Survey] (http://news.netcraft.com
 
 Nginx has a clear impact of serving people’s interest as a successful web server platform. Almost all the web servers which are in hunt with their existence and growth in the market have; and will have the basic features in common. But the proper use and tuning of each of these platforms will put one, ahead of another in some cases. Of course the expectancy of desired outcome from a web server will also play an important role in determining which one web server platform has the upper hand in a particular situation. But following are some of the features which have made Nginx popular among the users:
 
-  * Nginx is capable of giving better performance in terms of stability and scalability.
+  * Nginx is capable of giving better performance in terms of stability and scalability as it does not rely on threads for handling requests.
   * Nginx can deliver remarkable speed with lower memory consumption without much of a tuning effort.
   * Nginx is Event based and asynchronous which allows a better FLV and MP4 streaming.
   * Load Balancing, Caching and Reverse Proxy services are delivered with ease.
   * Many would find Multiple SSL sites working  easily with Nginx.
   * As Nginx offers a premium product too, they can afford to run a team of full time top notch developers to give the best performance and maintain real time security. Having said that, the fact is: Nginx do have less security exploits as per the official and unofficial documentations.
+  * Nginx is one of the handful of servers written to address the C10K problem.
    
 Above features set high standards for Nginx. If you wish to go through a detailed documentation of features, here are some links for you:
 
@@ -160,7 +161,7 @@ Above features set high standards for Nginx. If you wish to go through a detaile
 
 ## Major plugins
 
-Top 5 to 10 major plugins for this, if available.
+
 
 ## Internals (Algorithms, Protocols, formats, etc)
 
