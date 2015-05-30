@@ -159,7 +159,13 @@ Above features set high standards for Nginx. If you wish to go through a detaile
 
 ## Major plugins
 
+Plugins are extensions which allow a platform to do more. Usually Nginx comes with a lot of built in [core features] (http://wiki.nginx.org/Modules “core features”) but yet the following plugins might be useful to users: 
 
+**Please note that these are not supported officially by Nginx and users are suggested to use these at their own risk.**
+
+Plugin Name | Plugin Benefit | Author | Download Link
+:-----------|:---------------|:-------|:-------------
+[Accept Language] (https://github.com/giom/nginx_accept_language_module/ "Accept Language") | Provides the most suitable locale from a list of supported locales. | [Guillaume Maury] (https://github.com/giom "Guillaume Maury") | [Source] (https://github.com/giom/nginx_accept_language_module/ "Source")
 
 ## Internals (Algorithms, Protocols, formats, etc)
 
