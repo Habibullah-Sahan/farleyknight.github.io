@@ -1,11 +1,11 @@
 # Nginx
 ## Description
 
-Nginx is a high performance HTTP server. At the same time it is also a reverse proxy and IMAP/POP3 proxy server. Nginx popularized itself by providing rich feature set, high performance, stability, simple configuration and low resource consumption. Ngnix open source web server is powering more than 130 million website. And the popularity of this platform among high traffic website is noteworthy.
+Nginx is a high performance HTTP server, a reverse proxy server, a mail proxy server and a generic TCP proxy server. Nginx popularized itself by providing rich feature set, high performance, stability, simple configuration and low resource consumption. According to [Netcraft May 2015 Web Server Survey] (http://news.netcraft.com/archives/2015/05/19/may-2015-web-server-survey.html "Netcraft May 2015 Web Server Survey") Ngnix open source web server is powering more than 126 million website. The survey also reveals the popularity of **Nginx Web Server** among high traffic websites.
 
-Nginx claims to provide with a better load balancing with cookies. The platform has kept the 4 mega trends of the IT sector: Cloud, Big data, Mobility and Social in mind to manage the traffic in a sophisticated manner. According to the [recent Ntecraft web survey] (http://news.netcraft.com/archives/2015/04/20/april-2015-web-server-survey.html "recent Ntecraft web survey"), Nginx has served or proxied 21.43% of the busiest websites. [Igor Sysoev] (http://en.wikipedia.org/wiki/Igor_Sysoev "Igor Sysoev") must be a proud man who originally wrote Nginx.
+Nginx claims to provide with a better load balancing with cookies. The platform has kept the 4 mega trends of the IT sector: Cloud, Big data, Mobility and Social in mind to manage the traffic in a sophisticated manner. According to the [recent Ntecraft web survey] (http://news.netcraft.com/archives/2015/04/20/april-2015-web-server-survey.html "recent Ntecraft web survey"), Nginx has served or proxied 21.43% of the top million busiest websites. [Igor Sysoev] (http://en.wikipedia.org/wiki/Igor_Sysoev "Igor Sysoev") must be a proud man who originally wrote Nginx.
 
-**References:** http://nginx.org/en/
+**Source:** http://nginx.org/en/
 
 ## Quick Facts
 * **Main Site** - http://nginx.com/
@@ -25,9 +25,7 @@ The worldwide data analytics of Google Trend shows that the particular keyword "
 
 ### Number of downloads over time
 
-More than 3 million times.
-
-**Source:** http://nginx.com/blog/12-reasons-why-nginx-is-the-standard-for-containerized-applications-and-deploying-microservices/
+As of writing this piece, Nginx is the third most popular software on [Docker] (https://registry.hub.docker.com/search?q=library&n=25&s=stars “Docker”). Then again according to [Netcraft May 2015 Web Server Survey] (http://news.netcraft.com/archives/2015/05/19/may-2015-web-server-survey.html “Netcraft May 2015 Web Server Survey”) which was ran over **857,927,160** sites, Nginx held 14.87% of all web sites, 14.24% of all active sites and 21.43% of top million busiest sites.
 
 ## Major versions
 
