@@ -159,14 +159,22 @@ Above features set high standards for Nginx. If you wish to go through a detaile
 
 ## Major plugins
 
-Plugins are extensions which allow a platform to do more. Usually Nginx comes with a lot of built in [core features] (http://wiki.nginx.org/Modules “core features”) but yet the following plugins might be useful to users: 
+Among the major noticeable Nginx plugins, following are some trendy and available plugin:
 
-**Please note that these are not supported officially by Nginx and users are suggested to use these at their own risk.**
+**Nginx Web Server New Relic Plugin:** The nginx web server plugin for New Relic allows to monitor key metrics such as:
+  - Active client connections
+  - Idle (keepalive) client connections
+  - Client connections accept/drop rate
+  - Request Rate/ Average client requests per second
+  
+It has additional features for Nginx Plus users. 
 
-Plugin Name | Plugin Benefit | Author | Download Link
-:-----------|:---------------|:-------|:-------------
-[Accept Language] (https://github.com/giom/nginx_accept_language_module/ "Accept Language") | Provides the most suitable locale from a list of supported locales. | [Guillaume Maury] (https://github.com/giom "Guillaume Maury") | [Source] (https://github.com/giom/nginx_accept_language_module/ "Source")
+_**Source:** [Official Repository] (https://github.com/qixtand/newrelic_nginx_agent "Official Repository") & [New Relic Official Website] (http://newrelic.com/plugins/nginx-inc/13 "New Relic Official Website")._
 
+**Cpnginx for cPanel Server:** This plugin delivers the high performance of Nginx to a cPanel web server. To check the detailed feature list of this plugin, click [here] (http://cpnginx.com/Features “here”). To check out the Cpnginx official documentation, click [here] (http://docs.cpnginx.com/ “here”).
+
+**Nginx Helper for Wordpress:** Cleans nginx's fastcgi/proxy cache whenever a post is edited/published. As per the official records, this plugin has more than 10,000 active installs (Update: June 2015). It also has other functionalities on offer. Details about this plugin could be found [here] (https://wordpress.org/plugins/nginx-helper/ “here”).
+  
 ## Internals (Algorithms, Protocols, formats, etc)
 
 For each of these sections, please try to link to GitHub for specific code examples whenever possible.
