@@ -175,11 +175,16 @@ _**Source:** [Official Repository] (https://github.com/qixtand/newrelic_nginx_ag
 
 **Nginx Helper for Wordpress:** Cleans nginx's fastcgi/proxy cache whenever a post is edited/published. As per the official records, this plugin has more than 10,000 active installs (Update: June 2015). It also has other functionalities on offer. Details about this plugin could be found [here] (https://wordpress.org/plugins/nginx-helper/ “here”).
   
-## Internals (Algorithms, Protocols, formats, etc)
+## Internals
 
-For each of these sections, please try to link to GitHub for specific code examples whenever possible.
+Now it’s time to dive a bit more deep into Nginx Web Server.
 
-### Algorithms used by PRODUCT_NAME
+### Algorithms used by Nginx
+
+The official documentation and [this git repository] (https://github.com/perusio/nginx-load-balancing-extras/blob/master/README.md “this git repository”) reveals that by default Nginx uses the following Algorithms: 
+  - weighted round-robin
+  - IP hash
+  - least connections
 
 ### Data Structures used by PRODUCT_NAME
 
