@@ -148,6 +148,7 @@ Nginx has a clear impact of serving people’s interest as a successful web serv
   * Many would find Multiple SSL sites working  easily with Nginx.
   * As Nginx offers a premium product too, they can afford to run a team of full time top notch developers to give the best performance and maintain real time security. Having said that, the fact is: Nginx do have less security exploits as per the official and unofficial documentations.
   * Nginx is one of the handful of servers written to address the C10K problem.
+  * Embedded Perl interpreter.
    
 Above features set high standards for Nginx. If you wish to go through a detailed documentation of features, here are some links for you:
 
@@ -186,7 +187,21 @@ The official documentation and [this git repository] (https://github.com/perusio
   - IP hash
   - least connections
 
-### Data Structures used by PRODUCT_NAME
+### Data Structures used by Nginx
+
+Nginx is found to use the following data structure type:
+
+**[Array] (https://en.wikipedia.org/wiki/Array_data_structure "Array")**
+
+**[Hashing] (http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture17.pdf "Hashing")**
+
+**[Queue] (http://www.studytonight.com/data-structures/queue-data-structure "Queue")** 
+
+**[Red-black tree] (https://en.wikipedia.org/wiki/Red%E2%80%93black_tree "Red-black tree")** 
+
+**[String] (https://en.wikipedia.org/wiki/String_%28computer_science%29 "String")**
+
+**[Memory pool] (https://en.wikipedia.org/wiki/Memory_pool "Memory pool")**
 
 ### Protocols used or supported by PRODUCT_NAME
 
