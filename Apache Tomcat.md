@@ -3,22 +3,20 @@
 
 ## Description
 
-This should be a general description of the product. No more than a paragraph. It's best to quote someone else on this topic than write it by hand. In the future this policy might change, but I don't want the site to have too much custom language at this point.
+Apache Tomcat™ is an open source software implementation of the Java Servlet and JavaServer Pages technologies. It can also act as a standalone web server and it can also be used with the Apache HTTP web server. Apache Tomcat is well known for Java Servlet API implementation while serving dynamic content.
 
 ## Quick Facts
 
-* **Main Site** - ...
-* **Documentation** - ...
-* **Wikipedia** - ...
-* **Main Git Repo** - ...
-* **Current Version** - ...
-* **Current Version Released** - ...
-
-## Analytics
+* **Main Site** - http://tomcat.apache.org/
+* **Documentation** - http://tomcat.apache.org/
+* **Wikipedia** - https://en.wikipedia.org/wiki/Apache_Tomcat
+* **Main Git Repo** - N/A
+* **Current Version** - v8.0.23
+* **Current Version Released** - 2015-05-22
 
 ### Google Trends
 
-Google trends can be found [here](http://google.com/trends) but remember that the values are relative and don't give an indication of the volume of traffic, only a relative comparison by key word. Also the embed code does not show up on GitHub.
+Apache Tomcat, Tomcat, Tomcat Server, Tomcat Download, Exlipse Tomcat
 
 ### Number of downloads over time
 
