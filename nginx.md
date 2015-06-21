@@ -261,6 +261,59 @@ Now that the installation segment is covered, we can afford to move on to some B
 
 ### Advanced Tutorials
 
+This segment is a compilation of authentic tutorials over the internet. 
+
+**[NGINX Web Server] (http://nginx.com/resources/admin-guide/web-server/ "NGINX Web Server"):** This tutorial covers the following core topics:
+  - The most common configuration of a web server
+  - How to set up virtual servers and define locations for request processing
+  - How to use variables
+  - How to return specific status codes
+  - How to rewrite the URI of a request
+  - How to configure HTTP error pages
+   
+**[NGINX Reverse Proxy] (http://nginx.com/resources/admin-guide/reverse-proxy/ "NGINX Reverse Proxy"):** This tutorial covers the following core topics:
+  - Pass a request from NGINX to proxied servers over different protocols
+  - Modify client request headers that are sent to the proxied server
+  - configure buffering of responses coming from the proxied servers
+
+**[NGINX Content Caching] (http://nginx.com/resources/admin-guide/caching/ "NGINX Content Caching"):** This tutorial covers the following core topics:
+  - Enabling the Caching of Responses
+  - NGINX Plus Processes Involved in Caching
+  - Specifying Which Requests to Cache
+  - Limiting or Bypassing Caching
+  - Combined Configuration Example
+   
+**[NGINX Load Balancing] (http://nginx.com/resources/admin-guide/load-balancer/ "NGINX Load Balancing"):** This tutorial covers the following core topics:
+  - Load balancing overview
+  - Proxying traffic to a group of servers
+  - Choosing a load balancing method
+  - Server weights
+  - Server slow start
+  - Enabling session persistence
+  - Limiting the number of connections
+  - Passive health monitoring
+  - Active health monitoring
+  - Sharing data with multiple worker processes
+  - Configuring load balancing using DNS
+  - Runtime reconfiguration
+
+**[TCP Load Balancing] (http://nginx.com/resources/admin-guide/tcp-load-balancing/ "TCP Load Balancing"):** This tutorial covers the following core topics:
+  - Configuring TCP Load Balancing
+  - Choosing a Load Balancing Method
+  - Configuring Session Persistence
+  - Limiting the Number of Connections
+  - Passive Health Monitoring
+  - Active Health Monitoring
+  - Runtime Reconfiguration
+  - Example of TCP Load Balancing Configuration
+   
+**[NGINX SSL Termination] (http://nginx.com/resources/admin-guide/nginx-ssl-termination/ "NGINX SSL Termination"):** This tutorial covers the following core topics:
+  - HTTPS Server Optimization
+  - SSL Certificate Chains
+  - A Single HTTP/HTTPS server
+  - Name-Based HTTPS Servers
+  - An SSL Certificate With Several Names
+  - Server Name Indication
 
 ## Positive Reviews
 
