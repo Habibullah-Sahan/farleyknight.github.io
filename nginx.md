@@ -220,6 +220,11 @@ Nginx supports the following protocols:
   
 ### File or data formats supported by Nginx
 
+Nginx Error Log and Access Log denote the overall status of the Nginx server. The article, [Reading nginx web logs] (http://articles.slicehost.com/2010/8/27/reading-nginx-web-logs "Reading nginx web logs") discusses exquisitely about this.
+
+And among **Multipurpose Internet Mail Extensions (MIME)** type, Nginx supports: html, htm, shtml, css, xml, rss, gif, jpeg, jpg, js, txt, htc, mml, png, ico, jng, wbmp, jar, war, ear, hqx, pdf, cco, jardiff, jnlp, run, pl, pm, prc, pdb, rar, rpm, sea, swf, sit, tcl, tk, der, pem, crt, xpi, zip, deb, bin, exe, dll, dmg, eot, iso, img, msi, msp, msm, mp3, ra, mpeg, mpg, mov, flv, avi, wmv, asx, asf and mng.
+
+**Source:** http://wiki.nginx.org/FullExample
 
 ## Articles
 
