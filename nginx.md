@@ -402,5 +402,11 @@ This segment is a compilation of authentic tutorials over the internet.
 
 ## Positive Reviews
 
+Nginx have been receiving high praises from its users. Almost each and every single user who have come across Nginx is talking about the speed and low memory consumption of Nginx. Positive comments appear in [Spiceworks Community] (http://community.spiceworks.com/product/47338-nginx "Spiceworks Community").
+
+According to [StackShare Nginx Fans] (http://stackshare.io/nginx/fans#more "StackShare Nginx Fans"), Nginx is a High-performance HTTP Server, has easy setup methods, load balancing solution and scalability.
+
+According to questions and answers in Quora regarding [Apache vs Nginx vs lighttpd] (http://www.quora.com/Server-Side-JavaScript/Apache-vs-Nginx-vs-lighttpd-vs-something-else-with-Node-JS "Apache vs Nginx vs lighttpd"), Nginx clearly seems to be the favorite. Besides, there are tons of blogging and bragging going on comparing Apache vs Nginx and in most of the cases the popularity of Nginx is higher.
 
 ## Negative Reviews
+
