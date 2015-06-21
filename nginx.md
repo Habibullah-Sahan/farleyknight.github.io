@@ -127,15 +127,24 @@ crafted response. The issu is vulnerable to v0.1.0-1.1.16 but non-vulnerable to 
 ## Companies using Nginx
 
 According to the [Netcraft May 2015 Web Server Survey] (http://news.netcraft.com/archives/2015/05/19/may-2015-web-server-survey.html “Netcraft May 2015 Web Server Survey”) though Nginx lost a little bit of overall market share, it is still doing well within the million busiest sites. Nginx is especially popular among the high volume traffic websites. Following are some of the popular platforms using Nginx:
- * [NETFLIX] (https://www.netflix.com/ "NETFLIX")
+ * [Airbnb] (https://www.airbnb.com/ "Airbnb")
  * [box] (https://www.box.com/ "box")
- * [hulu] (www.hulu.com/ "hulu")
- * [Wordpress] (https://wordpress.com/ "Wordpress")
- * [MaxCDN] (https://www.maxcdn.com/ "MaxCDN")
- * [Yandex] (https://www.yandex.com/ "Yandex")
+ * [CloudFlare] (https://www.cloudflare.com/ "CloudFlare")
  * [Dropbox] (https://www.dropbox.com/ "Dropbox")
+ * [Engine Yard] (https://www.engineyard.com/ "Engine Yard")
+ * [Eventbrite] (https://www.eventbrite.com/ "Eventbrite")
+ * [Github] (https://github.com/ "Github")
+ * [Heroku] (https://www.heroku.com/ "Heroku")
+ * [Hulu] (www.hulu.com/ "hulu")
+ * [MaxCDN] (https://www.maxcdn.com/ "MaxCDN")
+ * [Media Temple] (http://mediatemple.net/ "Media Temple")
+ * [NETFLIX] (https://www.netflix.com/ "NETFLIX")
  * [Pinterest] (https://www.pinterest.com/ "Pinterest")
  * [Rambler] (http://www.rambler.ru/ "Rambler")
+ * [RightScale] (http://www.rightscale.com/ "RightScale")
+ * [Wordpress] (https://wordpress.com/ "Wordpress")
+ * [Yandex] (https://www.yandex.com/ "Yandex")
+ * [Zappos] (http://www.zappos.com/ "Zappos")
  
 ## Features
 
@@ -367,6 +376,29 @@ This segment is a compilation of authentic tutorials over the internet.
 **[Using NGINX as an application gateway with uWSGI and Django] (http://nginx.com/resources/admin-guide/gateway-uwsgi-django/ "Using NGINX as an application gateway with uWSGI and Django"):** This tutorial covers the following core topics:
   - An overview of uWSGI
   - Configuring NGINX for use with uWSGI and Django
+   
+**[Nginx Tutorials Brought to You by Digitalocean] (https://www.digitalocean.com/community/tags/nginx?type=tutorials "Nginx Tutorials Brought to You by Digitalocean"):** This tutorial covers the following core topics:
+  - How To Upgrade Nginx In-Place Without Dropping Client Connections
+  - How To Configure Nginx to Use Custom Error Pages on Ubuntu 14.04
+  - How To Configure Nginx to Use Custom Error Pages on CentOS 7
+  - Deploying a Rails App on Ubuntu 14.04 with Capistrano, Nginx, and Puma
+  - How To Redirect www to Non-www with Nginx on Ubuntu 14.04
+  - How To Redirect www to Non-www with Nginx on CentOS 7
+  - Automating the Deployment of a Scalable WordPress Site
+  - How To Deploy a Rails App with Puma and Nginx on Ubuntu 14.04
+  - How To Deploy a Rails App with Unicorn and Nginx on Ubuntu 14.04
+  - How To Serve Flask Applications with Gunicorn and Nginx on CentOS 7
+  - How To Serve Flask Applications with Gunicorn and Nginx on Ubuntu 14.04
+  - How To Serve Flask Applications with uWSGI and Nginx on CentOS 7
+  - How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 14.04
+  - How To Set Up a Two Node LEPP Stack on CentOS 7
+  - How To Set Up Django with Postgres, Nginx, and Gunicorn on CentOS 7
+  - How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 14.04
+  - How To Deploy Web2py Python Applications with uWSGI and Nginx on CentOS 7
+  - How To Deploy Web2py Python Applications with uWSGI and Nginx on Ubuntu 14.04
+  - How To Serve Django Applications with uWSGI and Nginx on CentOS 7
+  - How To Set Up uWSGI and Nginx to Serve Python Apps on CentOS 7
+  - How To Serve Django Applications with uWSGI and Nginx on Ubuntu 14.04
 
 ## Positive Reviews
 
