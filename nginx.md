@@ -203,9 +203,22 @@ Nginx is found to use the following data structure type:
 
 **[Memory pool] (https://en.wikipedia.org/wiki/Memory_pool "Memory pool")**
 
-### Protocols used or supported by PRODUCT_NAME
+### Protocols supported by Nginx
 
-### File or data formats used or supported by PRODUCT_NAME
+Nginx supports the following protocols:
+  - [Hypertext Transfer Protocol (HTTP)] (https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol (HTTP)")
+  - [HTTPS] (https://en.wikipedia.org/wiki/HTTPS "HTTPS")
+  - [Simple Mail Transfer Protocol (SMTP)] (https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol "Simple Mail Transfer Protocol (SMTP)")
+  - [POP3] (https://en.wikipedia.org/wiki/Post_Office_Protocol "POP3")
+  - [Internet Message Access Protocol (IMAP)] (https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol "Internet Message Access Protocol (IMAP)")
+  - [Secure Sockets Layer (SSL)] (https://en.wikipedia.org/wiki/Transport_Layer_Security "Secure Sockets Layer (SSL)")
+  - [Simple Common Gateway Interface (SCGI)] (https://en.wikipedia.org/wiki/Simple_Common_Gateway_Interface "Simple Common Gateway Interface (SCGI)")
+  - [FastCGI] (https://en.wikipedia.org/wiki/FastCGI "FastCGI")
+  - [Internet Protocol version 6 (IPv6)] (https://en.wikipedia.org/wiki/IPv6 "Internet Protocol version 6 (IPv6)")
+  - [SPDY] (https://en.wikipedia.org/wiki/SPDY "SPDY")
+  - [STARTTLS] (https://en.wikipedia.org/wiki/STARTTLS "STARTTLS")
+  
+### File or data formats supported by Nginx
 
 
 ## Articles
