@@ -315,6 +315,59 @@ This segment is a compilation of authentic tutorials over the internet.
   - An SSL Certificate With Several Names
   - Server Name Indication
 
+**[Setting up SSL Termination for a TCP Upstream] (http://nginx.com/resources/admin-guide/nginx-tcp-ssl-termination/ "Setting up SSL Termination for a TCP Upstream"):** This tutorial covers the following core topics:
+  - Overview of SSL Termination
+  - Obtaining SSL Certificates
+  - Configuring NGINX Plus
+  - Speeding up Secure TCP Connections
+  - Complete Example
+ 
+**[Securing TCP Traffic to Upstream Servers] (http://nginx.com/resources/admin-guide/nginx-tcp-ssl-upstreams/ "Securing TCP Traffic to Upstream Servers"):** This tutorial covers the following core topics:
+  - Prerequisites
+  - Obtaining SSL Server Certificates
+  - Obtaining an SSL Client Certificate
+  - Configuring NGINX Plus
+  - Complete Example
+
+**[Compression and Decompression] (http://nginx.com/resources/admin-guide/compression-and-decompression/ "Compression and Decompression"):** This tutorial covers the following core topics:
+  - Enabling Compression
+  - Enabling Decompression
+  - Sending Compressed Files
+
+**[Serving Static Content] (http://nginx.com/resources/admin-guide/serving-static-content/ "Serving Static Content"):** This tutorial covers the following core topics:
+  - Root Directory and Index Files
+  - Trying Several Options
+
+**[Restricting Access] (http://nginx.com/resources/admin-guide/restricting-access/ "Restricting Access")"** This tutorial covers the following core topics:
+  - Limiting Access
+  - Limiting the Number of Connections
+  - Limiting the Request Rate
+  - Limiting the Bandwidth
+
+**[Processes and Runtime Control] (http://nginx.com/resources/admin-guide/processes-and-runtime-control/ "Processes and Runtime Control"):** This tutorial covers the following core topics:
+  - Master and Worker Processes
+  - Controlling nginx
+
+**[Logging and Monitoring] (http://nginx.com/resources/admin-guide/logging-and-monitoring/ "Logging and Monitoring"):** This tutorial covers the following core topics:
+  - Setting up the error log
+  - Setting up the access log
+  - Logging to syslog
+  - Live activity monitoring
+
+**[High Availability Support for NGINX Plus] (http://nginx.com/resources/admin-guide/nginx-ha-keepalived/ "High Availability Support for NGINX Plus"):** This tutorial covers the following core topics:
+  - High Availability Support Based on keepalived
+  - Configuring High Availability
+  - Using a Health-Checking Script to Control Mastership
+  - Displaying Node State
+  - Forcing a State Change
+  - Adding More Virtual IP Addresses
+  - Troubleshooting keepalived and VRRP
+  - Keeping NGINX Plus Configuration Files in Sync
+
+**[Using NGINX as an application gateway with uWSGI and Django] (http://nginx.com/resources/admin-guide/gateway-uwsgi-django/ "Using NGINX as an application gateway with uWSGI and Django"):** This tutorial covers the following core topics:
+  - An overview of uWSGI
+  - Configuring NGINX for use with uWSGI and Django
+
 ## Positive Reviews
 
 
