@@ -410,3 +410,7 @@ According to questions and answers in Quora regarding [Apache vs Nginx vs lightt
 
 ## Negative Reviews
 
+It's really hard to find a Negative Review of Nginx. By this time it is revealed that Nginx is very popular among high traffic websites. While Nginx can deliver concurrency, scalability and speed it might lack stability and power when compared to Apache.
+
+Apache is like Microsoft Word, it has a million options but you only need six. Nginx does those six things, and it does five of them 50 times faster than Apache.
+— Chris Lea on nginx and Wordpress"
