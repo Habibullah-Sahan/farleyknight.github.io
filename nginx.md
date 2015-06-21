@@ -228,26 +228,36 @@ And among **Multipurpose Internet Mail Extensions (MIME)** type, Nginx supports:
 
 ## Articles
 
+Following articles show how to install Nginx on different platforms and making the most out of it.
 
 ## Tutorials
 
 ### Installation
 
+This segment shows how Nginx can be installed as per the platforms below:
 
-#### On Windows
+#### [On Windows] (http://nginx.org/en/docs/windows.html "On Windows")
 
+#### [On Mac OS X] (https://coderwall.com/p/dgwwuq/installing-nginx-in-mac-os-x-maverick-with-homebrew "On Mac OS X")
 
-#### On Mac OS X
+#### [On Ubuntu Linux] (https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts "On Ubuntu Linux")
 
-
-#### On Ubuntu Linux
-
-
-#### On Red Hat Linux
+#### [On Red Hat Linux] (http://www.rackspace.com/knowledge_center/article/nginx-basics-install-nginx-on-red-hat-enterprise-linux-and-debian-based-oss "On Red Hat Linux")
 
 
 ### Beginner Tutorials
 
+Now that the installation segment is covered, we can afford to move on to some Beginner Tutorials. These tutorials are intended to users who have already installed Nginx. The beginner tutorials are listed as per their mode of use:
+
+**[Starting, Stopping, and Reloading Configuration] (http://nginx.org/en/docs/beginners_guide.html#control "Starting, Stopping, and Reloading Configuration")**
+
+**[Configuration File’s Structure] (http://nginx.org/en/docs/beginners_guide.html#conf_structure "Configuration File’s Structure")**
+
+**[Serving Static Content] (http://nginx.org/en/docs/beginners_guide.html#static "Serving Static Content")**
+
+**[Setting Up a Simple Proxy Server] (http://nginx.org/en/docs/beginners_guide.html#proxy "Setting Up a Simple Proxy Server")**
+
+**[Setting Up FastCGI Proxying] (http://nginx.org/en/docs/beginners_guide.html#fastcgi "Setting Up FastCGI Proxying")**
 
 ### Advanced Tutorials
 
