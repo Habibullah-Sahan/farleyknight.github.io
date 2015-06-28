@@ -86,11 +86,13 @@ Plugins are usually extensions which enables a particular platform to do more. "
 
 Besides, an official documentation of the most popular modules and latest modules for Apache could be traced through [this link] (https://modules.apache.org/ "this link"). The modules could also be traced as per the tags: [Security] (https://modules.apache.org/browse.lua?tag=security "Security"), [Logging] (https://modules.apache.org/browse.lua?tag=logging "Logging"), [Mapping] (https://modules.apache.org/browse.lua?tag=mapping "Mapping"), [MPMs] (https://modules.apache.org/browse.lua?tag=mpms "MPMs"), [Generators] (https://modules.apache.org/browse.lua?tag=generators "Generators"), [Filters] (https://modules.apache.org/browse.lua?tag=filters "Filters"), [Scripting] (https://modules.apache.org/browse.lua?tag=scripting "Scripting"), [Version Control] (https://modules.apache.org/browse.lua?tag=vc "Version Control"), [Proxying] (https://modules.apache.org/browse.lua?tag=proxying "Proxying") and [Miscellaneous] (https://modules.apache.org/browse.lua?tag=misc "Miscellaneous").
 
-## Internals (Algorithms, Protocols, formats, etc)
+## Internals 
 
-For each of these sections, please try to link to GitHub for specific code examples whenever possible.
+The “Internals” section includes Algorithm, Data Structures, Protocols and Data Formats adopted by Apache Httpd Web Server.
 
-### Algorithms used by PRODUCT_NAME
+### Algorithms used by Apache Httpd
+
+
 
 ### Data Structures used by PRODUCT_NAME
 
