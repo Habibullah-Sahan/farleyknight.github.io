@@ -112,6 +112,8 @@ This segment can also be regarded as the **list of algorithms used by Apache Htt
 
 - **Step 4:** o get here means no variant was selected (because none are acceptable to the browser). Return a 406 status (meaning "No acceptable representation") with a response body consisting of an HTML document listing the available variants. Also set the HTTP **Vary** header to indicate the dimensions of variance.
 
+**MD5 message-digest algorithm:** The use of **[MD5 message-digest algorithm] (https://en.wikipedia.org/wiki/MD5 "MD5 message-digest algorithm")** is seen on **ContentDigest Directive** in Apache Httpd. This is also active in one of the four formats that Apache httpd supports for basic-authentication passwords. Among the four supported format, this format is named as **MD5**.Digest Authentication also observes the use of the very algorithm.
+
 ### Data Structures used by PRODUCT_NAME
 
 ### Protocols used or supported by PRODUCT_NAME
