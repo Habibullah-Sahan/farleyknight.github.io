@@ -120,6 +120,11 @@ This segment can also be regarded as the **list of algorithms used by Apache Htt
   - **[Weighted Traffic Counting Algorithm] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html#traffic "Weighted Traffic Counting Algorithm")**
   
   - **[Pending Request Counting Algorithm] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html#busyness "Pending Request Counting Algorithm")** 
+ 
+**MCacheRemovalAlgorithm Directive:** The algorithm is used to select documents for removal from the cache. Two choices available in this algorithm are:
+
+ - **LRU (Least Recently Used):** LRU removes the documents that have not been accessed for the longest time.
+ - **GDSF (GreadyDual-Size):** GDSF assigns a priority to cached documents based on the cost of a cache miss and the size of the document. Documents with the lowest priority are removed first.
 
 ### Data Structures used by PRODUCT_NAME
 
