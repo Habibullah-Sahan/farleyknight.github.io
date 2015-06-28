@@ -114,6 +114,13 @@ This segment can also be regarded as the **list of algorithms used by Apache Htt
 
 **MD5 message-digest algorithm:** The use of **[MD5 message-digest algorithm] (https://en.wikipedia.org/wiki/MD5 "MD5 message-digest algorithm")** is seen on **ContentDigest Directive** in Apache Httpd. This is also active in one of the four formats that Apache httpd supports for basic-authentication passwords. Among the four supported format, this format is named as **MD5**.Digest Authentication also observes the use of the very algorithm.
 
+**Load balancer scheduler algorithm:** In presence of [mod_proxy] (http://httpd.apache.org/docs/2.2/mod/mod_proxy.html "mod_proxy") and [mod_proxy_balancer] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html "mod_proxy_balancer") in server, Apache Httpd implements the following 3 load balancer scheduler algorithms:
+  - **[Request Counting Algorithm] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html#requests "Request Counting Algorithm")**
+  
+  - **[Weighted Traffic Counting Algorithm] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html#traffic "Weighted Traffic Counting Algorithm")**
+  
+  - **[Pending Request Counting Algorithm] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html#busyness "Pending Request Counting Algorithm")** 
+
 ### Data Structures used by PRODUCT_NAME
 
 ### Protocols used or supported by PRODUCT_NAME
