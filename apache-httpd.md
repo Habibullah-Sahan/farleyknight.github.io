@@ -92,6 +92,9 @@ The “Internals” section includes Algorithm, Data Structures, Protocols and D
 
 ### Algorithms used by Apache Httpd
 
+This segment can also be regarded as the **list of algorithms used by Apache Httpd Web Server**. Apache uses the following Algorithms as per June 2015:
+
+**Apache Negotiation Algorithm:** This algorithm is used for Content Negotiation. There are certain **[Negotiation Methods of Apache] (http://httpd.apache.org/docs/2.2/content-negotiation.html#methods "Negotiation Methods of Apache")** which is implemented through the Apache Negotiation Algorithm. The operational steps of Apache Negotiation Algorithm are as follows:
 
 
 ### Data Structures used by PRODUCT_NAME
