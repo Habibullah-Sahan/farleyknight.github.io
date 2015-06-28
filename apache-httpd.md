@@ -126,7 +126,11 @@ This segment can also be regarded as the **list of algorithms used by Apache Htt
  - **LRU (Least Recently Used):** LRU removes the documents that have not been accessed for the longest time.
  - **GDSF (GreadyDual-Size):** GDSF assigns a priority to cached documents based on the cost of a cache miss and the size of the document. Documents with the lowest priority are removed first.
 
-### Data Structures used by PRODUCT_NAME
+**Cryptographic Algorithms:** Frederick J. Hirsch has defined Cryptographic Algorithms exquisitely in his article [Introducing SSL and Certificates using SSLeay] (http://home.comcast.net/~fjhirsch/Papers/wwwj/article.html "Introducing SSL and Certificates using SSLeay"). According to this article: There are two categories of cryptographic algorithms: conventional and public key. 
+ * **conventional cryptography**, also known as symmetric cryptography, requires the sender and receiver to share a key: a secret piece of information that may be used to encrypt or decrypt a message. If this key is secret, then nobody other than the sender or receiver may read the message. If Alice and the bank know a secret key, then they may send each other private messages. The task of privately choosing a key before communicating, however, can be problematic. 
+ * **Public key cryptography**, also known as asymmetric cryptography, solves the key exchange problem by defining an algorithm which uses two keys, each of which may be used to encrypt a message. If one key is used to encrypt a message then the other must be used to decrypt it. This makes it possible to receive secure messages by simply publishing one key (the public key) and keeping the other secret (the private key). Anyone may encrypt a message using the public key, but only the owner of the private key will be able to read it. In this way, Alice may send private messages to the owner of a key-pair (the bank), by encrypting it using their public key. Only the bank will be able to decrypt it.
+
+### Data Structures used by Apache Httpd
 
 ### Protocols used or supported by PRODUCT_NAME
 
