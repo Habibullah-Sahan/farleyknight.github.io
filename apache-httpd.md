@@ -60,15 +60,11 @@ Apache is certainly the oldest in the business when it comes to talk about Web S
 
 ## Major plugins
 
-Plugins are usually extensions which enables a particular platform to do more. "Modules" could also be used as a synonymous term of plugin. Some of the popular modules for Apache are:
+Plugins are usually extensions which enables a particular platform to do more. Following are some of the major Apache Httpd plugins:
 
-**mod_proxy_msrpc:** This module enables the anywhere Outlook service. Without it, Apache would block any Outlook Anywhere requests. Detailed information on this module could be found here: https://github.com/bombadil/mod_proxy_msrpc
+**Apache Httpd New Relic Plugin:** New Relic is a software analyzing platform aimed at making the software business smoother. The New Relic Apache Httpd Plugin shows statistics and monitors the Apache web server.
 
-**mod_auth_dacs:** This module is also known as the **DACS** module. This module is available for v2.0, v2.2 and v2.4 **mod_auth_dacs** is one of the popular security modules. Details about this Secure Resource Sharing module could be found on: http://dacs.dss.ca/
-
-**IP2Location:** IP2Location module enables the easy detection of the country, city, region, latitude, longitude, time zone, zip code, ISP, domain name, area code, connection type, weather, MCC, MNC, mobile brand name, elevation and usage type by IP address. All the details could be foud here: http://www.ip2location.com/developers/apache
-
-**mod_amf:** This module for Apache is very popular for detecting mobile devices. The process is easy and fast. Details about this module could be found on this link: http://www.apachemobilefilter.org/
+**Stackdriver Apache Plugin:** This plugin is concerned with monitoring key Apache metrics within the Stackdriver platform such as: Active Connections, Idle Workers and Requests.
 
 ## Internals 
 
@@ -80,7 +76,7 @@ This segment can also be regarded as the **list of algorithms used by Apache Htt
 
 **Apache Negotiation Algorithm:** Apache Negotiation Algorithm follows the rules of Content Negotiation described in [HTTP/1.1 specification] (http://www.w3.org/Protocols/rfc2616/rfc2616.txt "HTTP/1.1 specification") to deliver the best representation from the available set of options. The purpose of this algorithm is to deliver the most suitable form of content based on pre defined variants. The accuracy of defining the variants perfectly will determine the outcome of coming up with the best result.
 
-**MD5 message-digest algorithm:** The use of **[MD5 message-digest algorithm] (https://en.wikipedia.org/wiki/MD5 "MD5 message-digest algorithm")** is seen on **ContentDigest Directive** in Apache Httpd. This is also active in one of the four formats that Apache httpd supports for basic-authentication passwords. Among the four supported format, this format is named as **MD5**.Digest Authentication also observes the use of the very algorithm.
+**MD5 message-digest algorithm:** The use of **[MD5 message-digest algorithm] (https://en.wikipedia.org/wiki/MD5 "MD5 message-digest algorithm")** is seen on **ContentDigest Directive** in Apache Httpd. This is also active in one of the four formats that Apache httpd supports for basic-authentication passwords. Among the four supported format, this format is named as **MD5**. Digest Authentication also observes the use of the very algorithm.
 
 **Load balancer scheduler algorithm:** In presence of [mod_proxy] (http://httpd.apache.org/docs/2.2/mod/mod_proxy.html "mod_proxy") and [mod_proxy_balancer] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html "mod_proxy_balancer") in server, Apache Httpd implements the following 3 load balancer scheduler algorithms:
   - **[Request Counting Algorithm] (http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html#requests "Request Counting Algorithm")**
@@ -94,9 +90,7 @@ This segment can also be regarded as the **list of algorithms used by Apache Htt
  - **LRU (Least Recently Used):** LRU removes the documents that have not been accessed for the longest time.
  - **GDSF (GreadyDual-Size):** GDSF assigns a priority to cached documents based on the cost of a cache miss and the size of the document. Documents with the lowest priority are removed first.
 
-**Cryptographic Algorithms:** Frederick J. Hirsch has defined Cryptographic Algorithms exquisitely in his article [Introducing SSL and Certificates using SSLeay] (http://home.comcast.net/~fjhirsch/Papers/wwwj/article.html "Introducing SSL and Certificates using SSLeay"). According to this article: There are two categories of cryptographic algorithms: conventional and public key. 
- * **conventional cryptography**, also known as symmetric cryptography, requires the sender and receiver to share a key: a secret piece of information that may be used to encrypt or decrypt a message. If this key is secret, then nobody other than the sender or receiver may read the message. If Alice and the bank know a secret key, then they may send each other private messages. The task of privately choosing a key before communicating, however, can be problematic. 
- * **Public key cryptography**, also known as asymmetric cryptography, solves the key exchange problem by defining an algorithm which uses two keys, each of which may be used to encrypt a message. If one key is used to encrypt a message then the other must be used to decrypt it. This makes it possible to receive secure messages by simply publishing one key (the public key) and keeping the other secret (the private key). Anyone may encrypt a message using the public key, but only the owner of the private key will be able to read it. In this way, Alice may send private messages to the owner of a key-pair (the bank), by encrypting it using their public key. Only the bank will be able to decrypt it.
+**Cryptographic Algorithms:** Cryptographic Algorithms comes into play in SSL/TLS Strong Encryption as far as the implementation of these algorithms in Apache Httpd are concerned. It is very important as per the security measurements to know that we are contacting who we actually intend to and we are communicating with a valid source. There are two types of Cryptographic Algorithm. One is **Conventional Cryptography** and the other one is **Public Key Cryptography**. **Conventional Cryptography** is like a new lock. A new lock might have a certain number of keys. And each of these authentic keys might be used to open this lock. Only the members with the proper key can access to the lock. Lock is compared with the data where as the term key is attributed to permission. In case of **Public Key Cryptography** it is like owning a master key. Whoever has the set or sets of master key can access valid permissions. The implementation of Cryptographic Algorithm in Apache Httpd server helps to provide certificates from valid sources and keep the data integrity intact.
 
 ### Data Structures used by Apache Httpd
 
