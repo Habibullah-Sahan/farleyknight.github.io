@@ -1,13 +1,9 @@
 # Apache Httpd
 
 ## Description
-The Apache HTTP Server Project is a collaborative software development effort aimed at creating a robust, commercial-grade, featureful, and freely-available source code implementation of an HTTP (Web) server. The project is jointly managed by a group of volunteers located around the world, using the Internet and the Web to communicate, plan, and develop the server and its related documentation. This project is part of the Apache Software Foundation. In addition, hundreds of users have contributed ideas, code, and documentation to the project. This file is intended to briefly describe the history of the Apache HTTP Server and recognize the many contributors.
 
-**Source:** http://httpd.apache.org/ABOUT_APACHE.html
-
-Apache HTTP Server is based on [NCSA HTTPd] (http://en.wikipedia.org/wiki/NCSA_HTTPd "NCSA HTTPd"). Apche HTTPd has played the most important of roles in the growth of [WWW (World Wide Web)] (http://en.wikipedia.org/wiki/World_Wide_Web "WWW (World Wide Web)"). Apache has achieved the milestone of serving more than 100 million Websites in the year 2009. They are the first platform to reach such a milestone in aspect of WWW development.
-
-**Reference:** http://en.wikipedia.org/wiki/Apache_HTTP_Server
+Apache Httpd is the top web server in the world considering the number of its users. Till now it holds the first position in the Web Server Industry. Apache’s strong security features and wide 
+range of functionality have taken it to the highest of its current success. The Apache Httpd project is run under the [Apache Software Foundation] (http://apache.org/ "Apache Software Foundation"). Starting in February 1995, this project didn’t have to look back. The popularity meter prevailed on the top ever since.
 
 ## Quick Facts
 * **Main Site** - http://www.apache.org/
@@ -19,7 +15,7 @@ Apache HTTP Server is based on [NCSA HTTPd] (http://en.wikipedia.org/wiki/NCSA_H
 
 ### Google Trends
 
-Apache Maven, Apache ivy, Apache Ant
+Apache Maven, Apache ivy, Apache Ant, Apache Tuning.
 
 ### Number of downloads over time
 
@@ -42,7 +38,7 @@ The following links will show the documentation of vulnerabilities as per the pr
 
 ## Companies using Apache Httpd
 
-Till now Apache is the most widely used web server. As per the April 2015 servey of Netcraft on 849,027,856 sites, Apache holds the first position in terms of numbers. Following are some of the top companies that are using Apache Httpd:
+Till now Apache is the most widely used web server. Following are some of the top companies that are using Apache Httpd:
 * Wikipedia.org
 * Paypal.com
 * Apple.com
@@ -52,9 +48,6 @@ Till now Apache is the most widely used web server. As per the April 2015 servey
 * Ask.com
 
 As Apache Httpd Web Server is being used my millions of websites out there, it is not easy to create a list. But above are some of the well known platforms out there that are using Apache Httpd Web Server.
-
-**Source:** http://w3techs.com/technologies/details/ws-apache/all/all
-
 
 ## Features
 
