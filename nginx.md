@@ -347,7 +347,7 @@ This segment is a compilation of authentic tutorials over the internet.
   - Root Directory and Index Files
   - Trying Several Options
 
-**[Restricting Access] (http://nginx.com/resources/admin-guide/restricting-access/ "Restricting Access")"** This tutorial covers the following core topics:
+**[Restricting Access] (http://nginx.com/resources/admin-guide/restricting-access/ "Restricting Access"):** This tutorial covers the following core topics:
   - Limiting Access
   - Limiting the Number of Connections
   - Limiting the Request Rate
