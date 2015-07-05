@@ -51,17 +51,12 @@ As Apache Httpd Web Server is being used my millions of websites out there, it i
 
 ## Features
 
-Apache is certainly the oldest in the business out there. Each version comes with unique enhancements. In v2.4 multiple MPMs could be built as loadable modules. This is expected to enhance the runtime. Besides, the [Event MPM] (http://httpd.apache.org/docs/2.4/mod/event.html "Event MPM") which was experimental in v2.2 is fully supported in v2.4
-
-[If] (http://httpd.apache.org/docs/2.4/mod/core.html#if "<If>"), [Else] (http://httpd.apache.org/docs/2.4/mod/core.html#else "<Else>") and [ElseIf] (http://httpd.apache.org/docs/2.4/mod/core.html#elseif "<ElseIf>") have been added in Per-request configuration sections to configure better on per-request criteria. No matter what people say but nobody can deny that Apache Web Server is the oldest platform among its competitor. And it outnumbers its competitor on the basis of user number.
-
-Each up gradation came up with its unique features which can simply distinguish between the features of its competitors. The following links are the official documentation of features which were added during the up gradations from on version to another:
-
-**Documentation of new features in Apache 2.0:** http://httpd.apache.org/docs/2.0/new_features_2_0.html
-
-**Documentation of new features in Apache 2.2:** http://httpd.apache.org/docs/2.2/new_features_2_2.html
-
-**Documentation of new features in Apache 2.4:** http://httpd.apache.org/docs/2.4/new_features_2_4.html
+Apache is certainly the oldest in the business when it comes to talk about Web Servers. The following are some of the feature of Apache Httpd Web Server:
+  * Apache is the most widely used web server. So, it can be echoed as the most reliable web server the human species have ever seen.
+  * Apache can offer more possibilities than of any other Web Server with the recent version containing Run-time Loadable MPMs, Event MPM, Asynchronous support and many more.
+  * In spite of a number of security exploits, Apache have developed the knack of taking quick security measures and have a tough security.
+  * Ability to configure the Log Level to Per Module and Per Directory.
+  * Mod_macro is not a 3rd party module anymore. It simplifies the situation where a configuration is needed to use again and again. It is now very easy to create macro configuration and use it without hustle as many times as required.
 
 ## Major plugins
 
@@ -74,10 +69,6 @@ Plugins are usually extensions which enables a particular platform to do more. "
 **IP2Location:** IP2Location module enables the easy detection of the country, city, region, latitude, longitude, time zone, zip code, ISP, domain name, area code, connection type, weather, MCC, MNC, mobile brand name, elevation and usage type by IP address. All the details could be foud here: http://www.ip2location.com/developers/apache
 
 **mod_amf:** This module for Apache is very popular for detecting mobile devices. The process is easy and fast. Details about this module could be found on this link: http://www.apachemobilefilter.org/
-
-**mod_pLua:** The **mod_pLua** module is also among the popular modules. And it helps develope web applications. Details could be found on this link: http://sourceforge.net/projects/modplua/
-
-Besides, an official documentation of the most popular modules and latest modules for Apache could be traced through [this link] (https://modules.apache.org/ "this link"). The modules could also be traced as per the tags: [Security] (https://modules.apache.org/browse.lua?tag=security "Security"), [Logging] (https://modules.apache.org/browse.lua?tag=logging "Logging"), [Mapping] (https://modules.apache.org/browse.lua?tag=mapping "Mapping"), [MPMs] (https://modules.apache.org/browse.lua?tag=mpms "MPMs"), [Generators] (https://modules.apache.org/browse.lua?tag=generators "Generators"), [Filters] (https://modules.apache.org/browse.lua?tag=filters "Filters"), [Scripting] (https://modules.apache.org/browse.lua?tag=scripting "Scripting"), [Version Control] (https://modules.apache.org/browse.lua?tag=vc "Version Control"), [Proxying] (https://modules.apache.org/browse.lua?tag=proxying "Proxying") and [Miscellaneous] (https://modules.apache.org/browse.lua?tag=misc "Miscellaneous").
 
 ## Internals 
 
