@@ -87,23 +87,7 @@ The “Internals” section includes Algorithm, Data Structures, Protocols and D
 
 This segment can also be regarded as the **list of algorithms used by Apache Httpd Web Server**. Apache uses the following Algorithms as per June 2015:
 
-**Apache Negotiation Algorithm:** This algorithm is used for Content Negotiation. There are certain **[Negotiation Methods of Apache] (http://httpd.apache.org/docs/2.2/content-negotiation.html#methods "Negotiation Methods of Apache")** which is implemented through the Apache Negotiation Algorithm. The operational steps of Apache Negotiation Algorithm are as follows:
- - **Step 1:** For each dimension of the negotiation, check the appropriate **Accept** header field and assign a quality to each variant. If the **Accept** header for any dimension implies that this variant is not acceptable, eliminate it. If no variants remain, go to step 4.
-
- - **Step 2:** Select the 'best' variant by a process of elimination. Each of the following tests is applied in order. Any variants not selected at each test are eliminated. After each test, if only one variant remains, select it as the best match and proceed to step 3. If more than one variant remains, move on to the next test. 
-  1. Multiply the quality factor from the Accept header with the quality-of-source factor for this variants media type, and select the variants with the highest value.
-  2. Select the variants with the highest language quality factor.
-  3. Select the variants with the best language match, using either the order of languages in the **Accept-Language** header (if present), or else the order of languages in the **LanguagePriority** directive (if present).
-  4. Select the variants with the highest 'level' media parameter (used to give the version of text/html media types).
-  5. Select variants with the best charset media parameters, as given on the **Accept-Charset** header line. Charset ISO-8859-1 is acceptable unless explicitly excluded. Variants with a text/* media type but not explicitly associated with a particular charset are assumed to be in ISO-8859-1.
-  6. Select those variants which have associated charset media parameters that are not **ISO-8859-1**. If there are no such variants, select all variants instead.
-  7. Select the variants with the best encoding. If there are variants with an encoding that is acceptable to the user-agent, select only these variants. Otherwise if there is a mix of encoded and non-encoded variants, select only the unencoded variants. If either all variants are encoded or all variants are not encoded, select all variants.
-  8. Select the variants with the smallest content length.
-  9. Select the first variant of those remaining. This will be either the first listed in the type-map file, or when variants are read from the directory, the one whose file name comes first when sorted using ASCII code order.
-
-- **Step 3:** The algorithm has now selected one 'best' variant, so return it as the response. The HTTP response header **Vary** is set to indicate the dimensions of negotiation (browsers and caches can use this information when caching the resource). End.
-
-- **Step 4:** o get here means no variant was selected (because none are acceptable to the browser). Return a 406 status (meaning "No acceptable representation") with a response body consisting of an HTML document listing the available variants. Also set the HTTP **Vary** header to indicate the dimensions of variance.
+**Apache Negotiation Algorithm:** Apache Negotiation Algorithm follows the rules of Content Negotiation described in [HTTP/1.1 specification] (http://www.w3.org/Protocols/rfc2616/rfc2616.txt "HTTP/1.1 specification") to deliver the best representation from the available set of options. The purpose of this algorithm is to deliver the most suitable form of content based on pre defined variants. The accuracy of defining the variants perfectly will determine the outcome of coming up with the best result.
 
 **MD5 message-digest algorithm:** The use of **[MD5 message-digest algorithm] (https://en.wikipedia.org/wiki/MD5 "MD5 message-digest algorithm")** is seen on **ContentDigest Directive** in Apache Httpd. This is also active in one of the four formats that Apache httpd supports for basic-authentication passwords. Among the four supported format, this format is named as **MD5**.Digest Authentication also observes the use of the very algorithm.
 
