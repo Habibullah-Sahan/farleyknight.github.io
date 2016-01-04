@@ -3,7 +3,7 @@
 
 ## Description
 
-This should be a general description of the product. No more than a paragraph. It's best to quote someone else on this topic than write it by hand. In the future this policy might change, but I don't want the site to have too much custom language at this point.
+ActiveMQ is an Integration Patterns server.
 
 ## Quick Facts
 
